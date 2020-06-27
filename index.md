@@ -7,14 +7,15 @@ layout: default
 
 I am a PhD student in Machine Learning at Harvard University, 
 working with Professor [Finale Doshi-Velez](https://finale.seas.harvard.edu/)
-at the Data to Actionable Knowledge (DTAK) Lab.
+at the Data to Actionable Knowledge (DtAK) Lab.
 I work on uncertainty quantification and tractable approximate inference
 for deep Bayesian latent variable models, 
 with applications in health-care. 
 
-Before joining DTAK, I earned my MM in Contemporary Improvisation from
+Before joining DtAK, I earned my MM in Contemporary Improvisation from
 the New England Conservatory in 2016 and my AB in Computer Science
 from Harvard College in 2015. 
+You can find my music page [here](http://yanivyacoby.com/). 
 
 
 ## Publications
@@ -36,6 +37,6 @@ Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine 
 
 ## Contact
 
-Email: yanivyacoby AT g DOT harvard DOT edu
+**Email:** yanivyacoby AT g DOT harvard DOT edu
 
 
