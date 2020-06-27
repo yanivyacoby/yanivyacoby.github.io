@@ -5,9 +5,9 @@ layout: default
 
 ## About
 
-I am a PhD student in Machine Learning, 
+I am a PhD student in Machine Learning at Harvard University, 
 working with Professor [Finale Doshi-Velez](finale.seas.harvard.edu)
-at the Harvard Data to Actionable Knowledge (DTAK) Lab.
+at the Data to Actionable Knowledge (DTAK) Lab.
 
 ## Research Interests
 
