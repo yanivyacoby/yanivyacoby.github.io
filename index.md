@@ -22,6 +22,12 @@ You can find my music page [here](http://yanivyacoby.com/).
 
 You can find the most updated list on my [google scholar](https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en) page. 
 
+* **Y Yacoby**, W Pan, F Doshi-Velez. Failure Modes of Variational Autoencoders and their Effects on Downstream Tasks. Submitted 2020.
+
+* T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. BaCOUn: Bayesian Classifier with OOD Uncertainty. Submitted 2020.
+
+* M Downs, J Chu, **Y Yacoby**, F Doshi-Velez, W Pan. CRUDS: Counterfactual Recourse Using Disentangled Subspaces. Submitted 2020.
+
 * S Thakur, C Lorsung, **Y Yacoby**, F Doshi-Velez, W Pan.
 [Learned Uncertainty-Aware (LUNA) Bases for Bayesian Regression using Multi-Headed Auxiliary Networks](https://arxiv.org/abs/2006.11695).
 Pre-Print.
