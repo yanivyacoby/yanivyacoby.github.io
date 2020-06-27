@@ -35,6 +35,18 @@ Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine 
 
 * D Vaughan, W Pan, **Y Yacoby**, EA Seidler, AQ Leung, F Doshi-Velez, D Sakkas. [The application of machine learning methods to evaluate predictors of live birth in programmed thaw cycles](https://finale.seas.harvard.edu/files/finale/files/the_application_of_machine_learning_methods_to_evaluate_predictors_for_live_birth_in_programmed_thaw_cycles.pdf), Clinical Abstract. American Society of Reproductive Medicine (ASRM), 2019. 
 
+
+## Teaching
+
+I served as a teaching fellow for a number of courses at Harvard:
+
+* TA for CS281 (Advanced Machine Learning), Fall 2018
+
+* TA for CS61 (Systems Programming and Machine Organization), Fall 2015
+
+* TA for CS50 (Intro to Computer Science I), Fall 2012
+
+
 ## Contact
 
 **Email:** yanivyacoby AT g DOT harvard DOT edu
