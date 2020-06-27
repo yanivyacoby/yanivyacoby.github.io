@@ -49,6 +49,6 @@ and Intro to Computer Science I (CS50) Fall 2012.
 
 ## Contact
 
-**Email:** yanivyacoby AT g DOT harvard DOT edu
+**Email:** yanivyacoby \[AT\] g \[DOT\] harvard \[DOT\] edu
 
 
