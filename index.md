@@ -9,14 +9,21 @@ I am a PhD student in Machine Learning at Harvard University,
 working with Professor [Finale Doshi-Velez](https://finale.seas.harvard.edu/)
 at the Data to Actionable Knowledge (DTAK) Lab.
 I work on uncertainty quantification and tractable approximate inference
-in deep Bayesian latent variable models.
+for deep Bayesian latent variable models, 
+with applications in health-care. 
 
-Before joining DTAK, I got an MM in Contemporary Improvisation from
-the New England Conservatory in 2016 and an AB in Computer Science
+Before joining DTAK, I earned my MM in Contemporary Improvisation from
+the New England Conservatory in 2016 and my AB in Computer Science
 from Harvard College in 2015. 
 
 
 ## Publications
+
+You can find the most updated list on my [google scholar](https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en) page. 
+
+* S Thakur, C Lorsung, **Y Yacoby**, F Doshi-Velez, W Pan.
+[Learned Uncertainty-Aware (LUNA) Bases for Bayesian Regression using Multi-Headed Auxiliary Networks](https://arxiv.org/abs/2006.11695).
+Pre-print.
 
 
 ## Contact
