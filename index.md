@@ -6,7 +6,7 @@ layout: default
 ## About
 
 I am a PhD student in Machine Learning at Harvard University, 
-working with Professor [Finale Doshi-Velez](https://finale.seas.harvard.edu/){:target="_blank"}
+working with Professor [Finale Doshi-Velez](https://finale.seas.harvard.edu/)
 at the Data to Actionable Knowledge (DTAK) Lab.
 I work on uncertainty quantification and tractable approximate inference
 in deep Bayesian latent variable models.
