@@ -22,7 +22,7 @@ You can find my music page [here](http://yanivyacoby.com/).
 
 You can find the most updated list on my [google scholar](https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en) page. 
 
-* **Y Yacoby**, W Pan, F Doshi-Velez. Failure Modes of Variational Autoencoders and their Effects on Downstream Tasks. Submitted 2020.
+* **Y Yacoby**, W Pan, F Doshi-Velez. Failure Modes of Variational Autoencoders and Their Effects on Downstream Tasks. Submitted 2020.
 
 * T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. BaCOUn: Bayesian Classifier with OOD Uncertainty. Submitted 2020.
 
