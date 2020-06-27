@@ -30,6 +30,8 @@ Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine 
 
 * **Y Yacoby**, W Pan, F Doshi-Velez. [Learning Deep Bayesian Latent Variable Regression Models that Generalize: When Non-identifiability is a Problem](https://arxiv.org/abs/1911.00569). Pre-Print. 
 
+  * Previous Version: **Y Yacoby**, W Pan, F Doshi-Velez. [Mitigating Model Non-Identifiability in BNN with Latent Variables](http://www.gatsby.ucl.ac.uk/~balaji/udl2019/accepted-papers/UDL2019-paper-24.pdf). Uncertainty & Robustness in Deep Learning (UDL) workshop @ ICML, 2019. **Spotlight Talk**. 
+
 
 ## Contact
 
