@@ -32,6 +32,7 @@ Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine 
 
   * Previous Version: **Y Yacoby**, W Pan, F Doshi-Velez. [Mitigating Model Non-Identifiability in BNN with Latent Variables](http://www.gatsby.ucl.ac.uk/~balaji/udl2019/accepted-papers/UDL2019-paper-24.pdf). Uncertainty & Robustness in Deep Learning (UDL) workshop @ ICML, 2019. **Spotlight Talk**. 
 
+* D Vaughan, W Pan, **Y Yacoby**, EA Seidler, AQ Leung, F Doshi-Velez, D Sakkas. [The application of machine learning methods to evaluate predictors of live birth in programmed thaw cycles](https://finale.seas.harvard.edu/files/finale/files/the_application_of_machine_learning_methods_to_evaluate_predictors_for_live_birth_in_programmed_thaw_cycles.pdf), Clinical Abstract. American Society of Reproductive Medicine (ASRM), 2019. 
 
 ## Contact
 
