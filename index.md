@@ -25,6 +25,9 @@ You can find the most updated list on my [google scholar](https://scholar.google
 [Learned Uncertainty-Aware (LUNA) Bases for Bayesian Regression using Multi-Headed Auxiliary Networks](https://arxiv.org/abs/2006.11695).
 Pre-print.
 
+* Y Yacoby, W Pan, F Doshi-Velez. [Characterizing and Avoiding Problematic Global Optima of Variational Autoencoders](https://arxiv.org/abs/2003.07756).
+Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine Learning Research (PMLR) 118:1-17, 2020. **Spotlight Talk**.
+
 
 ## Contact
 
