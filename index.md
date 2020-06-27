@@ -24,7 +24,7 @@ You can find the most updated list on my [google scholar](https://scholar.google
 
 * **Y Yacoby**, W Pan, F Doshi-Velez. Failure Modes of Variational Autoencoders and Their Effects on Downstream Tasks. Submitted 2020.
 
-* T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. BaCOUn: Bayesian Classifier with OOD Uncertainty. Submitted 2020.
+* T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. BaCOUn: Bayesian Classifers with Out-of-Distribution Uncertainty. Submitted 2020.
 
 * M Downs, J Chu, **Y Yacoby**, F Doshi-Velez, W Pan. CRUDS: Counterfactual Recourse Using Disentangled Subspaces. Submitted 2020.
 
