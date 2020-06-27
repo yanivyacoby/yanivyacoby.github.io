@@ -2,6 +2,12 @@
 layout: default
 ---
 
+I am a PhD student in Machine Learning, 
+working with Professor [Finale Doshi-Velez](finale.seas.harvard.edu)
+at the Harvard Data to Actionable Knowledge (DTAK) Lab.
+
+
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
