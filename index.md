@@ -38,13 +38,12 @@ Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine 
 
 ## Teaching
 
-I served as a teaching fellow for a number of courses at Harvard:
-
-* TA for CS281 (Advanced Machine Learning), Fall 2018
-
-* TA for CS61 (Systems Programming and Machine Organization), Fall 2015
-
-* TA for CS50 (Intro to Computer Science I), Fall 2012
+I currently serve as a research mentor for students continuing 
+their research after completing course, "Stochastic Methods for Data Analysis -- Inference and Optimization" (AM207).
+I previously served as a teaching fellow for a number of courses at Harvard:
+Advanced Machine Learning (CS281) Fall 2018,
+Systems Programming and Machine Organization (CS61) Fall 2015,
+and Intro to Computer Science I (CS50) Fall 2012.
 
 
 ## Contact
