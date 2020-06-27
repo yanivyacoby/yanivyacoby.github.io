@@ -21,4 +21,6 @@ from Harvard College in 2015.
 
 ## Contact
 
+Email: yanivyacoby AT g DOT harvard DOT edu
+
 
