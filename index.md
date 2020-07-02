@@ -7,9 +7,9 @@ layout: default
 
 I am a PhD student in Machine Learning at Harvard University, 
 working with Professor [Finale Doshi-Velez](https://finale.seas.harvard.edu/)
-at the Data to Actionable Knowledge (DtAK) Lab.
+at the [Data to Actionable Knowledge Lab](https://dtak.github.io/) (DtAK).
 I work on uncertainty quantification and tractable approximate inference
-for deep Bayesian latent variable models, 
+for deep Bayesian latent variable models 
 with applications in health-care. 
 
 Before joining DtAK, I earned my MM in Contemporary Improvisation from
@@ -42,7 +42,7 @@ Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine 
 * D Vaughan, W Pan, **Y Yacoby**, EA Seidler, AQ Leung, F Doshi-Velez, D Sakkas. [The application of machine learning methods to evaluate predictors of live birth in programmed thaw cycles](https://finale.seas.harvard.edu/files/finale/files/the_application_of_machine_learning_methods_to_evaluate_predictors_for_live_birth_in_programmed_thaw_cycles.pdf), Clinical Abstract. American Society of Reproductive Medicine (ASRM), 2019. 
 
 
-## Teaching
+## Teaching & Mentoring
 
 I currently serve as a research mentor for students continuing 
 their research after completing "Stochastic Methods for Data Analysis -- Inference and Optimization" (AM207).
