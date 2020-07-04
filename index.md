@@ -44,8 +44,10 @@ Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine 
 
 ## Teaching & Mentoring
 
-I currently serve as a research mentor for students continuing 
+I'm currently a research mentor for students continuing 
 their research after completing "Stochastic Methods for Data Analysis -- Inference and Optimization" (AM207).
+
+I was a mentor for the Women in Data Science Cambridge datathon/workshop in 2019 and 2020. 
 
 I previously served as a teaching fellow for a number of courses at Harvard:
 Advanced Machine Learning (CS281) Fall 2018,
