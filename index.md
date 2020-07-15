@@ -22,9 +22,9 @@ You can find my music page [here](http://yanivyacoby.com/).
 
 You can find the most updated list on my [google scholar](https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en) page. 
 
-* **Y Yacoby**, W Pan, F Doshi-Velez. [Failures of Variational Autoencoders and Their Effects on Downstream Tasks](http://www.gatsby.ucl.ac.uk/~balaji/udl2020/accepted-papers/UDL2020-paper-056.pdf). Uncertainty & Robustness in Deep Learning (UDL) workshop @ ICML, 2020. 
+* **Y Yacoby**, W Pan, F Doshi-Velez. [Failures of Variational Autoencoders and Their Effects on Downstream Tasks](https://arxiv.org/abs/2007.07124). Uncertainty & Robustness in Deep Learning (UDL) workshop @ ICML, 2020. 
 
-* T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. [BaCOUn: Bayesian Classifers with Out-of-Distribution Uncertainty](https://arxiv.org/pdf/2007.06096.pdf). Uncertainty & Robustness in Deep Learning (UDL) workshop @ ICML, 2020.
+* T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. [BaCOUn: Bayesian Classifers with Out-of-Distribution Uncertainty](https://arxiv.org/abs/2007.06096). Uncertainty & Robustness in Deep Learning (UDL) workshop @ ICML, 2020.
 
 * M Downs, J Chu, **Y Yacoby**, F Doshi-Velez, W Pan. CRUDS: Counterfactual Recourse Using Disentangled Subspaces. Workshop on Human Interpretability in Machine Learning (WHI) @ ICML 2020.
 
