@@ -22,15 +22,16 @@ You can find my music page [here](http://yanivyacoby.com/).
 
 You can find the most updated list on my [google scholar](https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en) page. 
 
-* **Y Yacoby**, W Pan, F Doshi-Velez. [Failures of Variational Autoencoders and Their Effects on Downstream Tasks](https://arxiv.org/abs/2007.07124). Uncertainty & Robustness in Deep Learning (UDL) workshop @ ICML, 2020. 
-
-* T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. [BaCOUn: Bayesian Classifers with Out-of-Distribution Uncertainty](https://arxiv.org/abs/2007.06096). Uncertainty & Robustness in Deep Learning (UDL) workshop @ ICML, 2020.
-
-* M Downs, J Chu, **Y Yacoby**, F Doshi-Velez, W Pan. CRUDS: Counterfactual Recourse Using Disentangled Subspaces. Workshop on Human Interpretability in Machine Learning (WHI) @ ICML 2020.
+* **Y Yacoby**, W Pan, F Doshi-Velez. [Failures of Variational Autoencoders and Their Effects on Downstream Tasks](https://arxiv.org/abs/2007.07124). ICML Workshop onn Uncertainty & Robustness in Deep Learning (UDL), 2020. 
 
 * S Thakur, C Lorsung, **Y Yacoby**, F Doshi-Velez, W Pan.
 [Learned Uncertainty-Aware (LUNA) Bases for Bayesian Regression using Multi-Headed Auxiliary Networks](https://arxiv.org/abs/2006.11695).
-Pre-Print.
+ICML Workshop onn Uncertainty & Robustness in Deep Learning (UDL), 2020. 
+
+* T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. [BaCOUn: Bayesian Classifers with Out-of-Distribution Uncertainty](https://arxiv.org/abs/2007.06096). ICML Workshop onn Uncertainty & Robustness in Deep Learning (UDL), 2020. 
+
+* M Downs, J Chu, **Y Yacoby**, F Doshi-Velez, W Pan. CRUDS: Counterfactual Recourse Using Disentangled Subspaces. ICML Workshop on Human Interpretability in Machine Learning (WHI), 2020.
+
 
 * **Y Yacoby**, W Pan, F Doshi-Velez. [Characterizing and Avoiding Problematic Global Optima of Variational Autoencoders](https://arxiv.org/abs/2003.07756).
 Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine Learning Research (PMLR) 118:1-17, 2020. **Spotlight Talk**.
