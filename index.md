@@ -30,15 +30,14 @@ ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020.
 
 * T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. [BaCOUn: Bayesian Classifers with Out-of-Distribution Uncertainty](https://arxiv.org/abs/2007.06096). ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020. 
 
-* M Downs, J Chu, **Y Yacoby**, F Doshi-Velez, W Pan. CRUDS: Counterfactual Recourse Using Disentangled Subspaces. ICML Workshop on Human Interpretability in Machine Learning (WHI), 2020.
-
+* M Downs, J Chu, **Y Yacoby**, F Doshi-Velez, W Pan. [CRUDS: Counterfactual Recourse Using Disentangled Subspaces](https://finale.seas.harvard.edu/files/finale/files/cruds-_counterfactual_recourse_using_disentangled_subspaces.pdf). ICML Workshop on Human Interpretability in Machine Learning (WHI), 2020.
 
 * **Y Yacoby**, W Pan, F Doshi-Velez. [Characterizing and Avoiding Problematic Global Optima of Variational Autoencoders](https://arxiv.org/abs/2003.07756).
 Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine Learning Research (PMLR) 118:1-17, 2020. **Spotlight Talk**.
 
 * **Y Yacoby**, W Pan, F Doshi-Velez. [Learning Deep Bayesian Latent Variable Regression Models that Generalize: When Non-identifiability is a Problem](https://arxiv.org/abs/1911.00569). Pre-Print. 
 
-  * Previous Version: **Y Yacoby**, W Pan, F Doshi-Velez. [Mitigating Model Non-Identifiability in BNN with Latent Variables](http://www.gatsby.ucl.ac.uk/~balaji/udl2019/accepted-papers/UDL2019-paper-24.pdf). Uncertainty & Robustness in Deep Learning (UDL) workshop @ ICML, 2019. **Spotlight Talk**. 
+  * Previous Version: **Y Yacoby**, W Pan, F Doshi-Velez. [Mitigating Model Non-Identifiability in BNN with Latent Variables](https://finale.seas.harvard.edu/files/finale/files/mitigating_model_non-identifiability_in_bnn_with_latent_variables.pdf). Uncertainty & Robustness in Deep Learning (UDL) workshop @ ICML, 2019. **Spotlight Talk**. 
 
 * D Vaughan, W Pan, **Y Yacoby**, EA Seidler, AQ Leung, F Doshi-Velez, D Sakkas. [The application of machine learning methods to evaluate predictors of live birth in programmed thaw cycles](https://finale.seas.harvard.edu/files/finale/files/the_application_of_machine_learning_methods_to_evaluate_predictors_for_live_birth_in_programmed_thaw_cycles.pdf), Clinical Abstract. American Society of Reproductive Medicine (ASRM), 2019. 
 
