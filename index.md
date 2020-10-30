@@ -44,6 +44,9 @@ Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine 
 
 ## Teaching & Mentoring
 
+I created and organized a [workshop for incoming PhD students](https://yanivyacoby.github.io/a-guide-to-your-phd/) at Harvard about managing the multi-faceted challenges of being a PhD student (2020). 
+Workshop content can be found [here](https://yanivyacoby.github.io/a-guide-to-your-phd/guide.html). 
+
 I was a final project mentor, as well as a research mentor for students continuing 
 their research after completing "Stochastic Methods for Data Analysis -- Inference and Optimization" (AM207) in 2019 and 2020.
 
