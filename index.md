@@ -22,13 +22,15 @@ You can find my music page [here](http://yanivyacoby.com/).
 
 You can find the most updated list on my [google scholar](https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en) page. 
 
-* **Y Yacoby**, W Pan, F Doshi-Velez. [Failures of Variational Autoencoders and Their Effects on Downstream Tasks](https://arxiv.org/abs/2007.07124). ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020. 
+* **Y Yacoby**, W Pan, F Doshi-Velez. [Failure Modes of Variational Autoencoders and Their Effects on Downstream Tasks](https://arxiv.org/abs/2007.07124). Pre-Print. 
+
+  * Previous Version: **Y Yacoby**, W Pan, F Doshi-Velez. [Failures of Variational Autoencoders and Their Effects on Downstream Tasks](http://www.gatsby.ucl.ac.uk/~balaji/udl2020/accepted-papers/UDL2020-paper-056.pdf). ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020. 
 
 * S Thakur, C Lorsung, **Y Yacoby**, F Doshi-Velez, W Pan.
 [Learned Uncertainty-Aware (LUNA) Bases for Bayesian Regression using Multi-Headed Auxiliary Networks](https://arxiv.org/abs/2006.11695).
 ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020. 
 
-* T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. [BaCOUn: Bayesian Classifers with Out-of-Distribution Uncertainty](https://arxiv.org/abs/2007.06096). ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020. 
+* T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. [BaCOUn: Bayesian Classifiers with Out-of-Distribution Uncertainty](https://arxiv.org/abs/2007.06096). ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020. 
 
 * M Downs, J Chu, **Y Yacoby**, F Doshi-Velez, W Pan. [CRUDS: Counterfactual Recourse Using Disentangled Subspaces](https://finale.seas.harvard.edu/files/finale/files/cruds-_counterfactual_recourse_using_disentangled_subspaces.pdf). ICML Workshop on Human Interpretability in Machine Learning (WHI), 2020.
 
