@@ -37,7 +37,7 @@ ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020.
 * **Y Yacoby**, W Pan, F Doshi-Velez. [Characterizing and Avoiding Problematic Global Optima of Variational Autoencoders](https://arxiv.org/abs/2003.07756).
 Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine Learning Research (PMLR) 118:1-17, 2020. **Spotlight Talk**.
 
-* **Y Yacoby**, W Pan, F Doshi-Velez. [Learning Deep Bayesian Latent Variable Regression Models that Generalize: When Non-identifiability is a Problem](https://arxiv.org/abs/1911.00569). Pre-Print. 
+* **Y Yacoby**, W Pan, F Doshi-Velez. [Mitigating the Effects of Non-Identifiability on Inference for Bayesian Neural Networks with Latent Variables](https://arxiv.org/abs/1911.00569). Pre-Print. 
 
   * Previous Version: **Y Yacoby**, W Pan, F Doshi-Velez. [Mitigating Model Non-Identifiability in BNN with Latent Variables](https://finale.seas.harvard.edu/files/finale/files/mitigating_model_non-identifiability_in_bnn_with_latent_variables.pdf). ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2019. **Spotlight Talk**. 
 
