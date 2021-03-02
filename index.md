@@ -27,7 +27,11 @@ You can find the most updated list on my [google scholar](https://scholar.google
   * Previous Version: **Y Yacoby**, W Pan, F Doshi-Velez. [Failures of Variational Autoencoders and Their Effects on Downstream Tasks](http://www.gatsby.ucl.ac.uk/~balaji/udl2020/accepted-papers/UDL2020-paper-056.pdf). ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020. 
 
 * S Thakur, C Lorsung, **Y Yacoby**, F Doshi-Velez, W Pan.
-[Learned Uncertainty-Aware (LUNA) Bases for Bayesian Regression using Multi-Headed Auxiliary Networks](https://arxiv.org/abs/2006.11695).
+[Uncertainty-Aware (UNA) Bases for Bayesian Regression Using Multi-Headed Auxiliary Networks](https://arxiv.org/abs/2006.11695).
+Pre-Print. 
+
+  * Previous Version: S Thakur, C Lorsung, **Y Yacoby**, F Doshi-Velez, W Pan.
+[Learned Uncertainty-Aware (LUNA) Bases for Bayesian Regression using Multi-Headed Auxiliary Networks](http://www.gatsby.ucl.ac.uk/~balaji/udl2020/accepted-papers/UDL2020-paper-024.pdf).
 ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020. 
 
 * T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. [BaCOUn: Bayesian Classifiers with Out-of-Distribution Uncertainty](https://arxiv.org/abs/2007.06096). ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020. 
