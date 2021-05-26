@@ -26,6 +26,13 @@ You can find the most updated list on my [google scholar](https://scholar.google
 
   * Previous Version: **Y Yacoby**, W Pan, F Doshi-Velez. [Failures of Variational Autoencoders and Their Effects on Downstream Tasks](http://www.gatsby.ucl.ac.uk/~balaji/udl2020/accepted-papers/UDL2020-paper-056.pdf). ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020. 
 
+* **Y Yacoby**, W Pan, F Doshi-Velez. [Mitigating the Effects of Non-Identifiability on Inference for Bayesian Neural Networks with Latent Variables](https://arxiv.org/abs/1911.00569). Pre-Print. 
+
+  * Previous Version: **Y Yacoby**, W Pan, F Doshi-Velez. [Mitigating Model Non-Identifiability in BNN with Latent Variables](https://finale.seas.harvard.edu/files/finale/files/mitigating_model_non-identifiability_in_bnn_with_latent_variables.pdf). ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2019. **Spotlight Talk**. 
+  
+* **Y Yacoby**, W Pan, F Doshi-Velez. [Characterizing and Avoiding Problematic Global Optima of Variational Autoencoders](https://arxiv.org/abs/2003.07756).
+Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine Learning Research (PMLR) 118:1-17, 2020. **Spotlight Talk**.
+
 * S Thakur, C Lorsung, **Y Yacoby**, F Doshi-Velez, W Pan.
 [Uncertainty-Aware (UNA) Bases for Bayesian Regression Using Multi-Headed Auxiliary Networks](https://arxiv.org/abs/2006.11695).
 Pre-Print. 
@@ -37,13 +44,6 @@ ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020.
 * T Guénais, D Vamvourellis, **Y Yacoby**, F Doshi-Velez, W Pan. [BaCOUn: Bayesian Classifiers with Out-of-Distribution Uncertainty](https://arxiv.org/abs/2007.06096). ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020. 
 
 * M Downs, J Chu, **Y Yacoby**, F Doshi-Velez, W Pan. [CRUDS: Counterfactual Recourse Using Disentangled Subspaces](https://finale.seas.harvard.edu/files/finale/files/cruds-_counterfactual_recourse_using_disentangled_subspaces.pdf). ICML Workshop on Human Interpretability in Machine Learning (WHI), 2020.
-
-* **Y Yacoby**, W Pan, F Doshi-Velez. [Characterizing and Avoiding Problematic Global Optima of Variational Autoencoders](https://arxiv.org/abs/2003.07756).
-Advances in Approximate Bayesian Inference (AABI), 2019, Proceedings of Machine Learning Research (PMLR) 118:1-17, 2020. **Spotlight Talk**.
-
-* **Y Yacoby**, W Pan, F Doshi-Velez. [Mitigating the Effects of Non-Identifiability on Inference for Bayesian Neural Networks with Latent Variables](https://arxiv.org/abs/1911.00569). Pre-Print. 
-
-  * Previous Version: **Y Yacoby**, W Pan, F Doshi-Velez. [Mitigating Model Non-Identifiability in BNN with Latent Variables](https://finale.seas.harvard.edu/files/finale/files/mitigating_model_non-identifiability_in_bnn_with_latent_variables.pdf). ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2019. **Spotlight Talk**. 
 
 * D Vaughan, W Pan, **Y Yacoby**, EA Seidler, AQ Leung, F Doshi-Velez, D Sakkas. [The application of machine learning methods to evaluate predictors of live birth in programmed thaw cycles](https://finale.seas.harvard.edu/files/finale/files/the_application_of_machine_learning_methods_to_evaluate_predictors_for_live_birth_in_programmed_thaw_cycles.pdf), Clinical Abstract. American Society of Reproductive Medicine (ASRM), 2019. 
 
