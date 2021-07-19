@@ -53,6 +53,8 @@ ICML Workshop on Uncertainty & Robustness in Deep Learning (UDL), 2020.
 I created and organized a [workshop for incoming PhD students](https://yanivyacoby.github.io/a-guide-to-your-phd/) at Harvard about managing the multi-faceted challenges of being a PhD student (Fall 2020). 
 Workshop content can be found [here](https://yanivyacoby.github.io/a-guide-to-your-phd/guide.html). 
 
+I'm a member of [InTouch](https://intouch.seas.harvard.edu/), a peer-to-peer support network for grad students (Spring 2021 - present).
+
 I was a final project mentor, as well as a research mentor for students continuing 
 their research after completing "Stochastic Methods for Data Analysis -- Inference and Optimization" ([AM207](https://onefishy.github.io/am207/)) (Fall 2019 - present).
 
