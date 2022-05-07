@@ -272,6 +272,7 @@ jekyll-diagrams:
 # Optional Features
 # -----------------------------------------------------------------------------
 
+show_social_icons:        false
 enable_google_analytics:    false  # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
 enable_google_verification: false  # enables google site verification
