@@ -1,72 +1,98 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+@article{yacoby2019mitigating,
+  abbr={Pre-Print, ICML UDL},
+  title={Mitigating the Effects of Non-Identifiability on Inference for Bayesian Neural Networks with Latent Variables},
+  author={*Yacoby, Yaniv and *Pan, Weiwei and Doshi-Velez, Finale},
+  journal={Pre-Print},
+  year={2022},
+  workshop_title={ICML UDL},
+  workshop_year={2019},
+  abstract={Bayesian Neural Networks with Latent Variables (BNN+LVs) capture predictive uncertainty by explicitly modeling model uncertainty (via priors on network weights) and environmental stochasticity (via a latent input noise variable). In this work, we first show that BNN+LV suffers from a serious form of non-identifiability: explanatory power can be transferred between the model parameters and latent variables while fitting the data equally well. We demonstrate that as a result, in the limit of infinite data, the posterior mode over the network weights and latent variables is asymptotically biased away from the ground-truth. Due to this asymptotic bias, traditional inference methods may in practice yield parameters that generalize poorly and misestimate uncertainty. Next, we develop a novel inference procedure that explicitly mitigates the effects of likelihood non-identifiability during training and yields high-quality predictions as well as uncertainty estimates. We demonstrate that our inference method improves upon benchmark methods across a range of synthetic and real data-sets.},
+  pdf={https://arxiv.org/abs/1911.00569},
+  spotlight={},
+  selected={true},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+
+
+@article{yacoby2020failure,
+  abbr={Pre-Print, ICML UDL},
+  title={Failure Modes of Variational Autoencoders and Their Effects on Downstream Tasks},
+  author={Yacoby, Yaniv and Pan, Weiwei and Doshi-Velez, Finale},
+  journal={Pre-Print},
+  year={2022},
+  workshop_title={ICML UDL},
+  workshop_year={2022},  
+  abstract={Variational Auto-encoders (VAEs) are deep generative latent variable models that are widely used for a number of downstream tasks. While it has been demonstrated that VAE training can suffer from a number of pathologies, existing literature lacks characterizations of exactly when these pathologies occur and how they impact downstream task performance. In this paper, we concretely characterize conditions under which VAE training exhibits pathologies and connect these failure modes to undesirable effects on specific downstream tasks, such as learning compressed and disentangled representations, adversarial robustness, and semi-supervised learning.},
+  pdf={https://arxiv.org/abs/2007.07124},
+  selected={true},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+
+@article{thakur2020uncertainty,
+  abbr={Pre-Print, ICML UDL},
+  title={Uncertainty-Aware (UNA) Bases for Deep Bayesian Regression Using Multi-Headed Auxiliary Networks},
+  author={*Thakur, Sujay and *Lorsung, Cooper and *Yacoby, Yaniv and Doshi-Velez, Finale and Pan, Weiwei},
+  journal={Pre-Print},
+  year={2022},
+  workshop_title={ICML UDL},
+  workshop_year={2020},    
+  abstract={Neural Linear Models (NLM) are deep Bayesian models that produce predictive uncertainties by learning features from the data and then performing Bayesian linear regression over these features. Despite their popularity, few works have focused on methodically evaluating the predictive uncertainties of these models. In this work, we demonstrate that traditional training procedures for NLMs drastically underestimate uncertainty on out-of-distribution inputs, and that they therefore cannot be naively deployed in risk-sensitive applications. We identify the underlying reasons for this behavior and propose a novel training framework that captures useful predictive uncertainties for downstream tasks.},
+  pdf={https://arxiv.org/abs/2006.11695},
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+@article{guenais2020bacoun,
+  abbr={ICML UDL},
+  title={BACOUN: Bayesian Classifiers with Out-of-Distribution Uncertainty},
+  author={Gu{\'e}nais, Th{\'e}o and Vamvourellis, Dimitris and Yacoby, Yaniv and Doshi-Velez, Finale and Pan, Weiwei},
+  journal={ICML UDL},
+  year={2020},
+  abstract={Traditional training of deep classifiers yields overconfident models that are not reliable under dataset shift. We propose a Bayesian framework to obtain reliable uncertainty estimates for deep classifiers. Our approach consists of a plug-in "generator" used to augment the data with an additional class of points that lie on the boundary of the training data, followed by Bayesian inference on top of features that are trained to distinguish these "out-of-distribution" points.},
+  pdf={https://arxiv.org/abs/2007.06096},
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+
+@article{downs2020cruds,
+  abbr={ICML WHI},
+  title={CRUDS: Counterfactual Recourse using Disentangled Subspaces},
+  author={Downs, Michael and Chu, Jonathan L and Yacoby, Yaniv and Doshi-Velez, Finale and Pan, Weiwei},
+  journal={ICML WHI},
+  volume={2020},
+  pages={1--23},
+  year={2020},
+  abstract={Algorithmic recourse is the task of generating a set of actions that will allow individuals to achieve a more favorable outcome under a given algorithmic decision system. Using the Conditional Subspace Variational Autoencoder (CSVAE), we propose a novel algorithmic recourse generation method, CRUDS, that generates multiple recourse satisfying underlying structure of the data as well as end-user specified constraints. We evaluate our method qualitatively and quantitatively on several synthetic and real datasets, demonstrating that CRUDS proposes recourse that are more realistic and actionable than baselines.}, 
+  pdf={https://oconnell.fas.harvard.edu/files/finale/files/cruds-_counterfactual_recourse_using_disentangled_subspaces.pdf},
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+
+@inproceedings{yacoby2020characterizing,
+  abbr={AABI, PMLR},
+  title={Characterizing and Avoiding Problematic Global Optima of Variational Autoencoders},
+  author={Yacoby, Yaniv and Pan, Weiwei and Doshi-Velez, Finale},
+  booktitle={Symposium on Advances in Approximate Bayesian Inference},
+  pages={1--17},
+  year={2019},
+  organization={PMLR},
+  abstract={Variational Auto-encoders (VAEs) are deep generative latent variable models consisting of two components: a generative model that captures a data distribution p(x) by transforming a distribution p(z) over latent space, and an inference model that infers likely latent codes for each data point (Kingma and Welling, 2013). Recent work shows that traditional training methods tend to yield solutions that violate modeling desiderata: (1) the learned generative model captures the observed data distribution but does so while ignoring the latent codes, resulting in codes that do not represent the data (e.g. van den Oord et al. (2017); Kim et al. (2018)); (2) the aggregate of the learned latent codes does not match the prior p(z). This mismatch means that the learned generative model will be unable to generate realistic data with samples from p(z)(e.g. Makhzani et al. (2015); Tomczak and Welling (2017)). In this paper, we demonstrate that both issues stem from the fact that the global optima of the VAE training objective often correspond to undesirable solutions. Our analysis builds on two observations: (1) the generative model is unidentifiable - there exist many generative models that explain the data equally well, each with different (and potentially unwanted) properties and (2) bias in the VAE objective - the VAE objective may prefer generative models that explain the data poorly but have posteriors that are easy to approximate. We present a novel inference method, LiBI, mitigating the problems identified in our analysis. On synthetic datasets, we show that LiBI can learn generative models that capture the data distribution and inference models that better satisfy modeling assumptions when traditional methods struggle to do so.},
+  pdf={https://arxiv.org/abs/2003.07756},
+  spotlight={},
+  selected={true},
+}
+
+
+@article{vaughan2019application,
+  abbr={ASRM},
+  title={The application of machine learning methods to evaluate predictors of live birth in programmed thaw cycles},
+  author={Vaughan, Denis and Pan, Weiwei and Yacoby, Yaniv and Seidler, Emily A and Leung, Angela Q and Doshi-Velez, Finale and Sakkas, Denny},
+  journal={Fertility and Sterility},
+  volume={112},
+  number={3},
+  pages={e273},
+  year={2019},
+  publisher={Elsevier},
+  pdf={https://finale.seas.harvard.edu/files/finale/files/the_application_of_machine_learning_methods_to_evaluate_predictors_for_live_birth_in_programmed_thaw_cycles.pdf},
 }

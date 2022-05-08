@@ -1,4 +1,4 @@
-/*******************************************************************************
+n/*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
@@ -64,7 +64,7 @@ blockquote {
 
 .card {
   background-color: var(--global-card-bg-color);
-
+  
   img {
     width: 100%;
   }
@@ -93,28 +93,57 @@ blockquote {
 // Profile
 
 .profile {
-  margin-left: 1rem;
-  width: 100%;
-
-  .address {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
-    p {
-      display: inline-block;
-      margin: 0;
+    .row {
+	display: flex;
     }
-  }
+
+    .left-column {
+	flex: 35%;
+	padding-left: 15px;
+	padding-right: 15px;	
+    }
+
+    .right-column {
+	flex: 65%;
+	padding-left: 15px;
+	padding-right: 15px;	
+    }
+    
+    .left-column-title {
+	flex: 35%;
+	.title {
+	    color: var(--global-theme-color);
+	}
+    }
+    
+    .right-column-vertical-center {
+	display: flex;
+	flex: 65%;
+	padding-left: 15px;
+	padding-right: 15px;	
+	align-items: center;
+
+	i {
+	    padding-right: 0.5em;
+	}
+    }
+
+    .img {
+	width: 100%;
+	max-width: 100%;
+    }
+    
+    @media (max-width: 576px) {
+	.row {
+	    display: block;
+	}
+	
+	.column {
+	    flex: 100%;
+	}
+    }    
 }
 
-@media (min-width: 576px) {
-  .profile {
-    width: 30%;
-    .address {
-      p { display: block; }
-    }
-  }
-}
 
 .post-description {
   margin-bottom: 2rem;
@@ -235,6 +264,35 @@ blockquote {
 
 // Social (bottom)
 
+.social-list {
+    p {
+	i::before {
+            color: var(--global-text-color);
+            transition-property: all 0.2s ease-in-out;
+	}
+	&:hover {	    
+            i::before {
+		color: var(--global-theme-color);
+            }
+	}
+
+	a::before {
+            color: var(--global-text-color);
+            transition-property: all 0.2s ease-in-out;
+	}
+	&:hover {	    
+            a::before {
+		color: var(--global-theme-color);
+            }
+	}
+
+	a {
+	    text-decoration: none;
+	}
+    }
+}
+
+
 .social {
   text-align: center;
   .contact-icons {
@@ -276,10 +334,26 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
-  border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
+    background-color: var(--global-footer-bg-color);
+    font-size: 0.75rem;
+    .container {
+	color: var(--global-footer-text-color);
+	padding-top: 9px;
+	padding-bottom: 8px;
+    }
+    a {
+	color: var(--global-footer-link-color);
+	&:hover {
+	    color: var(--global-theme-color);
+	    text-decoration: none;
+	}
+    }
+    /*    
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 0.9rem;
+   */
 }
 
 
@@ -314,7 +388,6 @@ footer.sticky-bottom {
       color: var(--global-text-color-light);
       font-size: 0.875rem;
       padding-top: 0.25rem;
-      padding-bottom: 0;
     }
     a {
       color: var(--global-text-color);
@@ -482,6 +555,14 @@ footer.sticky-bottom {
           }
         }
       }
+      .btn-disabled {
+          color: var(--global-text-color);
+          border: 1px solid var(--global-text-color);
+	  opacity: 0.5;
+	  text-decoration: none;
+	  pointer-events: none;
+	  cursor: default;
+      }
       .hidden {
         font-size: 0.875rem;
         max-height: 0px;
@@ -520,6 +601,7 @@ footer.sticky-bottom {
     }
   }
 }
+
 
 // Rouge Color Customization
 figure.highlight {
@@ -565,7 +647,6 @@ html.transition *:after {
   .post-tags{
     color: var(--global-text-color-light);
     font-size: 0.875rem;
-    padding-top: 0.25rem;
     padding-bottom: 1rem;
     a {
       color: var(--global-text-color-light);
@@ -576,9 +657,15 @@ html.transition *:after {
     }
   }
   .post-content{
-    blockquote {
-      border-left: 5px solid var(--global-theme-color);
-      padding: 8px;
-    }
-  }
+        blockquote {
+          border-left: 5px solid var(--global-theme-color);
+          padding: 8px;
+      }
+}
+}
+
+.post-tags {
+  color: var(--global-text-color-light);
+  font-size: 0.875rem;
+  padding-top: 0.25rem;
 }

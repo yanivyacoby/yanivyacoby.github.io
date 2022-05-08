@@ -1,18 +1,32 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Doshi-Velez":
+  - firstname: ["Finale", "F."]
+    url: https://finale.seas.harvard.edu/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Pan":
+  - firstname: ["Weiwei", "W."]
+    url: https://onefishy.github.io/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Vamvourellis":
+  - firstname: ["Dimitris", "D."]
+    url: https://dvamvourellis.github.io/
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Lorsung":
+  - firstname: ["Cooper", "C."]
+    url: https://scholar.google.com/citations?user=eHR-sX0AAAAJ&hl=en
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Thakur":
+  - firstname: ["Sujay", "S."]
+    url: https://scholar.google.com/citations?user=p7QEfQoAAAAJ&hl=en
+
+"Vaughan":
+  - firstname: ["Denis", "D."]
+    url: https://www.bostonivf.com/our-practice/physicians/DenisVaughan/
+
+"Sakkas":
+  - firstname: ["Denny", "D."]
+    url: https://www.bostonivf.com/our-practice/fertility-lab-research/DennySakkas/
+
+"Seidler":
+  - firstname: ["Emily A", "Emily A.", "E. A.", "Emily"]
+    url: https://www.bostonivf.com/our-practice/physicians/EmilySeidler/
+

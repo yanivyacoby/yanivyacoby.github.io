@@ -4,11 +4,14 @@
       <div class="row">
         <div class="col-sm-2 abbr">
         {%- if entry.abbr -%}
-          {%- if site.data.venues[entry.abbr] -%}
-          <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+	{%- assign venus = entry.abbr | | split: ", " -%}
+	{%- for venu in venus -%}
+          {%- if site.data.venues[venu] -%}
+          <abbr class="badge"><a href="{{site.data.venues[venu].url}}">{{venu}}</a></abbr>
           {%- else -%}
-          <abbr class="badge">{{entry.abbr}}</abbr>
+          <abbr class="badge">{{venu}}</abbr>
           {%- endif -%}
+	{%- endfor -%}
         {%- endif -%}
         </div>
 
@@ -23,14 +26,15 @@
           <div class="author">
           {%- for author in entry.author_array -%}
             {%- assign author_is_self = false -%}
-            {%- if author.last == site.scholar.last_name%}
+	    {%- assign true_last_name = author.last | replace: "*", "" -%}
+            {%- if true_last_name == site.scholar.last_name%}
               {%- if site.scholar.first_name contains author.first -%}
                 {%- assign author_is_self = true -%}
               {%- endif -%}
             {%- endif -%}
             {%- assign coauthor_url = nil -%}
-            {%- if site.data.coauthors[author.last] -%}
-              {%- for coauthor in site.data.coauthors[author.last] -%}
+            {%- if site.data.coauthors[true_last_name] -%}
+              {%- for coauthor in site.data.coauthors[true_last_name] -%}
                 {%- if coauthor.firstname contains author.first -%}
                   {%- assign coauthor_url = coauthor.url -%}
                   {%- break -%}
@@ -40,14 +44,14 @@
             
             {%- if forloop.length == 1 -%}
               {%- if author_is_self %}
-                <em>{{author.last}}, {{author.first}}</em>
+                <em><strong>{{author.last}}, {{author.first}}</strong></em>
               {%- else -%}
                 {{author.last}}, {{author.first}}
               {%- endif -%}
             {%- else -%}
               {%- unless forloop.last -%}
                 {% if author_is_self %}
-                  <em>{{author.last}}, {{author.first}}</em>,&nbsp;
+                  <em><strong>{{author.last}}, {{author.first}}</strong></em>,&nbsp;
                 {%- else -%}
                   {% if coauthor_url -%}
                     <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>,&nbsp;
@@ -57,7 +61,7 @@
                 {%- endif -%}
               {%- else -%}
                 {% if author_is_self -%}
-                  and <em>{{author.last}}, {{author.first}}</em>
+                  and <em><strong>{{author.last}}, {{author.first}}</strong></em>
                 {% else -%}
                   {%- if coauthor_url -%}
                     and <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>
@@ -85,11 +89,26 @@
             {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
           {%- endif -%}
           {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+
+          <!-- Workshop title and date -->
+	  {% if entry.workshop_title %}
+          {%- if entry.workshop_month -%}
+            {%- capture workshopmonth -%}{{ " " }}{{ entry.workshop_month | capitalize }}{%- endcapture -%}
+          {%- endif -%}
+          {%- if entry.workshop_year -%}
+            {%- capture workshopyear -%}{{ " " }}{{entry.workshop_year}}{%- endcapture -%}
+          {%- endif -%}
+          {%- capture workshopperiodical -%}<em>{{ entry.workshop_title }}</em> {{ workshopmonth }}{{ workshopyear }}{%- endcapture -%}	  
+	  {% endif %}	  
+	  
           <div class="periodical">
-            {{ periodical | strip }}
+            {{ periodical | strip }}.
+	    {% if entry.workshop_title %}
+	    Previously accepted at {{ workshopperiodical | strip }}.
+	    {% endif %}
           </div>
-        {%- endif %}
-        
+          {%- endif %}
+          
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}
@@ -141,6 +160,14 @@
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
+          {%- if entry.spotlight %}
+            {% if entry.spotlight contains '://' -%}
+            <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Spotlight Talk</a>
+            {%- else -%}
+            <a href="" class="btn btn-disabled btn-sm z-depth-0" role="button">Spotlight Talk</a>
+            {%- endif %}
+          {%- endif %}
+	    
           </div>
 
           {% if entry.abstract -%}
@@ -153,7 +180,7 @@
           {% if entry.bibtex_show -%}
           <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            {% highlight bibtex %}{{ entry.bibtex | hideCustomBibtex }}{% endhighlight %}
+            {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
           </div>
           {%- endif %}
         </div>
