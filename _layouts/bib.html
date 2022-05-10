@@ -160,11 +160,11 @@
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
-          {%- if entry.spotlight %}
-            {% if entry.spotlight contains '://' -%}
-            <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Spotlight Talk</a>
+          {%- if entry.presentation_type %}
+            {% if entry.presentation_url contains '://' -%}
+            <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">{{ entry.presentation_type }}</a>
             {%- else -%}
-            <a href="" class="btn btn-disabled btn-sm z-depth-0" role="button">Spotlight Talk</a>
+            <a href="" class="btn btn-disabled btn-sm z-depth-0" role="button">{{ entry.presentation_type }}</a>
             {%- endif %}
           {%- endif %}
 	    
