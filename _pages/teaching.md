@@ -28,7 +28,7 @@ their research after completing [AM207](https://onefishy.github.io/am207/), "Sto
 
 I created and organized a workshop for first-year PhD students at Harvard SEAS, called [How to make the most out of your PhD: a guide from current to incoming students](https://yanivyacoby.github.io/a-guide-to-your-phd/guide.html) (Fall 2020). The workshop is about managing the multi-faceted (and often undiscussed) challenges of being a PhD student. 
 
-I'm a member of [InTouch](https://intouch.seas.harvard.edu/) (Spring 2021 - present), a peer-to-peer support network for grad students.
+I'm a co-leader and member of [InTouch](https://intouch.seas.harvard.edu/) (Spring 2021 - present), a peer-to-peer support network for grad students.
 
 Lastly, I was a mentor for the Women in Data Science (WiDS) Cambridge datathon workshop (2019-2020). 
 
