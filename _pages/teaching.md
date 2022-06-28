@@ -19,7 +19,7 @@ I previously served as a teaching fellow for a number of courses at Harvard:
 ### Research Mentorship
 
 I serve as a research mentor for PhD, Master's and undergraduate students continuing 
-their research after completing [AM207](https://onefishy.github.io/am207/), "Stochastic Methods for Data Analysis -- Inference and Optimization" (Fall 2019 - present).
+their research after completing [AM207](https://onefishy.github.io/am207/), "Stochastic Methods for Data Analysis -- Inference and Optimization" (Fall 2019 - Spring 2022).
 
 <br/>
 
