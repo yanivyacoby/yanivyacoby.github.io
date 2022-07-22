@@ -18,7 +18,7 @@ nav: true
 
 ### Research Mentorship
 
-I serve as a **research mentor** for PhD, Master's and undergraduate students in (and continuing projects after):
+I serve as a **research mentor** for nearly 20 students -- PhD, Master's and undergraduate -- in and continuing projects after:
 * AC297r: Capstone Project Course (Fall 2022)
 * [AM207](https://onefishy.github.io/am207/): Stochastic Methods for Data Analysis -- Inference and Optimization (Fall 2019 - Spring 2022)
 
