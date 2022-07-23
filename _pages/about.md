@@ -29,14 +29,14 @@ working with Professor [Finale Doshi-Velez](https://finale.seas.harvard.edu/)
 at the [Data to Actionable Knowledge Lab](https://dtak.github.io/) (DtAK).
 I had the pleasure of interning with the [Biomedical-ML team](https://www.microsoft.com/en-us/research/theme/biomedical-ml/) at Microsoft Research New England (Summer 2021).
 
-Before joining DtAK, I received a **Master's of Music** in Contemporary Improvisation from the [New England Conservatory](https://necmusic.edu/dual-degree-programs) (2016) and an **Bachelor's** in Computer Science from Harvard University (2015). I am currently a performing [musician](http://yanivyacoby.com/).
+Before joining DtAK, I received a **Master's of Music** in Contemporary Improvisation from the [New England Conservatory](https://necmusic.edu/dual-degree-programs) (2016) and a **Bachelor's of Arts** in Computer Science from Harvard University (2015). I am currently a performing [musician](http://yanivyacoby.com/).
 
-I've also completed internships at Uber (2016), [Kensho](https://www.kensho.com/) (2015) and Meta (2013).
+I've also completed internships at Uber (2016), [Kensho](https://www.kensho.com/) (2015), and Meta (2013).
 
 
 ## Interests
 
-**Research:** My goal is to develop methodology that empowers individuals to effectively utilize Machine Learning by making consequences of modeling assumptions and inference decisions transparent.
+**Research:** My goal is to empower individuals to effectively utilize Machine Learning by making the consequences of modeling assumptions and inference decisions transparent.
 Specifically, I develop deep probabilistic/Bayesian models and approximate inference methods designed for safety-critical domains, such as precision healthcare.
 My work exposed failure mechanisms in a number of popular methods and provided ways to mitigate these failures.
 

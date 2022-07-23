@@ -26,7 +26,7 @@ nav: true
 
 <hr/>
 
-I serve as a **research mentor** for over 15 students at all levels -- PhD, Master's and undergraduate -- in and continuing projects after:
+I serve as a **research mentor** for over 15 students at all levels -- PhD, Master's, and undergraduate -- in and continuing projects after:
 * [AC297r](https://www.capstone.iacs.seas.harvard.edu/): Computational Science and Engineering Capstone Project (Fall 2022)
 * [AM207](https://onefishy.github.io/am207/): Stochastic Methods for Data Analysis -- Inference and Optimization (Fall 2019 - Spring 2022)
 
