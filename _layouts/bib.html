@@ -33,40 +33,46 @@
               {%- endif -%}
             {%- endif -%}
             {%- assign coauthor_url = nil -%}
+            {%- assign mentee_class = nil -%}
             {%- if site.data.coauthors[true_last_name] -%}
               {%- for coauthor in site.data.coauthors[true_last_name] -%}
                 {%- if coauthor.firstname contains author.first -%}
                   {%- assign coauthor_url = coauthor.url -%}
+	          {% capture mentee_class %}{% if coauthor.status == 'M' %}class="masters"{% elsif coauthor.status == 'U' %}class="undergrad"{% endif %}{% endcapture %}
                   {%- break -%}
                 {%- endif -%}
               {%- endfor -%}
             {%- endif -%}
-            
+	    
+	    {% capture eq_authorship %}{% if author.last != true_last_name %}*{% endif %}{% endcapture %}
+	    <!-- Define format for author names -->
+	    {% capture full_name %}{{ eq_authorship }}{{ author.first | slice: 0 }} {{ true_last_name }}{% endcapture %}
+          
             {%- if forloop.length == 1 -%}
               {%- if author_is_self %}
-                <em><strong>{{author.last}}, {{author.first}}</strong></em>
+                <em><strong>{{ full_name }}</strong></em>
               {%- else -%}
-                {{author.last}}, {{author.first}}
+                {{ full_name }}
               {%- endif -%}
             {%- else -%}
               {%- unless forloop.last -%}
                 {% if author_is_self %}
-                  <em><strong>{{author.last}}, {{author.first}}</strong></em>,&nbsp;
+                  <em><strong>{{ full_name }}</strong></em>,&nbsp;
                 {%- else -%}
                   {% if coauthor_url -%}
-                    <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>,&nbsp;
+                    <a href="{{coauthor_url}}" {{ mentee_class }}>{{ full_name }}</a>,&nbsp;
                   {%- else -%}
-                    {{author.last}}, {{author.first}},&nbsp;
+                    <span {{ mentee_class }}>{{ full_name }}</span>,&nbsp;
                   {%- endif -%}
                 {%- endif -%}
               {%- else -%}
                 {% if author_is_self -%}
-                  and <em><strong>{{author.last}}, {{author.first}}</strong></em>
+                  and <em><strong>{{ full_name }}</strong></em>
                 {% else -%}
                   {%- if coauthor_url -%}
-                    and <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>
+                    and <a href="{{coauthor_url}}" {{ mentee_class }}>{{ full_name }}</a>
                   {% else -%}
-                    and {{author.last}}, {{author.first}}
+                    and <span {{ mentee_class }}>{{ full_name }}</span>
                   {%- endif -%}
                 {%- endif -%}
               {%- endunless -%}

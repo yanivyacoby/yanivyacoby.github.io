@@ -9,14 +9,32 @@
 "Vamvourellis":
   - firstname: ["Dimitris", "D."]
     url: https://dvamvourellis.github.io/
+    status: M
 
 "Lorsung":
   - firstname: ["Cooper", "C."]
     url: https://scholar.google.com/citations?user=eHR-sX0AAAAJ&hl=en
+    status: M
 
 "Thakur":
   - firstname: ["Sujay", "S."]
     url: https://scholar.google.com/citations?user=p7QEfQoAAAAJ&hl=en
+    status: M
+
+"Guénais":
+  - firstname: ["Théo", "T."]
+    url: 
+    status: M
+
+"Downs":
+  - firstname: ["Michael", "M."]
+    url: 
+    status: M
+
+"Chu":
+  - firstname: ["Jonathan L", "Jonathan L.", "J. L.", "Jonathan"]
+    url: 
+    status: U
 
 "Vaughan":
   - firstname: ["Denis", "D."]
