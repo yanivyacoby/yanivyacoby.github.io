@@ -24,7 +24,7 @@ social: false  # includes social icons at the bottom of the page
 
 ## About
 
-I'm a **PhD candidate** in Machine Learning at Harvard University, 
+I'm a **Ph.D. candidate** in Machine Learning at Harvard University, 
 working with Professor [Finale Doshi-Velez](https://finale.seas.harvard.edu/)
 at the [Data to Actionable Knowledge Lab](https://dtak.github.io/) (DtAK).
 I had the pleasure of interning with the [Biomedical-ML team](https://www.microsoft.com/en-us/research/theme/biomedical-ml/) at Microsoft Research New England (Summer 2021).
@@ -38,7 +38,7 @@ I've also completed internships at Uber (2016), [Kensho](https://www.kensho.com/
 
 **Research:** My goal is to empower individuals to effectively utilize Machine Learning by making the consequences of modeling assumptions and inference decisions transparent.
 Specifically, I develop deep probabilistic/Bayesian models and approximate inference methods designed for safety-critical domains, such as precision healthcare.
-My work exposed failure mechanisms in a number of popular methods and provided ways to mitigate these failures.
+My work has exposed failure mechanisms in a number of popular methods and provides ways to mitigate these failures.
 
 **Teaching:** My goal is to create classroom environments and mentorship experiences that (a) builds student ability to independently interrogate technological systems in societal contexts (b) develops effective research skills (e.g. technical reading, writing, communication), and (c) helps students overcome common psychological barriers to learning (e.g. imposter phenomenon) using cohort-building. See my [teaching & mentorship](/teaching) page to learn more.
 
