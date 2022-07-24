@@ -11,9 +11,9 @@ profile:
       <p><i class="fas fa-landmark"></i> Ph.D. Candidate @ Harvard CS</p>
       <p><i class="fas fa-paw"></i> he/him/his</p>
       <p><i class="fas fa-envelope"></i> [first][last]@g.harvard.edu</p>
-      <p><a href="https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en"><i class="ai ai-google-scholar-square"></i> google scholar</a></p>
-      <p><a href="https://www.dropbox.com/s/mnt6k08unzjst9x/Yaniv-Yacoby-cv-2021.pdf?dl=0"><i class="fas fa-tree"></i> curriculum vitae</a></p>      
-      <p><a href="http://yanivyacoby.com/"><i class="fas fa-music"></i> music</a></p>      
+      <p><a href="https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> google scholar</a></p> <!-- ai ai-google-scholar-square -->
+      <p><a href="https://www.dropbox.com/s/mnt6k08unzjst9x/Yaniv-Yacoby-cv-2021.pdf?dl=0"><i class="fas fa-seedling"></i> curriculum vitae</a></p>      
+      <p><a href="http://yanivyacoby.com/"><i class="fas fa-guitar"></i> music</a></p>      
     </div>
 
 news: false  # includes a list of news items

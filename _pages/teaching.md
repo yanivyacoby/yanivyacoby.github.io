@@ -37,7 +37,7 @@ I serve as a **research mentor** for over 15 students at all levels -- undergrad
 
 <hr/>
 
-I **created and organized** a workshop for first-year Ph.D. students at Harvard SEAS, called [How to make the most out of your Ph.D.: a guide from current to incoming students](https://yanivyacoby.github.io/a-guide-to-your-phd/guide.html) (Fall 2020). The workshop is about managing the multi-faceted (and often undiscussed) challenges of being a Ph.D. student. 
+I **created and organized** a workshop for first-year Ph.D. students at Harvard SEAS, called [How to make the most out of your Ph.D: a guide from current to incoming students](https://yanivyacoby.github.io/a-guide-to-your-phd/guide.html) (Fall 2020). The workshop is about managing the multi-faceted (and often undiscussed) challenges of being a Ph.D. student. 
 
 I'm a **co-leader** of (Spring 2022 - present) and **peer mentor** (Spring 2021 - present) in [InTouch](https://intouch.seas.harvard.edu/), a peer-to-peer support network for graduate students.
 
