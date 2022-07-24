@@ -40,5 +40,5 @@ I've also completed internships at Uber (2016), [Kensho](https://www.kensho.com/
 Specifically, I develop deep probabilistic/Bayesian models and approximate inference methods designed for safety-critical domains, such as precision healthcare.
 My work has exposed failure mechanisms in a number of popular methods and provides ways to mitigate these failures.
 
-**Teaching:** My goal is to create classroom environments and mentorship experiences that (a) builds student ability to independently interrogate technological systems in societal contexts (b) develops effective research skills (e.g. technical reading, writing, communication), and (c) helps students overcome common psychological barriers to learning (e.g. imposter phenomenon) using cohort-building. See my [teaching & mentorship](/teaching) page to learn more.
+**Teaching:** My goal is to create classroom environments and mentorship experiences that (a) build student ability to independently interrogate technological systems in societal contexts, (b) that develop effective research skills (e.g. technical reading, writing, communication), and (c) help students overcome common psychological barriers to learning (e.g. imposter phenomenon) using cohort-building. See my [teaching & mentorship](/teaching) page for more info.
 
