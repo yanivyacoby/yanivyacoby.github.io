@@ -22,8 +22,6 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 
-## About
-
 I'm a **Ph.D. candidate** in Machine Learning at Harvard University, 
 working with Professor [Finale Doshi-Velez](https://finale.seas.harvard.edu/)
 at the [Data to Actionable Knowledge Lab](https://dtak.github.io/) (DtAK).
@@ -34,12 +32,15 @@ Before joining DtAK, I received a **Master's of Music** in Contemporary Improvis
 I've also completed summer internships at Uber (2016), [Kensho](https://www.kensho.com/) (2015), and Meta (2013).
 
 
-## Interests
+## Research
 
-**Research:** My goal is to empower individuals to effectively utilize Machine Learning by making the consequences of modeling assumptions and inference decisions transparent.
+My goal is to empower individuals to effectively utilize Machine Learning by making the consequences of modeling assumptions and inference decisions transparent.
 Specifically, I develop deep probabilistic/Bayesian models and approximate inference methods designed for safety-critical domains, such as precision healthcare.
 My work has exposed failure mechanisms in a number of popular methods, and provides ways to mitigate these failures.
 My work has also explored how people (mis)understand popular techniques for explainable AI.
 
-**Teaching:** My goal is to create classroom environments and mentorship experiences that (a) build student ability to independently interrogate technological systems in societal contexts, (b) that develop effective research skills (e.g. technical reading, writing, communication), and (c) help students overcome common psychological barriers to learning (e.g. imposter phenomenon) using cohort-building and discussion of academic culture. See my [teaching & mentorship](/teaching) page for more info.
+
+## Teaching
+
+My goal is to create classroom environments and mentorship experiences that (a) build student ability to independently interrogate technological systems in societal contexts, (b) that develop effective research skills (e.g. technical reading, writing, communication), and (c) help students overcome common psychological barriers to learning (e.g. imposter phenomenon) using cohort-building and discussion of academic culture. See my [teaching & mentorship](/teaching) page for more info.
 

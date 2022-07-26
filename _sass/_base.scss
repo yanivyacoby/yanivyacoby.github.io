@@ -8,6 +8,11 @@ p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
 }
 
+h1, h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;    
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -476,16 +481,16 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
-  margin-top: 2rem;
+  //margin-top: 2rem;
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    //margin-top: 1em;
+    //margin-bottom: 1em;
   }
   h2 {
-    margin-bottom: 1rem;
+    //margin-bottom: 1rem;
     span {
       font-size: 1.5rem;
     }
@@ -567,7 +572,7 @@ footer.sticky-bottom {
       .btn-disabled {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
-	  opacity: 0.5;
+	  opacity: 1.0;
 	  text-decoration: none;
 	  pointer-events: none;
 	  cursor: default;
