@@ -31,14 +31,15 @@ I had the pleasure of interning with the [Biomedical-ML team](https://www.micros
 
 Before joining DtAK, I received a **Master's of Music** in Contemporary Improvisation from the [New England Conservatory](https://necmusic.edu/dual-degree-programs) (2016) and a **Bachelor's of Arts** in Computer Science from Harvard University (2015). I am currently a performing [musician](http://yanivyacoby.com/).
 
-I've also completed internships at Uber (2016), [Kensho](https://www.kensho.com/) (2015), and Meta (2013).
+I've also completed summer internships at Uber (2016), [Kensho](https://www.kensho.com/) (2015), and Meta (2013).
 
 
 ## Interests
 
 **Research:** My goal is to empower individuals to effectively utilize Machine Learning by making the consequences of modeling assumptions and inference decisions transparent.
 Specifically, I develop deep probabilistic/Bayesian models and approximate inference methods designed for safety-critical domains, such as precision healthcare.
-My work has exposed failure mechanisms in a number of popular methods and explainable AI techniques, and provides ways to mitigate these failures.
+My work has exposed failure mechanisms in a number of popular methods, and provides ways to mitigate these failures.
+My work has also explored how people (mis)understand popular techniques for explainable AI.
 
 **Teaching:** My goal is to create classroom environments and mentorship experiences that (a) build student ability to independently interrogate technological systems in societal contexts, (b) that develop effective research skills (e.g. technical reading, writing, communication), and (c) help students overcome common psychological barriers to learning (e.g. imposter phenomenon) using cohort-building. See my [teaching & mentorship](/teaching) page for more info.
 
