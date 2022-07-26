@@ -8,7 +8,7 @@ nav: true
 <!-- _pages/publications.md -->
 <div class="publications">
 
-Co-authors whose names are <span style="border-bottom: 1px dashed;">underlined</span> were undergraduate or Master's students at time of publication. 
+I served as a direct research mentor to the undergraduate/Master's co-authors whose names are <span style="border-bottom: 1px dashed;">underlined</span>. 
 
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
