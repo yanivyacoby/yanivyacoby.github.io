@@ -41,5 +41,5 @@ Specifically, I develop deep probabilistic/Bayesian models and approximate infer
 My work has exposed failure mechanisms in a number of popular methods, and provides ways to mitigate these failures.
 My work has also explored how people (mis)understand popular techniques for explainable AI.
 
-**Teaching:** My goal is to create classroom environments and mentorship experiences that (a) build student ability to independently interrogate technological systems in societal contexts, (b) that develop effective research skills (e.g. technical reading, writing, communication), and (c) help students overcome common psychological barriers to learning (e.g. imposter phenomenon) using cohort-building. See my [teaching & mentorship](/teaching) page for more info.
+**Teaching:** My goal is to create classroom environments and mentorship experiences that (a) build student ability to independently interrogate technological systems in societal contexts, (b) that develop effective research skills (e.g. technical reading, writing, communication), and (c) help students overcome common psychological barriers to learning (e.g. imposter phenomenon) using cohort-building and discussion of academic culture. See my [teaching & mentorship](/teaching) page for more info.
 
