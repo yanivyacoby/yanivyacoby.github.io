@@ -11,7 +11,7 @@ nav: true
 <hr/>
 
 **As a course developer & instructor:** 
-* [CS290A & CS290B](https://yanivyacoby.github.io/harvard-cs290/): Effective Research Practices & Academic Culture (Fall 2021 - Spring 2023).
+* [CS290A & CS290B](https://yanivyacoby.github.io/harvard-cs290/){:target="_blank"}{:rel="noopener noreferrer"}: Effective Research Practices & Academic Culture (Fall 2021 - Spring 2023).
 
   I **created** a new syllabus that focuses on skill building (e.g. how to read research papers), soft-skill building (e.g. managing advising relationships, how to support your peers), and academic culture (e.g. mental health in academia, normalizing and de-stigmatizing of mental health needs, discussion of power dynamics in scientific communities).
 
@@ -37,7 +37,7 @@ I serve as a direct **research mentor** for over 15 students at all levels -- un
 
 <hr/>
 
-I **created and organized** a workshop for first-year Ph.D. students at Harvard SEAS, called [How to make the most out of your Ph.D: a guide from current to incoming students](https://yanivyacoby.github.io/a-guide-to-your-phd/guide.html) (Fall 2020). The workshop is about managing the multi-faceted (and often undiscussed) challenges of being a Ph.D. student. 
+I **created and organized** a workshop for first-year Ph.D. students at Harvard SEAS, called [How to make the most out of your Ph.D: a guide from current to incoming students](https://yanivyacoby.github.io/a-guide-to-your-phd/guide.html){:target="_blank"}{:rel="noopener noreferrer"} (Fall 2020). The workshop is about managing the multi-faceted (and often undiscussed) challenges of being a Ph.D. student. 
 
 I'm a **co-leader** of (Spring 2022 - present) and **peer mentor** (Spring 2021 - present) in [InTouch](https://intouch.seas.harvard.edu/), a peer-to-peer support network for graduate students.
 
