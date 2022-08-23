@@ -11,7 +11,7 @@ nav: true
 <hr/>
 
 **As a course developer & instructor:** 
-* [CS290A & CS290B](https://yanivyacoby.github.io/harvard-cs290/): Ph.D. Cohort Research Seminar (Fall 2021 - Spring 2023).
+* [CS290A & CS290B](https://yanivyacoby.github.io/harvard-cs290/): Seminar on Effective Research Practices & Academic Culture (Fall 2021 - Spring 2023).
 
   I **created** a new syllabus that focuses on skill building (e.g. how to read research papers), soft-skill building (e.g. managing advising relationships, how to support your peers), and academic culture (e.g. mental health in academia, normalizing and de-stigmatizing of mental health needs, discussion of power dynamics in scientific communities).
 
