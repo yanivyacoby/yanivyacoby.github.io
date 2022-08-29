@@ -56,3 +56,10 @@
   - firstname: ["Christopher L", "Christopher L.", "C. L.", "Christopher"]
     url: https://law.arizona.edu/christopher-l-griffin-jr
 
+"Parkes":
+  - firstname: ["David C", "David C.", "D. C.", "David"]
+    url: https://parkes.seas.harvard.edu/
+
+"Girash":
+  - firstname: ["J.", "John"]
+    url: https://scholar.harvard.edu/girash/home
