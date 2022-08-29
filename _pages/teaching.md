@@ -26,7 +26,7 @@ nav: true
 
 <hr/>
 
-I serve as a direct **research mentor** for over 15 students at all levels -- undergraduate, Master's, and Ph.D. -- enrolled in the following courses (or continuing their projects after):
+I serve(d) as a direct **research mentor** for ~20 students at all levels -- undergraduate, Master's, and Ph.D. -- enrolled in the following courses (or continuing their projects after):
 * [AC297r](https://www.capstone.iacs.seas.harvard.edu/): Computational Science and Engineering Capstone Project (Fall 2022)
 * [AM207](https://onefishy.github.io/am207/): Stochastic Methods for Data Analysis -- Inference and Optimization (Fall 2019 - Spring 2022)
 
