@@ -13,7 +13,7 @@ nav: true
 **As a course developer & instructor:** 
 * [CS290A & CS290B](https://yanivyacoby.github.io/harvard-cs290/){:target="_blank"}{:rel="noopener noreferrer"}: Effective Research Practices & Academic Culture (Fall 2021 - Spring 2023).
 
-  I **created** a new syllabus that focuses on skill building (e.g. how to read research papers), soft-skill building (e.g. managing advising relationships, how to support your peers), and academic culture (e.g. mental health in academia, normalizing and de-stigmatizing of mental health needs, discussion of power dynamics in scientific communities).
+  I **created** a new syllabus that focuses on skill building (e.g. how to read research papers), soft-skill building (e.g. managing advising relationships, how to support your peers), and academic culture (e.g. mental health in academia, normalizing and de-stigmatizing of mental health needs, discussion of power dynamics in scientific communities). Find out more in our [paper about CS290](https://arxiv.org/abs/2208.12650){:target="_blank"}{:rel="noopener noreferrer"}.
 
 **As a teaching fellow:** I previously served as a teaching fellow for a number of courses at Harvard:
 * CS281: Advanced Machine Learning (Fall 2018)
