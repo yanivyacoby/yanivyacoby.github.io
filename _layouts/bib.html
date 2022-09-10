@@ -4,12 +4,16 @@
       <div class="row">
         <div class="col-sm-2 abbr">
         {%- if entry.abbr -%}
-	{%- assign venus = entry.abbr | | split: ", " -%}
-	{%- for venu in venus -%}
+	{%- assign venues = entry.abbr | | split: ", " -%}
+	{%- for venu in venues -%}
           {%- if site.data.venues[venu] -%}
-          <abbr class="badge"><a href="{{site.data.venues[venu].url}}">{{venu}}</a></abbr>
+          <abbr class="badge"><a href="{{site.data.venues[venu].url}}">
+	      {% if entry.insubmission == "yes" and forloop.first %} Submitted: {% endif %} {{venu}}
+	  </a></abbr>
           {%- else -%}
-          <abbr class="badge">{{venu}}</abbr>
+          <abbr class="badge">
+	    {% if entry.insubmission == "yes" and forloop.first %} Submitted: {% endif %} {{venu}}
+	  </abbr>
           {%- endif -%}
 	{%- endfor -%}
         {%- endif -%}
@@ -82,9 +86,9 @@
 
           <!-- Journal/Book title and date -->
           {% if entry.type == "article" -%}
-            {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
+            {%- capture entrytype -%}<em>{{entry.journal}}</em> {%- endcapture -%}
           {%- elsif entry.type == "inproceedings" -%}
-            {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+            {%- capture entrytype -%}<em>{{entry.booktitle}}</em> {%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}
@@ -108,12 +112,34 @@
 	  {% endif %}	  
 	  
           <div class="periodical">
-            {{ periodical | strip }}.
+            {% if entry.insubmission %} In submission @ {% else %} Accepted @ {% endif %} {{ periodical | strip }}
+	    {%- if entry.presentation_type %}
+              {% if entry.presentation_url contains '://' -%}
+	        <abbr class="badge talk"><a href="{{ entry.presentation_url }}">{{ entry.presentation_type }}</a></abbr>
+              {%- else -%}
+		<abbr class="badge talk">{{ entry.presentation_type }}</abbr>
+              {%- endif %}
+            {%- endif %}
+
 	    {% if entry.workshop_title %}
-	    Previously accepted at {{ workshopperiodical | strip }}.
+	    <br/>
+	    Previous version accepted @ {{ workshopperiodical | strip }}
+	    {%- if entry.workshop_presentation_type %}
+              {% if entry.workshop_presentation_url contains '://' -%}
+	        <abbr class="badge talk"><a href="{{ entry.workshop_presentation_url }}">{{ entry.workshop_presentation_type }}</a></abbr>
+              {%- else -%}
+		<abbr class="badge talk">{{ entry.workshop_presentation_type }}</abbr>
+              {%- endif %}
+            {%- endif %}	    
 	    {% endif %}
           </div>
           {%- endif %}
+
+          {% if entry.note %}	  
+          <div class="periodical">
+	    {{ entry.note }}
+	  </div>
+          {% endif %}
           
           <!-- Links/Buttons -->
           <div class="links">
@@ -165,15 +191,7 @@
           {%- endif %}
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
-          {%- endif %}
-          {%- if entry.presentation_type %}
-            {% if entry.presentation_url contains '://' -%}
-            <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">{{ entry.presentation_type }}</a>
-            {%- else -%}
-            <a href="" class="btn btn-disabled btn-sm z-depth-0" role="button">{{ entry.presentation_type }}</a>
-            {%- endif %}
-          {%- endif %}
-	    
+          {%- endif %}	    
           </div>
 
           {% if entry.abstract -%}

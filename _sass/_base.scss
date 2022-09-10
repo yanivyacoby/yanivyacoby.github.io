@@ -572,6 +572,10 @@ footer.sticky-bottom {
       .btn-disabled {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
+          padding-left: 1rem;
+          padding-right: 1rem;
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;	  
 	  opacity: 1.0;
 	  text-decoration: none;
 	  pointer-events: none;
@@ -614,6 +618,16 @@ footer.sticky-bottom {
       }
     }
   }
+}
+
+.talk {
+    background-color: $cyan-color;
+    margin-left: 5px;
+    transform: translateY(-10%);
+    color: white;
+    &:hover {
+        text-decoration: none;
+    }    
 }
 
 
