@@ -37,9 +37,9 @@ I serve(d) as a direct **research mentor** for ~20 students at all levels -- und
 
 <hr/>
 
-I **created and organized** a workshop for first-year Ph.D. students at Harvard SEAS, called [How to make the most out of your Ph.D: a guide from current to incoming students](https://yanivyacoby.github.io/a-guide-to-your-phd/guide.html){:target="_blank"}{:rel="noopener noreferrer"} (Fall 2020). The workshop is about managing the multi-faceted (and often undiscussed) challenges of being a Ph.D. student. 
-
 I'm a **co-leader** of (Spring 2022 - present) and **peer mentor** (Spring 2021 - present) in [InTouch](https://intouch.seas.harvard.edu/), a peer-to-peer support network for graduate students.
+
+I **created and organized** a workshop for first-year Ph.D. students at Harvard SEAS, called [How to make the most out of your Ph.D: a guide from current to incoming students](https://yanivyacoby.github.io/a-guide-to-your-phd/guide.html){:target="_blank"}{:rel="noopener noreferrer"} (Fall 2020). The workshop is about managing the multi-faceted (and often undiscussed) challenges of being a Ph.D. student. 
 
 I served as a **mentor** for a Ph.D. Working Group (Fall 2021), where I helped students write personal statements, CVs, and practice interviewing. I also helped debunk common myths about Ph.D. programs that often provoke imposter syndrome / cause students to self-filter during the application process.
 
