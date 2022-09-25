@@ -12,7 +12,7 @@ profile:
       <p><i class="fas fa-paw"></i> he/him/his</p>
       <p><i class="fas fa-envelope"></i> [first][last]@g.harvard.edu</p>
       <p><a href="https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> google scholar</a></p> <!-- ai ai-google-scholar-square -->
-      <p><a href="https://www.dropbox.com/s/ztgaa1czfjxub5h/Yaniv-Yacoby-cv.pdf?dl=0"><i class="fas fa-seedling"></i> curriculum vitae</a></p>      
+      <p><a href="{{ Yaniv-Yacoby-cv.pdf | prepend: 'assets/pdf/' | relative_url }}"><i class="fas fa-seedling"></i> curriculum vitae</a></p>      
       <p><a href="http://yanivyacoby.com/"><i class="fas fa-guitar"></i> music</a></p>      
     </div>
 
