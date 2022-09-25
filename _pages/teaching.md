@@ -41,5 +41,7 @@ I **created and organized** a workshop for first-year Ph.D. students at Harvard 
 
 I'm a **co-leader** of (Spring 2022 - present) and **peer mentor** (Spring 2021 - present) in [InTouch](https://intouch.seas.harvard.edu/), a peer-to-peer support network for graduate students.
 
+I served as a **mentor** for a Ph.D. Working Group, where I helped students write personal statements, CVs, and practice interviewing. I also helped debunk common myths about Ph.D. programs that often provoke imposter syndrome / cause students to self-filter during the application process.
+
 Lastly, I was a **mentor** for the [Women in Data Science (WiDS) Cambridge datathon workshop](https://onefishy.github.io/wids_datathon/) (2019-2020). 
 
