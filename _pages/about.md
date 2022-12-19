@@ -5,7 +5,7 @@ permalink: /
 
 profile:
   align: left
-  image: profile.png
+  image: prof_pic.png
   contact: >
     <div class="social-list">
       <p><i class="fas fa-landmark"></i> Ph.D. Candidate @ Harvard CS</p>
