@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Additional Recordings
-description: 
+description: Features on recording projects with friends and colleagues.
+hide_description: true
 img: /assets/img/music/studio33_01.jpg
 importance: 6
 category: misc
@@ -9,7 +10,7 @@ category: misc
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-    	 <iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
+        {% include figure.html path="assets/img/music/the-boston-imposters.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	<p style="text-align: justify;">
@@ -22,6 +23,7 @@ category: misc
 
 	<div class="album-links">
 	     <a href="https://music.apple.com/us/album/the-boston-imposters/1488874781" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Apple</a>
+	     <a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">BandCamp</a>	     
 	     <a href="https://music.amazon.com/albums/B081V99Y3F?tag=fndcmpgns-20" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Amazon</a>
 	     <a href="https://open.spotify.com/album/2xmbHE4rRSJx3nODabcEDd" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Spotify</a>
 	</div>	

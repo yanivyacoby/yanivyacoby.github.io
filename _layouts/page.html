@@ -6,7 +6,11 @@ layout: default
 
           <header class="post-header">
             <h1 class="post-title">{{ page.title }}</h1>
+	    {% if page.hide_description == nil or page.hide_description == false %}
             <p class="post-description">{{ page.description }}</p>
+	    {% else %}
+	    <p></p>
+	    {% endif %}
           </header>
 
           <article>

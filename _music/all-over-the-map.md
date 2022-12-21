@@ -1,7 +1,8 @@
 ---
 layout: page
 title: All Over the Map
-description: A collaboration with Blue Thread
+description: A collaboration with ensemble, Blue Thread, featuring medieval Galago-Portuguese cantigas, as well as Galician and Sephardic love songs from the Iberian Peninsula, reviving melodies from ancient manuscripts.
+hide_description: true
 img: assets/img/music/all-over-the-map.jpeg
 importance: 5
 category: discography

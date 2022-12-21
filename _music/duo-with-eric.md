@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Duo with Eric Boodman
-description: Fiddle & Irish Bouzouki
+description: Irish and Québécois folk music on irish bouzouki, fiddle and foot percussion.
+hide_description: true
 img: assets/img/music/Yaniv-and-Eric.jpg
 importance: 3
 category: collaborations

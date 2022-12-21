@@ -2,6 +2,7 @@
 layout: page
 title: Triga
 description: A folk music trio formed on a Boston rooftop, rooted in traditions from Austria to Sweden to Quebec.
+hide_description: true
 img: assets/img/music/triga.jpg
 importance: 2
 category: collaborations
@@ -13,7 +14,7 @@ category: collaborations
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	<p style="text-align: justify;">
-		With roots in various traditions -- Swedish nyckelharpa music, Québécois fiddling, Irish bouzouki, baroque improvisation -- the three members of Triga bring a unique sound to old and new tunes alike.
+		Triga is a folk music trio formed on a Boston rooftop. With roots in various traditions -- Swedish nyckelharpa music, Québécois fiddling, Irish bouzouki, baroque improvisation -- the three members of Triga bring a unique sound to old and new tunes alike.
 	</p>
 	<p>
 		<a href="http://www.ericboodman.com" target="_blank" rel="noopener noreferrer">Eric Boodman</a> (Montreal) - Fiddle

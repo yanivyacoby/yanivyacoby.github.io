@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Duo with Sunniva Brynnel
-description: 
+description: Traditional and new Irish and Scandinavian folk music on irish bouzouki, accordion and voice.
+hide_description: true
 img: assets/img/music/yaniv-and-sunniva.jpeg
 importance: 4
 category: collaborations

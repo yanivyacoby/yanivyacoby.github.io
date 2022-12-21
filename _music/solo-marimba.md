@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Solo Marimba
-description: 
+description: Bits and pieces for marimba from a long time ago.
+hide_description: true
 img: assets/img/music/ck-yaniv-eggbg-title.png
 importance: 7
 category: misc
