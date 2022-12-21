@@ -721,3 +721,28 @@ html.transition *:after {
 	padding-right: 10px;
     }
 }
+
+.events-table {
+    tr:first-child {
+	td:first-child {
+	    padding-top: 10px;
+	}
+    }
+
+    tr:last-child {
+	td {
+	    padding-bottom: 20px;
+	}
+    }
+    
+    td {
+	vertical-align: top;
+	padding-left: 10px;
+	padding-right: 10px;
+    }
+
+    tbody:hover {
+	background-color: rgb(245, 245, 235);
+        transition: 0.2s;
+    }
+}
