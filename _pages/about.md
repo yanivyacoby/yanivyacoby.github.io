@@ -13,7 +13,7 @@ profile:
       <p><i class="fas fa-envelope"></i> [first][last]@g.harvard.edu</p>
       <p><a href="https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> google scholar</a></p> <!-- ai ai-google-scholar-square -->
       <p><a href="/assets/pdf/Yaniv_Yacoby_cv.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-seedling"></i> curriculum vitae</a></p>      
-      <p><a href="http://yanivyacoby.com/"><i class="fas fa-guitar"></i> music</a></p>      
+      <p><a href="/music"><i class="fas fa-guitar"></i> music</a></p>      
     </div>
 
 news: false  # includes a list of news items
@@ -27,7 +27,7 @@ working with Professor [Finale Doshi-Velez](https://finale.seas.harvard.edu/)
 at the [Data to Actionable Knowledge Lab](https://dtak.github.io/) (DtAK).
 I had the pleasure of interning with the [Biomedical-ML team](https://www.microsoft.com/en-us/research/theme/biomedical-ml/) at Microsoft Research New England (Summer 2021).
 
-Before joining DtAK, I received a **Master's of Music** in Contemporary Improvisation from the [New England Conservatory](https://necmusic.edu/dual-degree-programs) (2016) and a **Bachelor's of Arts** in Computer Science from Harvard University (2015). I am currently a performing [musician](http://yanivyacoby.com/).
+Before joining DtAK, I received a **Master's of Music** in Contemporary Improvisation from the [New England Conservatory](https://necmusic.edu/dual-degree-programs) (2016) and a **Bachelor's of Arts** in Computer Science from Harvard University (2015). I am currently a performing [musician](/music).
 
 I've also completed summer internships at Uber (2016), [Kensho](https://www.kensho.com/) (2015), and Meta (2013).
 

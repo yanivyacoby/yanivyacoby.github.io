@@ -3,6 +3,7 @@ layout: page
 permalink: /teaching/
 title: Teaching & Mentoring
 nav: true
+nav_order: 3
 ---
 
 
