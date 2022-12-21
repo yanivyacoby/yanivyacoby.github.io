@@ -2,7 +2,7 @@
 layout: page
 title: Additional Recordings
 description: 
-img: 
+img: /assets/img/music/studio33_01.jpg
 importance: 6
 category: misc
 ---

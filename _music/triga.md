@@ -61,3 +61,14 @@ category: collaborations
 	 </div>
     </div>
 </div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/music/BCMFest2020_credit_DylanLadds_01.jpg" class="img-fluid rounded z-depth-1" %}
+	<div style="text-align: right; font-size: small;">
+	    Photo credit: Dylan Ladds
+	</div>
+    </div>
+</div>
