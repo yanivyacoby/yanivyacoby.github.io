@@ -19,10 +19,10 @@ category: discography
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	 <p style="text-align: justify;">
-		We started The Corn Knight as a project to explore the relationship between marimba and piano, spending hours inventing new orchestrational techniques and ways to groove together. Through this collaboration, we discovered a common thread in our musical sensibilities -- a love for simplicity and narrative -- and in the winter of 2015, decided to formally write and play a collaborative piece.
+		<a href="https://chasemorrin.com/">Chase Morrin</a> and I started <i>The Corn Knight</i> as a project to explore the relationship between marimba and piano, spending hours inventing new orchestrational techniques and ways to groove together. Through this collaboration, we discovered a common thread in our musical sensibilities -- a love for simplicity and narrative -- and in the winter of 2015, decided to formally write and play a collaborative piece.
 	</p>
 	<p style="text-align: justify;">
-		The Corn Knight is an hour long story piece informed by a fictional narrative and composed of many short pieces, like chapters in a book. It is influenced by the music we study and admire and therefore draws from Irish and American Folk, Jazz, and Western Classical traditions. This piece is unique in that the structure is largely through-composed, but the details -- such as ornaments, grooving patterns, and in some cases, entire melodies -- are improvised.
+		<i>The Corn Knight</i> is an hour-long story-piece, informed by a fictional narrative and composed of many short pieces, like chapters in a book. It is influenced by the music we study and admire and therefore draws from Irish and American Folk, Jazz, and Western Classical traditions. This piece is unique in that the structure is largely through-composed, but the details -- such as ornaments, grooving patterns, and in some cases, entire melodies -- are improvised.
 	 </p>	 
     </div>
 </div>
@@ -32,7 +32,7 @@ category: discography
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
     	 <h4>Tracks</h4>
-    	 <table style="width:100%;">
+    	 <table style="width:100%;" class="album-tracks">
 	 	<tbody>
 		<tr>
 			<td>1</td>

@@ -698,7 +698,7 @@ html.transition *:after {
   padding-top: 0.25rem;
 }
 
-// album buy buttons
+// Music
 .album-links {
     text-align: center;
     
@@ -716,3 +716,8 @@ html.transition *:after {
     }
 }
 
+.album-tracks {
+    td:first-child {
+	padding-right: 10px;
+    }
+}
