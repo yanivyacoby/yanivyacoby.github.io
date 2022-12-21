@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Additional Recordings
-description: Features on recording projects with friends and colleagues.
+description: Features on recording projects with friends and colleagues, including The Boston Imposters and Gapi.
 hide_description: true
 img: /assets/img/music/studio33_01.jpg
 importance: 6
