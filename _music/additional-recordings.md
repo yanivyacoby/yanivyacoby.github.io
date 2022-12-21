@@ -1,0 +1,41 @@
+---
+layout: page
+title: Additional Recordings
+description: 
+img: 
+importance: 6
+category: misc
+---
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+    	 <iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+    	<p style="text-align: justify;">
+	     I collaborated with <a href="https://www.daveyharrison.com/" target="_blank" rel="noopener noreferrer">Davey Harrison</a> and Maire Clement of <a href="https://www.thebostonimposters.com/" target="_blank" rel="noopener noreferrer">The Boston Imposters</a> on tracks, "Periphery", "Mournful Dove" and "Old Sea Walls".
+	</p>
+
+	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3707682311/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
+	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3771275373/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
+	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=465768623/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+    	 {% include figure.html path="assets/img/music/gapi.jpeg" class="img-fluid rounded z-depth-1" %}
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+    	<p style="text-align: justify;">
+	     I collaborated with <a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a> and <a href="https://www.doyeonmusic.com/" target="_blank" rel="noopener noreferrer">DoYeon Kim</a> of <a href="https://chasemorrin.com/Recordings/GapiAlbum" target="_blank" rel="noopener noreferrer">Gapi</a> on track, "Heung".
+	</p>
+
+    </div>
+</div>
+
+<p></p>
+

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Solo Works
+title: Solo Marimba
 description: 
 img: assets/img/music/ck-yaniv-eggbg-title.png
 importance: 7
