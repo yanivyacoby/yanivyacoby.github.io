@@ -19,6 +19,12 @@ category: misc
 	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3707682311/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
 	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3771275373/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
 	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=465768623/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
+
+	<div class="album-links">
+	     <a href="https://music.apple.com/us/album/the-boston-imposters/1488874781" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Apple</a>
+	     <a href="https://music.amazon.com/albums/B081V99Y3F?tag=fndcmpgns-20" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Amazon</a>
+	     <a href="https://open.spotify.com/album/2xmbHE4rRSJx3nODabcEDd" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Spotify</a>
+	</div>	
     </div>
 </div>
 
@@ -27,15 +33,18 @@ category: misc
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
     	 {% include figure.html path="assets/img/music/gapi.jpeg" class="img-fluid rounded z-depth-1" %}
-
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	<p style="text-align: justify;">
 	     I collaborated with <a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a> and <a href="https://www.doyeonmusic.com/" target="_blank" rel="noopener noreferrer">DoYeon Kim</a> of <a href="https://chasemorrin.com/Recordings/GapiAlbum" target="_blank" rel="noopener noreferrer">Gapi</a> on track, "Heung".
 	</p>
 
+	<div class="album-links">
+	     <a href="https://music.apple.com/us/album/gapi/1271256198" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Apple</a>
+	     <a href="https://open.spotify.com/album/3mMjOJdugBd25uZVstf94k" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Spotify</a>
+	</div>	
     </div>
 </div>
 
-<p></p>
+
 

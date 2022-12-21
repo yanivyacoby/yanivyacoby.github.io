@@ -11,10 +11,11 @@ category: discography
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/music/ck-front.jpg" class="img-fluid rounded z-depth-1" %}
-
-	<a href="https://itunes.apple.com/us/album/the-corn-knight/id1112213726" target="_blank" style="text-decoration: none; color: white; background-color: rgb(102, 102, 102); padding: 10px 15px; margin-right: 5px;">iTunes</a>
-	<a href="https://www.amazon.com/gp/product/B01FEAPIIE?ie=UTF8&keywords=the%20corn%20knight&qid=1463019920&ref_=sr_1_2&sr=8-2" target="_blank" style="text-decoration: none; color: white; background-color: rgb(102, 102, 102); padding: 10px 15px; margin-right: 5px;">Amazon</a>
-	<a href="https://open.spotify.com/album/6ZVHG4K4cnk1t3vX6CKn3v?si=er4_rLofTt2Ir6IBnVR5_A" target="_blank" style="text-decoration: none; color: white; background-color: rgb(102, 102, 102); padding: 10px 15px; margin-right: 5px;">Spotify</a>	
+	<div class="album-links">
+	     <a href="https://itunes.apple.com/us/album/the-corn-knight/id1112213726" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Apple</a>
+	     <a href="https://www.amazon.com/gp/product/B01FEAPIIE?ie=UTF8&keywords=the%20corn%20knight&qid=1463019920&ref_=sr_1_2&sr=8-2" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Amazon</a>
+	     <a href="https://open.spotify.com/album/6ZVHG4K4cnk1t3vX6CKn3v?si=er4_rLofTt2Ir6IBnVR5_A" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Spotify</a>
+	</div>	
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	 <p style="text-align: justify;">
@@ -124,11 +125,13 @@ category: discography
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	 <h3>Credits</h3>
+	 <div style="font-size: small;">
     	 <p>Composition and performance by Chase Morrin and Yaniv Yacoby.</p>
 	 <p>Recorded January 11-14, 2016 at the Bridge Recording Studio, Glendale CA.</p>
-	 <p>Sound engineering by Rich Breene.</p>
-	 <p>Mixed and mastered by Rich Breene.</p>
+	 <p>Sound engineering by Rich Breen.</p>
+	 <p>Mixed and mastered by Rich Breen.</p>
 	 <p>Artwork by Yaara Yacoby, photography by Joseph Ong, font by Luna Daisy.</p>
+	 </div>
     </div>
 </div>
 
