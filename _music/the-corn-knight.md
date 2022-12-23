@@ -89,7 +89,7 @@ category: discography
 	</table>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/music/nite-1.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/music/nite-1.jpg" class="img-fluid rounded z-depth-1" %}    	 
     </div>
 </div>
 
@@ -123,6 +123,17 @@ category: discography
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/music/nite-2.jpg" class="img-fluid rounded z-depth-1" %}    	 
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/music/ck-inside.png" class="img-fluid rounded z-depth-1" %}    	     
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">    
+        {% include figure.html path="assets/img/music/ck-back.png" class="img-fluid rounded z-depth-1" %}    	     
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	 <h3>Credits</h3>
