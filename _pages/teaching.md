@@ -39,8 +39,8 @@ I serve(d) as a direct **research mentor** for ~20 students at all levels -- und
 <hr/>
 
 **Leadership:**
-* I served as a **co-leader** of (Spring 2022 - Fall 2022) and **peer mentor** (Spring 2021 - Spring 2023) in [InTouch](https://intouch.seas.harvard.edu/), a peer-to-peer support network for graduate students. 
-* I was nominated to represent Harvard's School of Engineering and Applied Sciences on the [Student Wellbeing Council](https://www.harvard.edu/wellbeing/about/) (Fall 2022 - Present). 
+* I served as a **co-leader** of (Spring 2022 - Spring 2023) and **peer mentor** (Spring 2021 - Spring 2023) in [InTouch](https://intouch.seas.harvard.edu/), a peer-to-peer support network for graduate students. 
+* I was nominated to represent Harvard's School of Engineering and Applied Sciences on the [Student Wellbeing Council](https://www.harvard.edu/wellbeing/about/) (Fall 2022 - Spring 2023). 
 
 **Outreach:**
 * I served as a **mentor** for a Ph.D. Working Group (Fall 2021), where I helped students write personal statements, CVs, and practice interviewing. I also helped debunk common myths about Ph.D. programs that often provoke imposter syndrome / cause students to self-filter during the application process.
