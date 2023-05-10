@@ -8,7 +8,7 @@ profile:
   image: prof_pic.png
   contact: >
     <div class="social-list">
-      <p><i class="fas fa-landmark"></i> Ph.D. Candidate @ Harvard CS</p>
+      <p><i class="fas fa-landmark"></i> Postdoc @ Harvard Psychology</p>
       <p><i class="fas fa-paw"></i> he/him/his</p>
       <p><i class="fas fa-envelope"></i> [first][last]@g.harvard.edu</p>
       <p><a href="https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> google scholar</a></p> <!-- ai ai-google-scholar-square -->
