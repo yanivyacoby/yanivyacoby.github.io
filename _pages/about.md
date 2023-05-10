@@ -11,7 +11,7 @@ profile:
       <p><i class="fas fa-landmark"></i> Postdoc @ Harvard Psychology</p>
       <p><i class="fas fa-paw"></i> he/him/his</p>
       <p><i class="fas fa-envelope"></i> [first][last]@g.harvard.edu</p>
-      <p><a href="https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> google scholar</a></p> <!-- ai ai-google-scholar-square -->
+      <p><a href="https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en"><i class="fas fa-book"></i> google scholar</a></p> <!-- ai ai-google-scholar-square -->
       <p><a href="/assets/pdf/Yaniv_Yacoby_cv.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-seedling"></i> curriculum vitae</a></p>      
       <p><a href="/music"><i class="fas fa-guitar"></i> music</a></p>      
     </div>
