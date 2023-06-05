@@ -11,7 +11,7 @@ category: collaborations
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
     	 <p style="text-align: justify;">
-		Accordionist/singer <a href="http://sunnivabrynnel.com" target="_blank" rel="noopener noreferrer">Sunniva Brynnel</a> and bouzouki player Yaniv Yacoby met at the New England Conservatory, Boston. They are both immensely passionate about learning folk tunes; they also share a passion for cluttering their respective homesteads with new and exciting instruments which they are learning to play. Sunniva studied Irish traditional music at DIT -- Conservatory Of Music And Drama in Dublin, and Yaniv has made several trips to Ireland to immerse himself in its folk music.
+		Accordionist/singer <a href="http://sunnivabrynnel.com" target="_blank" rel="noopener noreferrer">Sunniva Brynnel</a> and bouzouki player Yaniv Yacoby met at the New England Conservatory, Boston. They are both immensely passionate about learning folk tunes; they also share a passion for cluttering their respective homesteads with new and exciting instruments which they are learning to play. Sunniva studied Irish traditional music at DIT -- Conservatory of Music and Drama in Dublin, and Yaniv has made several trips to Ireland to immerse himself in its folk music.
 	 </p>
     </div>
 </div>

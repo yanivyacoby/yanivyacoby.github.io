@@ -3,14 +3,17 @@ layout: page
 title: Triga
 description: A folk music trio formed on a Boston rooftop, rooted in traditions from Austria to Sweden to Quebec.
 hide_description: true
-img: assets/img/music/triga.jpg
+img: assets/img/music/triga-ep-cover.png
 importance: 2
 category: collaborations
 ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/music/triga.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/music/triga-credit-Flora Wiederkehr.jpg" class="img-fluid rounded z-depth-1" %}
+	<div style="text-align: right; font-size: 8px; position: absolute; bottom: 17px; left: 20px; color: #868686;">
+	    Photo credit: Flora Wiederkehr
+	</div>	
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	<p style="text-align: justify;">
@@ -42,9 +45,43 @@ category: collaborations
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
+    	 {% include figure.html path="assets/img/music/triga-yaniv-credit-Flora Wiederkehr.jpg" class="img-fluid rounded z-depth-1" %}
+	<div style="text-align: right; font-size: 8px; position: absolute; bottom: 20px; left: 20px; color: #868686;">
+	    Photo credit: Flora Wiederkehr
+	</div>	 
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+    	 {% include figure.html path="assets/img/music/triga-anna-credit-Flora Wiederkehr.jpg" class="img-fluid rounded z-depth-1" %}
+	<div style="text-align: right; font-size: 8px; position: absolute; bottom: 20px; left: 20px; color: #868686;">
+	    Photo credit: Flora Wiederkehr
+	</div>	 
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+    	 {% include figure.html path="assets/img/music/triga-eric-credit-Flora Wiederkehr.jpg" class="img-fluid rounded z-depth-1" %}
+	<div style="text-align: right; font-size: 8px; position: absolute; bottom: 20px; left: 20px; color: #868686;">
+	    Photo credit: Flora Wiederkehr
+	</div>	 
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
     	 <div style="position:relative;height:0px;padding-bottom:56%;margin:0px auto;">
 	      <iframe style="position:absolute;top:0px;left:0px;width:100%;height:100%;" width="640" height="360" src="https://www.youtube.com/embed/lnge056jI5s?rel=0&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
 	 </div>
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/music/triga-all-credit-Flora Wiederkehr.jpg" class="img-fluid rounded z-depth-1" %}
+	<div style="text-align: right; font-size: 8px; position: absolute; bottom: 20px; left: 20px; color: #868686;">
+	    Photo credit: Flora Wiederkehr
+	</div>
     </div>
 </div>
 
@@ -78,7 +115,7 @@ category: collaborations
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/music/BCMFest2020_credit_DylanLadds_01.jpg" class="img-fluid rounded z-depth-1" %}
-	<div style="text-align: right; font-size: small;">
+	<div style="text-align: right; font-size: 8px; position: absolute; bottom: 20px; left: 20px; color: #868686;">
 	    Photo credit: Dylan Ladds
 	</div>
     </div>
