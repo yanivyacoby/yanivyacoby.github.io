@@ -25,7 +25,6 @@ I'm a **postdoctoral fellow** at the [Nock Lab](https://nocklab.fas.harvard.edu/
 
 I completed my **Ph.D.** in Machine Learning at the [Data to Actionable Knowledge Lab](https://dtak.github.io/) (DtAK) at Harvard,
 working with Professor [Finale Doshi-Velez](https://finale.seas.harvard.edu/). I had the pleasure of interning with the [Biomedical-ML team](https://www.microsoft.com/en-us/research/theme/biomedical-ml/) at Microsoft Research New England (Summer 2021). Before joining DtAK, I received a **Master's of Music** in Contemporary Improvisation from the [New England Conservatory](https://necmusic.edu/dual-degree-programs) (2016) and a **Bachelor's of Arts** in Computer Science from Harvard University (2015). I am currently a performing [musician](/music).
-I've also completed summer internships at Uber (2016), [Kensho](https://www.kensho.com/) (2015), and Meta (2013).
 
 
 ## Research
