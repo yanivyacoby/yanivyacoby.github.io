@@ -91,3 +91,16 @@
 "Fortgang":
   - firstname: ["R.", "Rebecca"]
     url: https://www.rebeccafortgang.com/
+
+"Smoller":
+  - firstname: ["J.", "Jordan", "J. W.", "Jordan W."]
+    url: https://smollerlab.org/our-team/
+
+"Zuromski":
+  - firstname: ["K.", "Kelly"]
+    url: https://www.kellyzuromski.com/
+
+"Nock":
+  - firstname: ["M.", "Matthew"]
+    url: https://nocklab.fas.harvard.edu/people
+    
