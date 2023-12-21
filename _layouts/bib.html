@@ -112,7 +112,7 @@
 	  {% endif %}	  
 	  
           <div class="periodical">
-            {% if entry.insubmission %} In submission @ {% else %} Accepted @ {% endif %} {{ periodical | strip }}
+            {% if entry.insubmission == "yes" %} In submission @ {% elif entry.insubmission == "no" %} Paper available on {% else %} Accepted @ {% endif %} {{ periodical | strip }}
 	    {%- if entry.presentation_type %}
               {% if entry.presentation_url contains '://' -%}
 	        <abbr class="badge talk"><a href="{{ entry.presentation_url }}">{{ entry.presentation_type }}</a></abbr>
