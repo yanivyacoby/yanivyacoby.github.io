@@ -71,3 +71,23 @@
 "Coker":
   - firstname: ["B.", "Beau"]
     url: https://beaucoker.github.io/
+
+"Wang":
+  - firstname: ["S.", "Shirley"]
+    url: https://shirleywang.rbind.io/
+
+"Bentley":
+  - firstname: ["K.", "Kate"]
+    url: https://depressionmgh.org/who-we-are/staff/kate-bentley-phd
+
+"Kleiman":
+  - firstname: ["E.", "Evan"]
+    url: https://kleimanlab.org/people/
+
+"Millner":
+  - firstname: ["A.", "Alex"]
+    url: https://alexmillner.com/
+
+"Fortgang":
+  - firstname: ["R.", "Rebecca"]
+    url: https://www.rebeccafortgang.com/
