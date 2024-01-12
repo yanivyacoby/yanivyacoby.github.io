@@ -11,23 +11,15 @@ category: collaborations
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/music/triga-credit-Flora Wiederkehr.jpg" class="img-fluid rounded z-depth-1" %}
-	<div style="text-align: right; font-size: 8px; position: absolute; bottom: 17px; left: 20px; color: #868686;">
+	<div style="text-align: right; font-size: 8px; position: absolute; top: 5px; left: 20px; color: #868686;">
 	    Photo credit: Flora Wiederkehr
-	</div>	
+	</div>
+    	<p style="text-align: justify;">
+	    Triga is a folk music trio formed on a Boston rooftop by <a href="http://www.annabreger.com" target="_blank" rel="noopener noreferrer">Anna Breger</a> from Vienna (Nyckelharpa), <a href="http://www.ericboodman.com" target="_blank" rel="noopener noreferrer">Eric Boodman</a> from Montreal (fiddle), and Yaniv Yacoby from Boston (Irish Bouzouki). With roots in various traditions -- Swedish nyckelharpa music, Québécois fiddling, Irish bouzouki, baroque improvisation -- the three members of Triga bring a unique sound to old and new tunes alike.
+	</p>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-    	<p style="text-align: justify;">
-		Triga is a folk music trio formed on a Boston rooftop. With roots in various traditions -- Swedish nyckelharpa music, Québécois fiddling, Irish bouzouki, baroque improvisation -- the three members of Triga bring a unique sound to old and new tunes alike.
-	</p>
-	<p>
-		<a href="http://www.ericboodman.com" target="_blank" rel="noopener noreferrer">Eric Boodman</a> (Montreal) - Fiddle
-	</p>
-	<p>
-		<a href="http://www.annabreger.com" target="_blank" rel="noopener noreferrer">Anna Breger</a> (Vienna) - Nyckelharpa
-	</p>
-	<p>
-		Yaniv Yacoby (Boston) - Irish Bouzouki
-	</p>
+    	<iframe style="border: 0; width: 350px; height: 654px;" src="https://bandcamp.com/EmbeddedPlayer/album=3804122655/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://trigatrio.bandcamp.com/album/live-from-our-living-room">Live from our Living Room by Triga</a></iframe>	
     </div>
 </div>
 
