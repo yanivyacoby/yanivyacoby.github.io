@@ -27,9 +27,31 @@ category: collaborations
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/music/triga-all-credit-brennish-thomson.jpeg" class="img-fluid rounded z-depth-1" %}
+	<div style="text-align: right; font-size: 8px; position: absolute; bottom: 20px; left: 20px; color: #868686;">
+	    Photo credit: Brennish Thomson
+	</div>
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
     	 <div style="position:relative;height:0px;padding-bottom:56%;margin:0px auto;">
 	      <iframe style="position:absolute;top:0px;left:0px;width:100%;height:100%;" width="640" height="360" src="https://www.youtube.com/embed/5r7v7rvfjPM?rel=0&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
 	 </div>
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+    	 {% include figure.html path="assets/img/music/triga-all-right-credit-brennish-thomson.jpeg" class="img-fluid rounded z-depth-1" %}
+	<div style="text-align: right; font-size: 8px; position: absolute; bottom: 20px; left: 20px; color: #868686;">
+	    Photo credit: Brennish Thomson
+	</div>	 	 
     </div>
 </div>
 
@@ -70,10 +92,10 @@ category: collaborations
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/music/triga-all-credit-Flora Wiederkehr.jpg" class="img-fluid rounded z-depth-1" %}
+    	 {% include figure.html path="assets/img/music/triga-all-left-credit-brennish-thomson.jpeg" class="img-fluid rounded z-depth-1" %}
 	<div style="text-align: right; font-size: 8px; position: absolute; bottom: 20px; left: 20px; color: #868686;">
-	    Photo credit: Flora Wiederkehr
-	</div>
+	    Photo credit: Brennish Thomson
+	</div>	 	 	 
     </div>
 </div>
 
@@ -106,9 +128,9 @@ category: collaborations
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/music/BCMFest2020_credit_DylanLadds_01.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/music/triga-bcmfest-soldout-credit-brennish-thomson.jpeg" class="img-fluid rounded z-depth-1" %}
 	<div style="text-align: right; font-size: 8px; position: absolute; bottom: 20px; left: 20px; color: #868686;">
-	    Photo credit: Dylan Ladds
+	    Photo credit: Brennish Thomson
 	</div>
     </div>
 </div>
