@@ -2,7 +2,7 @@
 layout: page
 permalink: https://mogu-lab.github.io/
 external: true
-title: Research Lab
+title: Research
 nav: true
 nav_order: 1
 ---
