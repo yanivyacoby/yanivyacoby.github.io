@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Music
-permalink: /music/
+permalink: /music
 nav: true
 nav_order: 4
 display_categories: [collaborations, discography, misc]

@@ -2,7 +2,7 @@
 layout: page
 title: Performances
 hide_title: true
-permalink: /performances/
+permalink: /performances
 nav: false
 horizontal: false
 ---

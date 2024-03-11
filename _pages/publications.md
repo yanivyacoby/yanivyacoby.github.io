@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /publications/
+permalink: /publications
 title: Publications
 years: [2023, 2022, 2020, 2019]
 nav: true
