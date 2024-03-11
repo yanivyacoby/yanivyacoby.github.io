@@ -9,10 +9,10 @@ horizontal: false
 dropdown: true
 children: 
     - title: Listen & Watch
-      permalink: /music/
+      permalink: /music
     - title: divider
     - title: Performances
-      permalink: /performances/
+      permalink: /performances
 ---
 
 
