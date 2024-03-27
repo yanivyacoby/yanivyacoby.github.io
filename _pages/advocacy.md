@@ -32,8 +32,8 @@ nav_order: 4
 ### Leadership
 <hr/>
 
-* I served as a **co-leader** of (Spring 2022 - Fall 2022) and **peer mentor** (Spring 2021 - Spring 2023) in [InTouch](https://intouch.seas.harvard.edu/), a peer-to-peer support network for graduate students. 
-* I was nominated to represent Harvard's School of Engineering and Applied Sciences on the [Student Wellbeing Council](https://www.harvard.edu/wellbeing/about/) (Fall 2022 - Spring 2023). 
+* I served as a **co-leader** of (Spring 2022 - Fall 2022) and **peer mentor** (Spring 2021 - Spring 2023) in [InTouch](https://intouch.seas.harvard.edu/), a peer-to-peer support network for graduate students at Harvard's School of Engineering and Applied Sciences (SEAS). 
+* I was nominated to represent Harvard's SEAS on the [Student Wellbeing Council](https://www.harvard.edu/wellbeing/about/) (Fall 2022 - Spring 2023). 
 
 
 <br/>
@@ -41,6 +41,6 @@ nav_order: 4
 ### Outreach
 <hr/>
 
-* I served as a **mentor** for a Ph.D. Working Group (Fall 2021 - Fall 2023), where I helped students write personal statements, CVs, and practice interviewing. I also helped debunk common myths about Ph.D. programs that often provoke imposter syndrome / cause students to self-filter during the application process.
+* I served as a **mentor** for a Ph.D. Working Group at Harvard (Fall 2021 - Fall 2023), where I helped students write personal statements, CVs, and practice interviewing. I also helped debunk common myths about Ph.D. programs that often provoke imposter syndrome / cause students to self-filter during the application process.
 * I was a **mentor** for the [Women in Data Science (WiDS) Cambridge datathon workshop](https://onefishy.github.io/wids_datathon/) (2019 and 2020). 
 
