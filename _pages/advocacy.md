@@ -7,6 +7,9 @@ nav_order: 4
 ---
 
 
+I have led a number of initiatives that create resilient and supportive student communities that value mental health.
+
+
 ### Courses
 <hr/>
 
