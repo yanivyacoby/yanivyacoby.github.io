@@ -16,7 +16,7 @@ nav_order: 3
 * How will the class rely on the listed math prerequisites?
   > The main purpose of the math prerequisites for CS 349 is to ensure that students have had enough exposure to some math so that the new content we introduce is not overwhelming. We will not assume much specific knowledge is needed from the listed prerequisite classes.
 * What kind of healthcare context will be used in the class?
-  > Since acquiring access to real healthcare data-sets in the context of a class is tricky, we will instead use data from the "Intergalactic Hypothetical Hospital," a hospital made up by Prof. Yacoby especially for this class, where we will be analyzing data to improve medical care for intergalactic beings.
+  > Since acquiring access to real healthcare data-sets in the context of a class is tricky, we will instead use data from the "Intergalactic Hypothetical Hospital," a hospital we made up especially for this class, where we will be analyzing data to improve medical care for intergalactic beings.
 * Is this class better for students wishing to go to industry or grad school?
   > The course will set students up to be able to develop and interrogate probabilistic ML models, which can be helpful in both contexts.
 * How difficult will this class be?
@@ -30,7 +30,7 @@ nav_order: 3
 * What's the split between math and coding?
   > On the math side, the class will introduce the necessary math and stats (from probability, linear algebra, and calculus) needed to create fairly complicated probabilistic ML models – whether this will feel math-heavy is a little hard to tell a priori. On the coding side, unlike other coding-heavy classes, CS 349 will not require writing a lot of code (in terms of the number of lines), but the code we will write will be conceptually tricky and will require new skill sets to debug. In that sense, it's a coding-heavy class.
 * How often will CS 349 be offered?
-  > The current plan is: once a year!
+  > The current plan is: once a year! (though the course number and title might change as we figure out how it best fits into the broader Wellesley Computer Science and Data Science curriculums).
 
 <br/>
 
