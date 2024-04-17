@@ -13,6 +13,8 @@ nav_order: 3
 **Description:** In recent years, Artificial Intelligence has enabled applications that were previously not thought possible—from systems that propose novel drugs or generate new art/music, to systems that accurately and reliably predict outcomes of medical interventions in real-time. But what has enabled these developments? Probabilistic Machine Learning, a paradigm that casts recent advances in Machine Learning, like neural networks, into a statistical learning framework. In this course, we introduce the foundational concepts behind this paradigm—statistical model specification, and statistical learning and inference—focusing on connecting theory with real-world applications and hands-on practice. This course lays the foundation for advanced study and research in Machine Learning. Topics include: directed graphical models, deep Bayesian regression/classification, generative models (latent variable models) for clustering, dimensionality reduction, and time-series forecasting. Students will get hands-on experience building models for specific tasks, most taken from healthcare contexts, using a probabilistic programming language based in Python.
 
 **Frequently Asked Questions:**
+* Is previous experience with Machine Learning required for this class?
+  > Nope! The class is designed for students without a Machine Learning background.
 * How will the class rely on the listed math prerequisites?
   > The main purpose of the math prerequisites for CS 349 is to ensure that students have had enough exposure to some math so that the new content we introduce is not overwhelming. We will not assume much specific knowledge is needed from the listed prerequisite classes.
 * What kind of healthcare context will be used in the class?
