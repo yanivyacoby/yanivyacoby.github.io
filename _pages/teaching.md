@@ -17,6 +17,8 @@ nav_order: 3
   > Nope! The class is designed for students without a Machine Learning background.
 * How will the class rely on the listed math prerequisites?
   > The main purpose of the math prerequisites for CS 349 is to ensure that students have had enough exposure to some math so that the new content we introduce is not overwhelming. We will not assume much specific knowledge is needed from the listed prerequisite classes.
+* Can I audit the class?
+  > Unfortunately, given the amount of interest in the class, we cannot allow you to audit.  
 * What kind of healthcare context will be used in the class?
   > Since acquiring access to real healthcare data-sets in the context of a class is tricky, we will instead use data from the "Intergalactic Hypothetical Hospital," a hospital we made up especially for this class, where we will be analyzing data to improve medical care for intergalactic beings.
 * Is this class better for students wishing to go to industry or grad school?
