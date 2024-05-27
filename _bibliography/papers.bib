@@ -1,18 +1,17 @@
 ---
 ---
 
-@article{yacoby2020mapa,
-  insubmission={no},
+
+@inproceedings{yacoby2020mapa,
   abbr={AABI},
   title={Towards Model-Agnostic Posterior Approximation for Fast and Accurate Variational Autoencoders},
   author={Yacoby, Yaniv and Pan, Weiwei and Doshi-Velez, Finale},
-  journal={AABI},
+  booktitle={AABI},
   year={2024},
   abstract={Inference for Variational Autoencoders (VAEs) consists of learning two models: (1) a generative model, which transforms a simple distribution over a latent space into the distribution over observed data, and (2) an inference model, which approximates the posterior of the latent codes given data. The two components are learned jointly via a lower bound to the generative model's log marginal likelihood. In early phases of joint training, the inference model poorly approximates the latent code posteriors. Recent work showed that this leads optimization to get stuck in local optima, negatively impacting the learned generative model. As such, recent work suggests ensuring a high-quality inference model via iterative training: maximizing the objective function relative to the inference model before every update to the generative model. Unfortunately, iterative training is inefficient, requiring heuristic criteria for reverting from iterative to joint training for speed. Here, we suggest an inference method that trains the generative and inference models independently. It approximates the posterior of the true model a priori; fixing this posterior approximation, we then maximize the lower bound relative to only the generative model. By conventional wisdom, this approach should rely on the true prior and likelihood of the true model to approximate its posterior (which are unknown). However, we show that we can compute a deterministic, model-agnostic posterior approximation (MAPA) of the true model's posterior. We then use MAPA to develop a proof-of-concept inference method. We present preliminary results on low-dimensional synthetic data that (1) MAPA captures the trend of the true posterior, and (2) our MAPA-based inference performs better density estimation with less computation than baselines. Lastly, we present a roadmap for scaling the MAPA-based inference method to high-dimensional data.},
   pdf={https://arxiv.org/abs/2403.08941},
   selected={true},
 }
-
 
 @article{wang2023idiographic,
   insubmission={no},
