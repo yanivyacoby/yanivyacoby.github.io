@@ -8,7 +8,7 @@ profile:
   image: prof_pic.png
   contact: >
     <div class="social-list">
-      <p><i class="fas fa-landmark"></i> Postdoc @ Harvard Psych & MGH</p>
+      <p><i class="fas fa-landmark"></i> Assistant Professor @ Wellesley College</p>
       <p><i class="fas fa-paw"></i> he/him/his</p>
       <p><i class="fas fa-envelope"></i> yy109[at]wellesley[dot]edu</p>
       <p><a href="https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en"><i class="fas fa-book"></i> google scholar</a></p> <!-- ai ai-google-scholar-square -->
@@ -21,10 +21,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I'm a **postdoctoral fellow** at the [Nock Lab](https://nocklab.fas.harvard.edu/) in the Department of Psychology at Harvard University and Mass General Hospital, where I develop new machine learning methodology to advance the understanding, prediction, and prevention of suicide and related behaviors. In the summer of 2024, I'll be joining [Wellesley College](https://wellesley.edu/) as an **Assistant Professor** of Computer Science, where I'll be leading the [Model-Guided Uncertainty (MOGU) Lab](https://mogu-lab.github.io/).
+I'm an **Assistant Professor** of Computer Science at [Wellesley College](https://wellesley.edu/), where I lead the [Model-Guided Uncertainty (MOGU) Lab](https://mogu-lab.github.io/). My research focuses on developing new machine learning methods to advance the understanding, prediction, and prevention of suicide and related behaviors.
 
-I completed my **Ph.D.** in Machine Learning at the [Data to Actionable Knowledge Lab](https://dtak.github.io/) (DtAK) at Harvard,
-working with Professor [Finale Doshi-Velez](https://finale.seas.harvard.edu/). I had the pleasure of interning with the [Biomedical-ML team](https://www.microsoft.com/en-us/research/theme/biomedical-ml/) at Microsoft Research New England (Summer 2021). Before joining DtAK, I received a **Master's of Music** in Contemporary Improvisation from the [New England Conservatory](https://necmusic.edu/dual-degree-programs) (2016) and a **Bachelor's of Arts** in Computer Science from Harvard University (2015). I am currently a performing [musician](/music).
+Before joining Wellesley, I was a **postdoctoral fellow** at the [Nock Lab](https://nocklab.fas.harvard.edu/) in the Department of Psychology at Harvard University and Mass General Hospital. I completed my **Ph.D.** in Machine Learning at the [Data to Actionable Knowledge Lab](https://dtak.github.io/) (DtAK) at Harvard, working with Professor [Finale Doshi-Velez](https://finale.seas.harvard.edu/). I had the pleasure of interning with the [Biomedical-ML team](https://www.microsoft.com/en-us/research/theme/biomedical-ml/) at Microsoft Research New England (Summer 2021). Lastly, I received a **Master's of Music** in Contemporary Improvisation from the [New England Conservatory](https://necmusic.edu/dual-degree-programs) (2016) and a **Bachelor's of Arts** in Computer Science from Harvard University (2015). I am currently a performing [musician](/music).
 
 <!--
 ## Research
