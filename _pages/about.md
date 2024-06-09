@@ -8,7 +8,7 @@ profile:
   image: prof_pic.png
   contact: >
     <div class="social-list">
-      <p><i class="fas fa-landmark"></i> Assistant Professor @ Wellesley College</p>
+      <p><i class="fas fa-landmark"></i> Faculty @ Wellesley CS</p>
       <p><i class="fas fa-paw"></i> he/him/his</p>
       <p><i class="fas fa-envelope"></i> yy109[at]wellesley[dot]edu</p>
       <p><a href="https://scholar.google.com/citations?user=nEhVgawAAAAJ&hl=en"><i class="fas fa-book"></i> google scholar</a></p> <!-- ai ai-google-scholar-square -->
