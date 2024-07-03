@@ -5,7 +5,7 @@
 title: Yaniv Yacoby # the website title (if blank, full name will be used instead)
 first_name: Yaniv
 last_name: Yacoby
-email: yanivyacoby@g.harvard.edu
+email: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Yaniv Yacoby, machine learning researcher and musician based in Boston.
 footer_text: >

@@ -104,19 +104,19 @@ blockquote {
     }
 
     .left-column {
-	flex: 35%;
+	flex: 40%;
 	padding-left: 15px;
 	padding-right: 15px;	
     }
 
     .right-column {
-	flex: 65%;
+	flex: 60%;
 	padding-left: 15px;
 	padding-right: 15px;	
     }
     
     .left-column-title {
-	flex: 35%;
+	flex: 40%;
 	.title {
 	    color: var(--global-theme-color);
 	}
@@ -124,7 +124,7 @@ blockquote {
     
     .right-column-vertical-center {
 	display: flex;
-	flex: 65%;
+	flex: 60%;
 	padding-left: 15px;
 	padding-right: 15px;	
 	align-items: center;
