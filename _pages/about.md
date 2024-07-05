@@ -8,7 +8,7 @@ profile:
   image: prof_pic.png
   contact: >
     <div class="social-list">
-      <p><i class="fas fa-landmark"></i> Faculty @ Wellesley CS</p>     
+      <p><i class="fas fa-landmark"></i> Faculty @ <a href="https://www.wellesley.edu/departments-programs/department/computer-science">Wellesley CS</a></p>     
       <p><i class="fas fa-paw"></i> he/him/his</p>
       <p><i class="fas fa-envelope"></i> yy109[at]wellesley[dot]edu</p>
       <p><a href="https://www.google.com/maps/place/42%C2%B017'37.8%22N+71%C2%B018'10.2%22W/@42.2938392,-71.3033434,17.6z/data=!3m1!5s0x89e386c429b213d5:0x79736835f6323310!4m12!1m7!3m6!1s0x89e386c3eaae82cf:0x6ef22d5031dedc96!2sScience+Center!8m2!3d42.2940907!4d-71.3072745!16s%2Fg%2F1thvz8wk!3m3!8m2!3d42.293844!4d-71.302835" target="_blank" rel="noopener noreferrer"><i class="fas fa-location-dot"></i> Science Center W126</a></p>
