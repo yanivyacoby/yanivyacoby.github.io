@@ -17,7 +17,7 @@ nav_order: 3
 
 <br/>
 
-### [CS 230](https://cs.wellesley.edu/~cs230/): Data Structures (Fall 2024 & Spring 2025)
+### [CS 230](https://wellesley-cs230.github.io/): Data Structures (Fall 2024 & Spring 2025)
 <hr/>
 
 **Description:** An introduction to techniques and building blocks for organizing large programs. Topics include: modules, abstract data types, recursion, algorithmic efficiency, and the use and implementation of standard data structures and algorithms, such as lists, trees, graphs, stacks, queues, priority queues, tables, sorting, and searching. Students become familiar with these concepts through weekly programming assignments using the Java programming language. 
