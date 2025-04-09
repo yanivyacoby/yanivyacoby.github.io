@@ -9,7 +9,7 @@ nav_order: 2
 <!-- _pages/publications.md -->
 <div class="publications">
 
-  I served as a direct <strong>research mentor</strong> to the undergraduate/Master's co-authors whose names are <span style="border-bottom: 1px dashed;">underlined</span>. 
+  I served as a direct <strong>research mentor</strong> to the undergraduate/Master's/Ph.D. co-authors whose names are <span style="border-bottom: 1px dashed;">underlined</span>. 
 
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
