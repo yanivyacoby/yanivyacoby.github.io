@@ -127,6 +127,15 @@
     status: P
 
 "Hüyük":
-  - firstname: ["Alihan", A."]
+  - firstname: ["Alihan", "A."]
     url: https://alihanhyk.github.io
 
+"Liu":
+  - firstname: ["Yue-Jane", "Y."]
+    url: 
+    status: U
+
+"Malinda":
+  - firstname: ["Malinda", "M."]
+    url: https://www.linkedin.com/in/malindalu/
+    status: U
