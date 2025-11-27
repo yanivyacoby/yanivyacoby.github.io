@@ -10,6 +10,26 @@ category: misc
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/music/in-between.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+    	<p style="text-align: justify;">
+	     I collaborated with <a href="https://annabreger.com" target="_blank" rel="noopener noreferrer">Anna Breger</a> on tracks "Meditation / Polska efter Sven Donat" and "Farewell."
+	</p>
+
+	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1467023620/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=2043138519/transparent=true/" seamless><a href="https://annajova.bandcamp.com/album/in-between">In Between by Anna Jova Breger</a></iframe>
+	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1467023620/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=55375103/transparent=true/" seamless><a href="https://annajova.bandcamp.com/album/in-between">In Between by Anna Jova Breger</a></iframe>
+
+	<div class="album-links">
+	     <a href="https://annajova.bandcamp.com/album/in-between" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">BandCamp</a>	     
+	</div>	
+    </div>
+</div>
+
+<p></p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/music/the-boston-imposters.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
