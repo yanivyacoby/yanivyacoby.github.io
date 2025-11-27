@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Additional Recordings
-description: Features on recording projects with friends and colleagues, including The Boston Imposters and Gapi.
+title: Recording Features
+description: Features on recording projects with friends, including The Boston Imposters, Gapi, and Anna Breger
 hide_description: true
 img: /assets/img/music/studio33_01.jpg
 importance: 6
@@ -14,7 +14,7 @@ category: misc
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	<p style="text-align: justify;">
-	     I collaborated with <a href="https://annabreger.com" target="_blank" rel="noopener noreferrer">Anna Breger</a> on tracks "Meditation / Polska efter Sven Donat" and "Farewell."
+	     Collaborated with <a href="https://annabreger.com" target="_blank" rel="noopener noreferrer">Anna Breger</a> on tracks "Meditation / Polska efter Sven Donat" and "Farewell."
 	</p>
 
 	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1467023620/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=2043138519/transparent=true/" seamless><a href="https://annajova.bandcamp.com/album/in-between">In Between by Anna Jova Breger</a></iframe>
@@ -34,7 +34,7 @@ category: misc
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	<p style="text-align: justify;">
-	     I collaborated with <a href="https://www.daveyharrison.com/" target="_blank" rel="noopener noreferrer">Davey Harrison</a> and Maire Clement of <a href="https://www.thebostonimposters.com/" target="_blank" rel="noopener noreferrer">The Boston Imposters</a> on tracks, "Periphery", "Mournful Dove" and "Old Sea Walls".
+	     Collaborated with <a href="https://www.daveyharrison.com/" target="_blank" rel="noopener noreferrer">Davey Harrison</a> and Maire Clement of <a href="https://www.thebostonimposters.com/" target="_blank" rel="noopener noreferrer">The Boston Imposters</a> on tracks, "Periphery", "Mournful Dove" and "Old Sea Walls".
 	</p>
 
 	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3707682311/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
@@ -58,7 +58,7 @@ category: misc
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	<p style="text-align: justify;">
-	     I collaborated with <a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a> and <a href="https://www.doyeonmusic.com/" target="_blank" rel="noopener noreferrer">DoYeon Kim</a> of <a href="https://chasemorrin.com/Recordings/GapiAlbum" target="_blank" rel="noopener noreferrer">Gapi</a> on track, "Heung".
+	     Collaborated with <a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a> and <a href="https://www.doyeonmusic.com/" target="_blank" rel="noopener noreferrer">DoYeon Kim</a> of <a href="https://chasemorrin.com/Recordings/GapiAlbum" target="_blank" rel="noopener noreferrer">Gapi</a> on track, "Heung".
 	</p>
 
 	<div class="album-links">
