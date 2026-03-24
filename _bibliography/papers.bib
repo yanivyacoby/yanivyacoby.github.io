@@ -1,6 +1,20 @@
 ---
 ---
 
+@inproceedings{lu2025neural,
+  abbr={arXiv, ICML MOSS},
+  title={Neural Stochastic Differential Equations on Compact State Spaces: Theory, Methods, and Application to Suicide Risk Modeling},
+  author={Lu, Malinda and Liu, Yue-Jane and Nock, Matthew and Yacoby, Yaniv},
+  booktitle={arXiv},
+  year={2026},
+  workshop_title={ICML MOSS},
+  workshop_year={2025},
+  abstract={Ecological Momentary Assessment (EMA) studies enable the collection of high-frequency self-reports of suicidal thoughts and behaviors (STBs) via smartphones. Latent stochastic differential equations (SDE) are a promising model class for EMA data, as it is irregularly sampled, noisy, and partially observed. But SDE-based models suffer from two key limitations. (a) These models often violate domain constraints, undermining scientific validity and clinical trust of the model. (b) Training is numerically unstable without ad-hoc fixes (e.g.~oversimplified dynamics) that are ill-suited for high-stakes applications. Here, we develop a novel class of expressive SDEs whose solutions are provably confined to a prescribed compact polyhedral state space, matching the domains of EMA data. (1) We show why chain-rule-based constructions of SDEs on compact domains fail, theoretically and empirically; (2) we derive constraints on drift and diffusion for non-stationary/stationary SDEs so their solutions remain on the desired state space; and (3), we introduce a parameterization that maps arbitrary (neural or expert-given) dynamics into constraint-satisfying SDEs. On several real EMA datasets, including a large suicide-risk study, our parameterization improves inductive bias, training dynamics, and predictive performance over standard latent neural SDE baselines. These contributions pave way for principled, trustworthy continuous-time models of suicide risk and other clinical time series; they also extend the application of SDE-based methods (e.g.~diffusion models) to domains with hard state constraints.},
+  pdf={https://arxiv.org/pdf/2508.17090},
+  selected={true},
+}
+
+
 @article{yacoby2026teaching,
   abbr={SIGCSE},
   title={Teaching Probabilistic Machine Learning in the Liberal Arts: Empowering Socially and Mathematically Informed AI Discourse}, 
@@ -22,17 +36,6 @@
   year={2025},
   abstract={Ecological Momentary Assessment provides real-time data on suicidal thoughts and behaviors, but predicting suicide attempts remains challenging due to their rarity and patient heterogeneity. We show that single models fit to all patients perform poorly, while individualized models overfit with limited data. To address this, we introduce a Latent Similarity Gaussian Process (LSGP) that models patient heterogeneity, enabling those with little data to leverage similar patients' trends. Preliminary results show improved sensitivity over baselines and offer new understanding of patient similarity.},
   pdf={https://arxiv.org/abs/2511.18199},
-  selected={true},
-}
-
-@inproceedings{liu2025neural,
-  abbr={ICML MOSS},
-  title={Neural Stochastic Differential Equations on Compact State-Spaces},
-  author={Liu, Yue-Jane and Lu, Malinda and Nock, Matthew and Yacoby, Yaniv},
-  booktitle={ICML MOSS},
-  year={2025},
-  abstract={Many modern probabilistic models rely on SDEs, but their adoption is hampered by instability, poor inductive bias outside bounded domains, and reliance on restrictive dynamics or training tricks.  While recent work constrains SDEs to compact spaces using reflected dynamics, these approaches lack continuous dynamics and efficient high-order solvers, limiting interpretability and applicability.  We propose a novel class of neural SDEs on compact polyhedral spaces with continuous dynamics, amenable to higher-order solvers, and with favorable inductive bias.},
-  pdf={https://arxiv.org/abs/2508.17090},
   selected={true},
 }
 
