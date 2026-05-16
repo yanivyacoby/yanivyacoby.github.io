@@ -12,7 +12,7 @@ nav_order: 3
 
 **Description:** In recent years, Machine Learning has enabled applications that were previously not thought possible—from systems that propose novel drugs or generate new art/music, to systems that accurately and reliably predict outcomes of medical interventions in real-time. But what has enabled these developments? Faster computing hardware, large amounts of data, and the Probabilistic paradigm of Machine Learning (ML), a paradigm that casts recent advances in ML, like neural networks, into a statistical learning framework. In this course, we introduce the foundational concepts behind this paradigm—statistical model specification, and statistical learning and inference—focusing on connecting theory with real-world applications and hands-on practice. While expanding our methodological toolkit, we will simultaneously introduce critical perspectives to examine the ethics of ML within sociotechnical systems. This course lays the foundation for advanced study and research in ML. Topics include: directed graphical models, deep Bayesian regression/classification, generative models (latent variable models) for clustering, dimensionality reduction, and time-series forecasting. Students will get hands-on experience building models for specific tasks, most taken from healthcare contexts, using NumPyro, a Python-based probabilistic programming language.
 
-**Note:** I wrote a [textbook](https://mogu-lab.github.io/probabilistic-foundations-of-ml/) especially for these courses. You can learn more about my approach to ML pedagogy in [this paper](https://arxiv.org/abs/2510.25049).
+**Note:** I wrote a [textbook](https://mogu-lab.github.io/probabilistic-foundations-of-ml/) especially for this courses. You can learn more about my approach to ML pedagogy in [this paper](https://arxiv.org/abs/2510.25049).
 
 <br/>
 
@@ -21,6 +21,8 @@ nav_order: 3
 <hr/>
 
 **Description:** In this course, we will incorporate ideas from modern deep learning into the probabilistic framework of machine learning to explore uncertainty, interpretability, and decision-making. The course develops rigorous understanding and practical fluency with Bayesian neural networks, Gaussian Processes, deep generative models (e.g. Variational Autoencoders), and scalable inference methods for high-dimensional, complex models (including variational inference and Markov Chain Monte Carlo methods). A central focus is on how probabilistic thinking informs model design, evaluation, and deployment in real-world, high-stakes settings such as healthcare. Throughout the course, students will implement and experiment with state-of-the-art probabilistic deep learning models in NumPyro, critically analyze their behavior and limitations in a way that bridges theory, computation, and ethical reflection.
+
+**Note:** This course is currently *under development* to be offered in the Spring of 2027.
 
 <br/>
 
