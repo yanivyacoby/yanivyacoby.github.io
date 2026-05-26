@@ -81,19 +81,19 @@
     url: https://shirleywang.rbind.io/
 
 "Bentley":
-  - firstname: ["K.", "Kate"]
+  - firstname: ["K.", "Kate", "Kate H.", "K. H."]
     url: https://depressionmgh.org/who-we-are/staff/kate-bentley-phd
 
 "Kleiman":
-  - firstname: ["E.", "Evan"]
+  - firstname: ["E.", "Evan", "Evan M.", "E. M."]
     url: https://kleimanlab.org/people/
 
 "Millner":
-  - firstname: ["A.", "Alex"]
+  - firstname: ["A.", "Alex", "Alex J.", "A. J."]
     url: https://alexmillner.com/
 
 "Fortgang":
-  - firstname: ["R.", "Rebecca"]
+  - firstname: ["R.", "Rebecca", "Rebecca G.", "R. G."]
     url: https://www.rebeccafortgang.com/
 
 "Smoller":
@@ -101,7 +101,7 @@
     url: https://smollerlab.org/our-team/
 
 "Zuromski":
-  - firstname: ["K.", "Kelly"]
+  - firstname: ["K.", "Kelly", "Kelly L.", "K. L."]
     url: https://www.kellyzuromski.com/
 
 "Nock":
