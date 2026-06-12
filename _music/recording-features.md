@@ -54,11 +54,11 @@ category: misc
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-    	 {% include figure.html path="assets/img/music/gapi.jpeg" class="img-fluid rounded z-depth-1" %}
+    	 {% include figure.html path="assets/img/music/ize-trio.jpeg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	<p style="text-align: justify;">
-	     Collaborated with <a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a> and <a href="https://www.doyeonmusic.com/" target="_blank" rel="noopener noreferrer">DoYeon Kim</a> of <a href="https://chasemorrin.com/Recordings/GapiAlbum" target="_blank" rel="noopener noreferrer">Gapi</a> on track, "Heung".
+	     Collaborated with <a href="https://izetrio.com" target="_blank" rel="noopener noreferrer">Ize Trio</a>--<a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a>, <a href="https://lernismusic.com/home" target="_blank" rel="noopener noreferrer">George Lernis</a>, and <a href="https://www.alatrashmusic.com" target="_blank" rel="noopener noreferrer">Naseem Alatrash</a>--on track, "Snæfellsjökull."
 	</p>
 
 	<div class="album-links">
@@ -67,6 +67,26 @@ category: misc
 	</div>	
     </div>
 </div>
+
+
+<p></p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+    	 {% include figure.html path="assets/img/music/gapi.jpeg" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+    	<p style="text-align: justify;">
+	     Collaborated with <a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a> and <a href="https://www.doyeonmusic.com/" target="_blank" rel="noopener noreferrer">DoYeon Kim</a> of <a href="https://chasemorrin.com/Recordings/GapiAlbum" target="_blank" rel="noopener noreferrer">Gapi</a> on track, "Heung."
+	</p>
+
+	<div class="album-links">
+	     <a href="https://music.apple.com/us/album/gapi/1271256198" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Apple</a>
+	     <a href="https://open.spotify.com/album/3mMjOJdugBd25uZVstf94k" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Spotify</a>
+	</div>	
+    </div>
+</div>
+
 
 
 
