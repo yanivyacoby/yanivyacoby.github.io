@@ -62,8 +62,7 @@ category: misc
 	</p>
 
 	<div class="album-links">
-	     <a href="https://music.apple.com/us/album/gapi/1271256198" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Apple</a>
-	     <a href="https://open.spotify.com/album/3mMjOJdugBd25uZVstf94k" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Spotify</a>
+	     <a href="https://music.apple.com/us/album/ize-trio-global-prayer/1873520898" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Apple</a>
 	</div>	
     </div>
 </div>
