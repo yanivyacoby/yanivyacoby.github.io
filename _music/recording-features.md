@@ -63,6 +63,9 @@ category: misc
 
 	<div class="album-links">
 	     <a href="https://music.apple.com/us/album/ize-trio-global-prayer/1873520898" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Apple</a>
+		 <a href="https://chasemorrin.bandcamp.com/album/ize-trio-the-global-suites" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">BandCamp</a>	     
+	     <a href="https://www.amazon.com/music/player/albums/B0GKQ5BGF1" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Amazon</a>
+	     <a href="https://open.spotify.com/album/4ITzqup54ji6bKB6F5Mcic?si=rahGqpl5TqCDDGgc96rP8g" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Spotify</a>
 	</div>	
     </div>
 </div>
