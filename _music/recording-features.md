@@ -61,15 +61,16 @@ category: misc
 	     Collaborated with <a href="https://izetrio.com" target="_blank" rel="noopener noreferrer">Ize Trio</a>--<a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a>, <a href="https://lernismusic.com/home" target="_blank" rel="noopener noreferrer">George Lernis</a>, and <a href="https://www.alatrashmusic.com" target="_blank" rel="noopener noreferrer">Naseem Alatrash</a>--on track, "Snæfellsjökull."
 	</p>
 
+	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1498787232/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3480290272/transparent=true/" seamless><a href="https://chasemorrin.bandcamp.com/album/ize-trio-global-prayer">Ize Trio: Global Prayer by Chase Morrin, George Lernis, Naseem Alatrash, Vasilis Kostas, Yaniv Yacoby, and Layth Sidiq</a></iframe>
+
 	<div class="album-links">
 	     <a href="https://music.apple.com/us/album/ize-trio-global-prayer/1873520898" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Apple</a>
-		 <a href="https://chasemorrin.bandcamp.com/album/ize-trio-the-global-suites" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">BandCamp</a>	     
+		 <a href="https://chasemorrin.bandcamp.com/album/ize-trio-global-prayer" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">BandCamp</a>	     
 	     <a href="https://www.amazon.com/music/player/albums/B0GKQ5BGF1" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Amazon</a>
 	     <a href="https://open.spotify.com/album/4ITzqup54ji6bKB6F5Mcic?si=rahGqpl5TqCDDGgc96rP8g" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Spotify</a>
 	</div>	
     </div>
 </div>
-
 
 <p></p>
 
