@@ -3,6 +3,11 @@ layout: about
 title: About
 permalink: /
 
+# Landing cover: drop the navbar and let the WebGL scene fill the viewport.
+hide_nav: true
+full_bleed: true
+tagline: Machine learning researcher &amp; musician
+
 profile:
   align: left
   image: prof_pic.png

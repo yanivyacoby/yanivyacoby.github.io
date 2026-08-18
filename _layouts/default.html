@@ -13,15 +13,19 @@ layout: parse
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body class="{% unless page.hide_nav %}{% if site.navbar_fixed %}fixed-top-nav{% endif %}{% endunless %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}{% if page.full_bleed %} full-bleed-page{% endif %}">
 
     <!-- Header -->
-    {%- include header.html %}
+    {%- unless page.hide_nav %}{% include header.html %}{% endunless %}
 
     <!-- Content -->
+    {%- if page.full_bleed %}
+    {{ content }}
+    {%- else %}
     <div class="container mt-5">
       {{ content }}
     </div>
+    {%- endif %}
 
     <!-- Footer -->
     {%- include footer.html %}
