@@ -88,8 +88,7 @@ layout: default
     <section id="bio" class="section reveal">
       <div class="container">
         <h2 class="section-title">Bio</h2>
-        {% capture bio_md %}{% include sections/bio.md %}{% endcapture %}
-        {{ bio_md | markdownify }}
+        {% include sections/bio.html %}
       </div>
     </section>
 

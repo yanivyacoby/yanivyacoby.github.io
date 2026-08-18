@@ -312,6 +312,71 @@ html {
 }
 
 /******************************************************************************
+ * Bio timeline
+ ******************************************************************************/
+
+.timeline__list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Continuous connector line threading through the markers.
+.timeline__list::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: var(--global-divider-color);
+}
+
+.timeline__item {
+  position: relative;
+  padding: 0 0 1.75rem 2.5rem;
+
+  &:last-child { padding-bottom: 0; }
+}
+
+.timeline__marker {
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--global-bg-color);
+  border: 3px solid var(--global-theme-color);
+  box-sizing: border-box;
+}
+
+// The present role gets a filled marker with a soft accent ring.
+.timeline__item--current .timeline__marker {
+  background: var(--global-theme-color);
+  box-shadow: 0 0 0 4px rgba(232, 76, 51, 0.18); // $red-color, the light-theme accent
+}
+
+.timeline__role {
+  margin: 0 0 0.2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.timeline__place {
+  margin: 0;
+  opacity: 0.9;
+}
+
+// Secondary line under a role (e.g. research affiliations) — matches the place line.
+.timeline__note {
+  margin: 0.3rem 0 0;
+  opacity: 0.9;
+}
+
+/******************************************************************************
  * Scroll reveal
  ******************************************************************************/
 

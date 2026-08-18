@@ -1,0 +1,24 @@
+# Career / education timeline for the Bio section (earliest → now).
+# `place` is Markdown, so institution links live alongside the data.
+# Mark the present role with `current: true`.
+
+timeline:
+  - role: B.A. in Computer Science
+    place: "[Harvard University](https://www.harvard.edu/)"
+
+  - role: M.M. in Contemporary Improvisation
+    place: "[New England Conservatory](https://necmusic.edu/dual-degree-programs)"
+
+  - role: Ph.D. in Machine Learning
+    place: "[Data to Actionable Knowledge Lab](https://dtak.github.io/), Harvard University, advised by [Finale Doshi-Velez](https://finale.seas.harvard.edu/)"
+
+  - role: Research Intern, Biomedical ML
+    place: "[Microsoft Research New England](https://www.microsoft.com/en-us/research/theme/biomedical-ml/)"
+
+  - role: Postdoctoral Fellow
+    place: "[Nock Lab](https://nocklab.fas.harvard.edu/), Harvard University & Mass General Hospital"
+
+  - role: Assistant Professor of Computer Science
+    place: "[Wellesley College](https://wellesley.edu/), leading the [MOGU Lab](https://mogu-lab.github.io/)"
+    note: "Research affiliations with Harvard University & the Mass General Brigham healthcare system."
+    current: true

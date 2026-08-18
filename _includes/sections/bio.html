@@ -1,0 +1,17 @@
+<!-- Bio: career/education timeline, generated from _data/bio.yml (earliest → now). -->
+<div class="timeline">
+  <ol class="timeline__list">
+    {%- for item in site.data.bio.timeline %}
+    <li class="timeline__item{% if item.current %} timeline__item--current{% endif %}">
+      <span class="timeline__marker" aria-hidden="true"></span>
+      <div class="timeline__body">
+        <h3 class="timeline__role">{{ item.role }}</h3>
+        <p class="timeline__place">{{ item.place | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+        {%- if item.note %}
+        <p class="timeline__note">{{ item.note | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+        {%- endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+</div>
