@@ -238,13 +238,48 @@ html {
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 3.5rem 0;
   // Offset anchor jumps so section tops aren't hidden behind the sticky nav.
   scroll-margin-top: $onepage-nav-height;
+}
 
-  & + .section {
-    border-top: 1px solid var(--global-divider-color);
-  }
+// Per-section background tints, sampled from the WebGL scene's fall palette
+// (sky blue, sand gold, autumn amber, dusty rose, hill periwinkle) and lifted
+// to pale washes so the dark body text stays fully legible.
+#about        { background: #ebefef; } // sky blue
+#bio          { background: #e8e3e4; } // earth taupe
+#publications { background: #f3f0e5; } // sand gold
+#teaching     { background: #eee6d9; } // autumn amber
+#advocacy     { background: #f3ecea; } // dusty rose
+#music        { background: #e7e7eb; } // hill periwinkle
+
+// Lab call-to-action in the About section: lead-in line + large clickable logo.
+.lab-cta {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.lab-cta__text {
+  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+.lab-cta__link {
+  display: inline-block;
+  &:hover { text-decoration: none; }
+}
+
+.lab-cta__logo {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  transition: transform 0.2s ease;
+
+  .lab-cta__link:hover & { transform: scale(1.03); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lab-cta__logo { transition: none; }
 }
 
 .section-title {
@@ -255,6 +290,26 @@ html {
 
 // The About section leads with the profile, so no heading is needed there.
 #about { padding-top: 2.5rem; }
+
+// "See the full list" link under the selected-publications list.
+.pubs-more {
+  margin-top: 1.75rem;
+  font-size: 0.95rem;
+}
+
+// Performances sits under Music as a divided sub-section.
+.subsection {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.subsection-title {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
 
 /******************************************************************************
  * Scroll reveal

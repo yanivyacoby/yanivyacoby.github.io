@@ -30,11 +30,11 @@ layout: default
     </button>
     <ul class="onepage-nav__links">
       <li><a href="#about">About</a></li>
+      <li><a href="#bio">Bio</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#teaching">Teaching</a></li>
       <li><a href="#advocacy">Advocacy</a></li>
       <li><a href="#music">Music</a></li>
-      <li><a href="#performances">Performances</a></li>
       <li><a href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer">Lab&nbsp;&#8599;</a></li>
     </ul>
   </div>
@@ -42,66 +42,96 @@ layout: default
 
 <!-- Stacked content sections, each revealed on scroll -->
 <main class="landing-content">
-  <div class="container">
+  <!-- Each section is full-width (own background); content stays centered in .container -->
 
     <!-- About -->
     <section id="about" class="section reveal">
-      <div class="profile">
-        <div class="row">
-          <div class="left-column">
-            <center>
-              {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-              {% include figure.html
-              path=profile_image_path
-              class="img-fluid z-dept-1 rounded img"
-              alt=page.profile.image -%}
-              {% endif -%}
-            </center>
-          </div>
-          <div class="right-column-vertical-center">
-            {{ page.profile.contact }}
+      <div class="container">
+        <div class="profile">
+          <div class="row">
+            <div class="left-column">
+              <center>
+                {%- if page.profile.image %}
+                {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+                {% include figure.html
+                path=profile_image_path
+                class="img-fluid z-dept-1 rounded img"
+                alt=page.profile.image -%}
+                {% endif -%}
+              </center>
+            </div>
+            <div class="right-column-vertical-center">
+              {{ page.profile.contact }}
+            </div>
           </div>
         </div>
-      </div>
-      <div class="about-bio">
-        {{ content }}
+        <div class="about-bio">
+          {{ content }}
+        </div>
+
+        <div class="lab-cta">
+          <p class="lab-cta__text">
+            To learn more about my work, check out my
+            <a href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer">lab page</a>:
+          </p>
+          <a class="lab-cta__link" href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer"
+             aria-label="Model-Guided Uncertainty (MOGU) Lab">
+            <img class="lab-cta__logo"
+                 src="https://mogu-lab.github.io/assets/img/mogu-lab-logo.webp"
+                 alt="Model-Guided Uncertainty (MOGU) Lab logo" loading="lazy">
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- Publications -->
+    <!-- Bio -->
+    <section id="bio" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Bio</h2>
+        {% capture bio_md %}{% include sections/bio.md %}{% endcapture %}
+        {{ bio_md | markdownify }}
+      </div>
+    </section>
+
+    <!-- Selected publications (full list lives on /publications) -->
     <section id="publications" class="section reveal">
-      <h2 class="section-title">Publications</h2>
-      {% include sections/publications.html %}
+      <div class="container">
+        <h2 class="section-title">Selected Publications</h2>
+        {% include sections/selected-publications.html %}
+      </div>
     </section>
 
     <!-- Teaching -->
     <section id="teaching" class="section reveal">
-      <h2 class="section-title">Teaching</h2>
-      {% capture teaching_md %}{% include sections/teaching.md %}{% endcapture %}
-      {{ teaching_md | markdownify }}
+      <div class="container">
+        <h2 class="section-title">Teaching</h2>
+        {% capture teaching_md %}{% include sections/teaching.md %}{% endcapture %}
+        {{ teaching_md | markdownify }}
+      </div>
     </section>
 
     <!-- Advocacy -->
     <section id="advocacy" class="section reveal">
-      <h2 class="section-title">Advocacy</h2>
-      {% capture advocacy_md %}{% include sections/advocacy.md %}{% endcapture %}
-      {{ advocacy_md | markdownify }}
+      <div class="container">
+        <h2 class="section-title">Advocacy</h2>
+        {% capture advocacy_md %}{% include sections/advocacy.md %}{% endcapture %}
+        {{ advocacy_md | markdownify }}
+      </div>
     </section>
 
-    <!-- Music -->
+    <!-- Music (with Performances as a sub-section) -->
     <section id="music" class="section reveal">
-      <h2 class="section-title">Music</h2>
-      {% include sections/music.html %}
+      <div class="container">
+        <h2 class="section-title">Music</h2>
+        {% include sections/music.html %}
+
+        <div class="subsection">
+          <h3 class="subsection-title">Performances</h3>
+          {% include sections/performances.html %}
+        </div>
+      </div>
     </section>
 
-    <!-- Performances -->
-    <section id="performances" class="section reveal">
-      <h2 class="section-title">Performances</h2>
-      {% include sections/performances.html %}
-    </section>
-
-  </div>
 </main>
 
 <!-- Reveal-on-scroll + active-link highlighting + mobile nav toggle -->
