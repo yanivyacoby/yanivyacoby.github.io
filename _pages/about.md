@@ -11,24 +11,13 @@ tagline: Machine learning researcher &amp; musician
 profile:
   align: left
   image: prof_pic.png
-  contact: >
-    <div class="social-list">
-      <p><i class="fas fa-landmark"></i> Faculty @ <a href="https://www.wellesley.edu/departments-programs/department/computer-science">Wellesley CS</a></p>     
-      <p><i class="fas fa-paw"></i> he/they</p>
-      <p><i class="fas fa-envelope"></i> yy109[at]wellesley[dot]edu</p>
-      <p><a href="https://www.google.com/maps/place/42%C2%B017'37.8%22N+71%C2%B018'10.2%22W/@42.2938392,-71.3033434,17.6z/data=!3m1!5s0x89e386c429b213d5:0x79736835f6323310!4m12!1m7!3m6!1s0x89e386c3eaae82cf:0x6ef22d5031dedc96!2sScience+Center!8m2!3d42.2940907!4d-71.3072745!16s%2Fg%2F1thvz8wk!3m3!8m2!3d42.293844!4d-71.302835" target="_blank" rel="noopener noreferrer"><i class="fas fa-location-dot"></i> Science Center W126</a></p>
-      <p><a href="https://scholar.google.com/citations?hl=en&user=nEhVgawAAAAJ&view_op=list_works&sortby=pubdate"><i class="fas fa-book"></i> Google Scholar</a></p> <!-- ai ai-google-scholar-square -->
-      <p><a href="https://www.linkedin.com/in/yaniv-yacoby/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></p>      
-      <p><a href="/assets/pdf/Yaniv_Yacoby_cv.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-seedling"></i> Curriculum Vitae</a></p>      
-      <p><a href="/music"><i class="fas fa-guitar"></i> Music</a></p>      
-    </div>
 
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I'm an interdisciplinary researcher and educator developing machine learning and AI methods for suicide research and prevention. My work sits at the intersection of ML methodology, human-computer interaction, and clinical psychology—building models transparent and trustworthy enough for use in safety-critical settings.
+I'm an **interdisciplinary researcher and educator** developing machine learning and AI methods for **suicide research and prevention**. My work sits at the intersection of **ML methodology, human-computer interaction, and clinical psychology**—building models transparent and trustworthy enough for use in **safety-critical settings**.
 
 <!--
 ## Research

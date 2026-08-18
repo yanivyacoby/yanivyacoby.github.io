@@ -243,43 +243,153 @@ html {
   scroll-margin-top: $onepage-nav-height;
 }
 
-// Per-section background tints, sampled from the WebGL scene's fall palette
-// (sky blue, sand gold, autumn amber, dusty rose, hill periwinkle) and lifted
-// to pale washes so the dark body text stays fully legible.
-#about        { background: #ebefef; } // sky blue
-#bio          { background: #e8e3e4; } // earth taupe
-#publications { background: #f3f0e5; } // sand gold
-#teaching     { background: #eee6d9; } // autumn amber
-#advocacy     { background: #f3ecea; } // dusty rose
-#music        { background: #e7e7eb; } // hill periwinkle
+// Deep, saturated section backgrounds sampled from the WebGL scene's fall
+// palette, darkened until white body text clears WCAG AA (~4.7:1 contrast).
+#about        { background: #58748c; } // deep sky blue
+#bio          { background: #7a7084; } // plum / earth
+#publications { background: #797554; } // olive / sand gold
+#teaching     { background: #946d2d; } // rich amber
+#advocacy     { background: #8a6c78; } // mauve rose
+#music        { background: #6271ac; } // indigo periwinkle
 
-// Lab call-to-action in the About section: lead-in line + large clickable logo.
-.lab-cta {
-  margin-top: 2.5rem;
-  text-align: center;
+// Selector group for the saturated sections.
+$tinted-sections: "#about, #bio, #publications, #teaching, #advocacy, #music";
+
+// White text + warm-gold links across the saturated sections.
+#{$tinted-sections} {
+  color: #fff;
+
+  h1, h2, h3, h4, h5, h6,
+  p, li, ul, ol, dl, dt, dd,
+  strong, em, b, i, span, small, blockquote, figcaption,
+  td, th,
+  .section-title, .subsection-title,
+  .timeline__role, .timeline__place, .timeline__note {
+    color: #fff;
+  }
+
+  a {
+    color: #ffe0a3;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+
+    &:hover,
+    &:focus { color: #fff; }
+  }
+
+  hr { border-top-color: rgba(255, 255, 255, 0.35); }
+
+  blockquote {
+    border-left-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.08);
+  }
 }
 
-.lab-cta__text {
-  font-size: 1.15rem;
-  margin-bottom: 1.25rem;
+// About — contact list: white icons/links (no underline), gold on hover.
+#about .social-list {
+  a { color: #fff; text-decoration: none; &:hover { color: #ffe0a3; } }
+
+  p i::before,
+  p a::before { color: #fff; }
+  p:hover i::before,
+  p:hover a::before { color: #ffe0a3; }
 }
 
-.lab-cta__link {
-  display: inline-block;
+// Bio — the timeline drawn light on the dark section.
+#bio {
+  .timeline__list::before { background: rgba(255, 255, 255, 0.4); }
+  .timeline__marker {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.85);
+  }
+  .timeline__item--current .timeline__marker {
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.22);
+  }
+}
+
+// Music — project cards keep their own light background + dark text.
+#music {
+  .grid a,
+  .card a { text-decoration: none; }
+  .card,
+  .card-title,
+  .card-text,
+  .card-body,
+  .card-body * { color: var(--global-text-color); }
+
+  // Keep event-row hover subtle so white text stays legible.
+  .events-table tbody:hover { background-color: rgba(255, 255, 255, 0.1); }
+}
+
+// About header: profile photo + lab logo, side by side and centered.
+.about-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.about-header__photo {
+  flex: 0 1 auto;
+  width: 220px;
+  max-width: 45%;
+
+  figure { margin: 0; }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+}
+
+.about-header__lab {
+  flex: 0 1 auto;
+  display: inline-flex;
+  width: 240px;
+  max-width: 45%;
+
   &:hover { text-decoration: none; }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease;
+  }
+  &:hover img { transform: scale(1.03); }
 }
 
-.lab-cta__logo {
-  width: 100%;
-  max-width: 340px;
-  height: auto;
-  transition: transform 0.2s ease;
+// Contact + quick links: one column per theme (from _data/contact.yml),
+// laid out left-to-right. Columns wrap on narrow screens.
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+  margin-bottom: 1.75rem;
+}
 
-  .lab-cta__link:hover & { transform: scale(1.03); }
+.about-links__col {
+  flex: 1 1 150px;
+  min-width: 150px;
+
+  p { margin: 0 0 0.45rem; }
+  p:last-child { margin-bottom: 0; }
+}
+
+// Intro text sits below, left-aligned and width-limited for readability.
+.about-bio {
+  max-width: 44rem;
+  margin: 0;
+  text-align: left;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .lab-cta__logo { transition: none; }
+  .about-header__lab img { transition: none; }
 }
 
 .section-title {

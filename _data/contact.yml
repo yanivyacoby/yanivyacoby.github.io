@@ -1,0 +1,40 @@
+# About-section contact / quick links, grouped into columns by theme.
+# Add, remove, or reorder items freely — each column renders top-to-bottom,
+# and the columns lay out left-to-right.
+#
+# Item fields:
+#   icon     Font Awesome class, e.g. "fas fa-envelope" (required)
+#   text     plain text — a label, or the part shown before a link (optional)
+#   label    linked text; shown as a link when `url` is set (optional)
+#   url      link target (optional)
+#   new_tab  open the link in a new browser tab (optional, true/false)
+
+columns:
+  - title: Position
+    items:
+      - icon: fas fa-landmark
+        text: "Faculty @"
+        label: Wellesley CS
+        url: "https://www.wellesley.edu/departments-programs/department/computer-science"
+      - icon: fas fa-paw
+        text: he/they
+
+  - title: Contact
+    items:
+      - icon: fas fa-envelope
+        text: "yy109[at]wellesley[dot]edu"
+      - icon: fas fa-location-dot
+        label: Science Center W126
+        url: "https://www.google.com/maps/place/42%C2%B017'37.8%22N+71%C2%B018'10.2%22W/@42.2938392,-71.3033434,17.6z/data=!3m1!5s0x89e386c429b213d5:0x79736835f6323310!4m12!1m7!3m6!1s0x89e386c3eaae82cf:0x6ef22d5031dedc96!2sScience+Center!8m2!3d42.2940907!4d-71.3072745!16s%2Fg%2F1thvz8wk!3m3!8m2!3d42.293844!4d-71.302835"
+        new_tab: true
+
+  - title: Academic
+    items:
+      - icon: fas fa-book
+        label: Google Scholar
+        url: "https://scholar.google.com/citations?hl=en&user=nEhVgawAAAAJ&view_op=list_works&sortby=pubdate"
+        new_tab: true
+      - icon: fas fa-seedling
+        label: Curriculum Vitae
+        url: "/assets/pdf/Yaniv_Yacoby_cv.pdf"
+        new_tab: true
