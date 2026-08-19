@@ -11,21 +11,24 @@
 (function () {
   // --- data ------------------------------------------------------------------
   var NODES = [
-    { id: 'ba',      role: 'Undergrad in Computer Science',           place: 'Harvard University',             url: 'https://www.harvard.edu/' },
+    { id: 'ba',      role: 'Undergrad in Computer Science',           place: 'Harvard University' },
     { id: 'mm',      role: "Master's in Music",                       place: 'New England Conservatory',       url: 'https://necmusic.edu/dual-degree-programs' },
-    { id: 'phd',     role: 'Ph.D. in Machine Learning',              side: 'left', place: [
-        { text: 'Harvard University' },
-        { text: 'advised by' },
+    { id: 'phd',     role: 'Ph.D. in Machine Learning',              side: 'left', wide: true, placeMax: 32, place: [
+        { text: 'Harvard University, advised by' },
         { text: 'Finale Doshi-Velez', url: 'https://finale.seas.harvard.edu/' }
       ] },
     { id: 'msr',     role: 'Research Intern',                         place: 'Microsoft Research New England',          url: 'https://www.microsoft.com/en-us/research/theme/biomedical-ml/', side: 'right' },
-    { id: 'postdoc', role: 'Postdoctoral Fellow',                     side: 'left', place: [
+    { id: 'postdoc', role: 'Postdoctoral Fellow',                     side: 'left', wide: true, place: [
         { text: 'Nock Lab', url: 'https://nocklab.fas.harvard.edu/' },
-        { text: 'Harvard University & Mass General Hospital' }
+        { text: 'Harvard University' },
+        { text: '& Mass General Hospital' }
       ] },
-    { id: 'prof',    role: 'Assistant Professor of Computer Science', place: 'Wellesley College',              url: 'https://wellesley.edu/', current: true, side: 'left' },
+    { id: 'prof',    role: 'Assistant Professor of Computer Science', place: 'Wellesley College',              url: 'https://wellesley.edu/', current: true, side: 'right' },
     { id: 'dir',     role: 'Principal Investigator',                  place: 'MOGU Lab',                       url: 'https://mogu-lab.github.io/', current: true, side: 'right' },
-    { id: 'aff',     role: 'Research Affiliations',                   place: 'Harvard University & Mass General Brigham', current: true }
+    { id: 'aff',     role: 'Research Affiliations',                   roleMax: 24, current: true, place: [
+        { text: 'Harvard University' },
+        { text: '& Mass General Brigham' }
+      ] }
   ];
   var LINKS = [
     ['ba', 'phd'], ['mm', 'phd'],
@@ -57,10 +60,12 @@
   // --- layout ----------------------------------------------------------------
   function layout(w) {
     var N = {}, H;
-    if (w >= 560) {
+    // Below this width the three-across top row can't fit its labels, so we
+    // fall back to the stacked layout (one role per row) instead of cramming.
+    if (w >= 720) {
       var rh = 132, y0 = 72, Y = [y0, y0 + rh, y0 + 2 * rh, y0 + 3 * rh];
       N.ba = { x: 0.26 * w, y: Y[0] };  N.mm = { x: 0.54 * w, y: Y[0] };
-      N.phd = { x: 0.40 * w, y: Y[1] }; N.msr = { x: 0.82 * w, y: Y[1] };
+      N.phd = { x: 0.40 * w, y: Y[1] }; N.msr = { x: 0.64 * w, y: Y[1] }; // under Research Affiliations
       N.postdoc = { x: 0.40 * w, y: Y[2] };
       N.prof = { x: 0.16 * w, y: Y[3] }; N.dir = { x: 0.40 * w, y: Y[3] }; N.aff = { x: 0.64 * w, y: Y[3] };
       H = Y[3] + 96;
@@ -68,8 +73,12 @@
       var r = 116, t = 72, Yn = function (k) { return t + k * r; };
       N.ba = { x: 0.30 * w, y: Yn(0) };  N.mm = { x: 0.70 * w, y: Yn(0) };
       N.phd = { x: 0.50 * w, y: Yn(1) };
-      N.postdoc = { x: 0.38 * w, y: Yn(2) }; N.msr = { x: 0.80 * w, y: Yn(2) };
-      N.prof = { x: 0.50 * w, y: Yn(3) }; N.dir = { x: 0.50 * w, y: Yn(4) }; N.aff = { x: 0.50 * w, y: Yn(5) };
+      // Clamp so the left/right side labels stay on-screen at any narrow width.
+      N.postdoc = { x: Math.max(0.38 * w, 150), y: Yn(2) };
+      N.msr = { x: Math.min(0.74 * w, w - 150), y: Yn(2) };
+      // Roles reversed vs. their row index so that, after the vertical flip, the
+      // stacked order reads Assistant Professor -> PI -> Affiliations (matching wide).
+      N.aff = { x: 0.50 * w, y: Yn(3) }; N.dir = { x: 0.50 * w, y: Yn(4) }; N.prof = { x: 0.50 * w, y: Yn(5) };
       H = Yn(5) + 96;
     }
     // Flip vertically so the most recent roles sit at the top (arrows point upward).
@@ -95,12 +104,17 @@
   }
 
   var LH = 16, R = 9, GAP = 12;
+  var narrowMode = false; // set per render; disables the `wide` label widening when stacked
+  var labelInfo = {};     // per-render: id -> { tspans, maxW } for post-layout alignment
 
   // Draw a node's label at the given placement ('above' | 'below' | 'left' | 'right').
   function addLabel(g, d, place) {
     var side = (place === 'left' || place === 'right');
-    var roleMax = side ? 16 : 20;
-    var placeMax = side ? 20 : 26;
+    // `wide` nodes wrap their side labels less tightly, so the (left-aligned)
+    // text spreads further out and stacks into fewer lines.
+    var wide = d.wide && !narrowMode; // only widen in the uncompressed layout
+    var roleMax = d.roleMax || (side ? (wide ? 26 : 16) : 20);
+    var placeMax = (!narrowMode && d.placeMax) || (side ? (wide ? 28 : 20) : 26);
 
     // Segments: the role (no link), then one or more place blocks (each optionally a link).
     // `place` may be a plain string (one block) or an array of { text, url }.
@@ -148,11 +162,14 @@
               : place === 'left'  ? -(R + GAP) - maxW
               : -maxW / 2;
     tspans.forEach(function (t) { t.setAttribute('x', xLeft); });
+    labelInfo[d.id] = { tspans: tspans, maxW: maxW };
   }
 
   // --- render ----------------------------------------------------------------
   function render(container) {
     var w = container.clientWidth || 600;
+    narrowMode = w < 720;
+    labelInfo = {};
     var lay = layout(w), N = lay.N;
     container.innerHTML = '';
 
@@ -199,6 +216,17 @@
       g.append('circle').attr('class', 'bio-dg2__dot').attr('r', 9);
       addLabel(g, d, placementFor(d));
     });
+
+    // Uncompressed: Ph.D. and Postdoc sit at the same x with left-side labels,
+    // so align their text on a common left edge (based on the wider of the two).
+    if (!narrowMode) {
+      var grp = ['phd', 'postdoc'].map(function (id) { return labelInfo[id]; }).filter(Boolean);
+      if (grp.length === 2) {
+        var mW = Math.max(grp[0].maxW, grp[1].maxW);
+        var xL = -(R + GAP) - mW;
+        grp.forEach(function (li) { li.tspans.forEach(function (t) { t.setAttribute('x', xL); }); });
+      }
+    }
 
     function focusOn(id) {
       var keep = lineage(id);
