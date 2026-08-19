@@ -5,12 +5,12 @@
 $onepage-nav-height: 56px;
 
 // Full-bleed landing page: no nav padding, footer spacing removed so the cover
-// sits flush against the top of the viewport. The page/root background is set to
-// the cover's base tone so the iOS safe-area strips (notch, home indicator) and
-// the overscroll bounce show that instead of white.
+// sits flush against the top of the viewport. The page/root background is black
+// so the iOS safe-area strips (notch, home indicator) and the overscroll bounce
+// show black (matching the nav/footer) instead of white.
 body.full-bleed-page {
   padding-top: 0;
-  background: #6f9bbb;
+  background: #000;
 }
 
 // Smooth-scroll for the in-page anchor navigation.
