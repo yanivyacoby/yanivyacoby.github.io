@@ -975,8 +975,17 @@ gl.clearColor(17/255, 17/255, 17/255, 1.0);
 rebuild();
 requestAnimationFrame(frame);
 
-let _rt;
-window.addEventListener('resize', () => { clearTimeout(_rt); _rt = setTimeout(rebuild, 400); });
+let _rt, _lastW = window.innerWidth, _lastDPR = window.devicePixelRatio || 1;
+window.addEventListener('resize', () => {
+  // On mobile, scrolling shows/hides the browser chrome, which changes only the
+  // viewport *height* and fires a resize event. Rebuilding the scene on those is
+  // what makes it flicker/regenerate mid-scroll — so only rebuild when the width
+  // (or pixel ratio) genuinely changes (window resize, rotation, zoom).
+  const w = window.innerWidth, dpr = window.devicePixelRatio || 1;
+  if (w === _lastW && dpr === _lastDPR) return;
+  _lastW = w; _lastDPR = dpr;
+  clearTimeout(_rt); _rt = setTimeout(rebuild, 400);
+});
 
 
 })();
