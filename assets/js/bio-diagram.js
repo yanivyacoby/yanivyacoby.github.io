@@ -74,7 +74,8 @@
       N.ba = { x: 0.30 * w, y: Yn(0) };  N.mm = { x: 0.70 * w, y: Yn(0) };
       N.phd = { x: 0.50 * w, y: Yn(1) };
       // Clamp so the left/right side labels stay on-screen at any narrow width.
-      N.postdoc = { x: Math.max(0.38 * w, 150), y: Yn(2) };
+      // (The floor is raised a bit since these keep the roomier one-line wrap.)
+      N.postdoc = { x: Math.max(0.38 * w, 180), y: Yn(2) };
       N.msr = { x: Math.min(0.74 * w, w - 150), y: Yn(2) };
       // Roles reversed vs. their row index so that, after the vertical flip, the
       // stacked order reads Assistant Professor -> PI -> Affiliations (matching wide).
@@ -112,9 +113,9 @@
     var side = (place === 'left' || place === 'right');
     // `wide` nodes wrap their side labels less tightly, so the (left-aligned)
     // text spreads further out and stacks into fewer lines.
-    var wide = d.wide && !narrowMode; // only widen in the uncompressed layout
+    var wide = d.wide; // keep the roomier wrap in both layouts so text stays on one line
     var roleMax = d.roleMax || (side ? (wide ? 26 : 16) : 20);
-    var placeMax = (!narrowMode && d.placeMax) || (side ? (wide ? 28 : 20) : 26);
+    var placeMax = d.placeMax || (side ? (wide ? 28 : 20) : 26);
 
     // Segments: the role (no link), then one or more place blocks (each optionally a link).
     // `place` may be a plain string (one block) or an array of { text, url }.
