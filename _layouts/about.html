@@ -30,7 +30,7 @@ layout: default
     </button>
     <ul class="onepage-nav__links">
       <li><a href="#about">About</a></li>
-      <li><a href="#publications">Publications</a></li>
+      <li><a href="#publications">Research</a></li>
       <li><a href="#teaching">Teaching</a></li>
       <li><a href="#advocacy">Advocacy</a></li>
       <li><a href="#music">Music</a></li>
@@ -85,7 +85,7 @@ layout: default
     <!-- Selected publications (full list lives on /publications) -->
     <section id="publications" class="section reveal">
       <div class="container">
-        <h2 class="section-title">Selected Publications</h2>
+        <h2 class="section-title">Research</h2>
         {% include sections/selected-publications.html %}
       </div>
     </section>
@@ -96,6 +96,13 @@ layout: default
         <h2 class="section-title">Teaching</h2>
         {% capture teaching_md %}{% include sections/teaching.md %}{% endcapture %}
         {{ teaching_md | markdownify }}
+
+        <div class="subsection">
+          <h3 class="subsection-title">Selected Publications</h3>
+          <div class="publications">
+            {% bibliography -f papers -q @*[pedagogy=true]* %}
+          </div>
+        </div>
       </div>
     </section>
 

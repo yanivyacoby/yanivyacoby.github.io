@@ -517,6 +517,7 @@ footer.sticky-bottom {
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
+          color: white;
           padding-left: 0.5rem;
           padding-right: 0.5rem;
           margin-left: 0.1rem;
@@ -537,23 +538,7 @@ footer.sticky-bottom {
         font-weight: bolder;
       }
       .author {
-        a {
-          &:hover {
-              border-bottom-style: solid;
-              text-decoration: none;
-          }
-
-        }
-	.undergrad {
-            border-bottom: 1px dashed;
-	}
-	.masters {
-            border-bottom: 1px dashed;
-	}	  
-	.phd {
-            border-bottom: 1px dashed;
-	}
-	      
+        // Coauthor mentee-status underlines removed; hyperlink underlines remain.
         > em {
           border-bottom: 1px solid;
           font-style: normal;

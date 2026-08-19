@@ -1,7 +1,22 @@
-<!-- Selected publications: entries tagged `selected={true}` in papers.bib. -->
-<div class="publications">
-  {% bibliography -f papers -q @*[selected=true]* %}
+<!-- Research: vision + MOGU lab, then a selection of publications (full list on /publications). -->
+<div class="research-vision">
+  <div class="research-vision__text">
+    {% capture research_vision %}{% include sections/research-vision.md %}{% endcapture %}
+    {{ research_vision | markdownify }}
+  </div>
+  <a class="research-vision__lab" href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer"
+     aria-label="Model-Guided Uncertainty (MOGU) Lab">
+    <img src="https://mogu-lab.github.io/assets/img/mogu-lab-logo.webp"
+         alt="Model-Guided Uncertainty (MOGU) Lab logo" loading="lazy">
+  </a>
+</div>
+
+<div class="subsection">
+  <h3 class="subsection-title">Selected Publications</h3>
   <p class="pubs-more">
-    For the complete list, see my <a href="/publications">publications</a> page.
+    For a complete list of publications, see my <a href="/publications">publications</a> page.
   </p>
+  <div class="publications">
+    {% bibliography -f papers -q @*[selected=true]* %}
+  </div>
 </div>

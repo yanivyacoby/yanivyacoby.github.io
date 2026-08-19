@@ -4,18 +4,10 @@
       <div class="row">
         <div class="col-sm-2 abbr">
         {%- if entry.abbr -%}
-	{%- assign venues = entry.abbr | | split: ", " -%}
-	{%- for venu in venues -%}
-          {%- if site.data.venues[venu] -%}
-          <abbr class="badge"><a href="{{site.data.venues[venu].url}}">
-	      {% if entry.insubmission == "yes" and forloop.first %} Submitted: {% endif %} {{venu}}
-	  </a></abbr>
-          {%- else -%}
-          <abbr class="badge">
-	    {% if entry.insubmission == "yes" and forloop.first %} Submitted: {% endif %} {{venu}}
-	  </abbr>
-          {%- endif -%}
-	{%- endfor -%}
+        {%- assign venues = entry.abbr | split: ", " -%}
+        {%- for venu in venues -%}
+          <abbr class="badge">{% if entry.insubmission == "yes" and forloop.first %}Submitted: {% endif %}{{ venu }}</abbr>
+        {%- endfor -%}
         {%- endif -%}
         </div>
 

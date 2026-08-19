@@ -247,7 +247,7 @@ html {
 // palette, darkened until white body text clears WCAG AA (~4.7:1 contrast).
 #about        { background: #58748c; } // deep sky blue
 #bio          { background: #7a7084; } // plum / earth
-#publications { background: #797554; } // olive / sand gold
+#publications { background: #5f7a3e; } // mossy green
 #teaching     { background: #946d2d; } // rich amber
 #advocacy     { background: #8a6c78; } // mauve rose
 #music        { background: #6271ac; } // indigo periwinkle
@@ -260,7 +260,7 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy, #music";
   color: #fff;
 
   h1, h2, h3, h4, h5, h6,
-  p, li, ul, ol, dl, dt, dd,
+  p, div, li, ul, ol, dl, dt, dd,
   strong, em, b, i, span, small, blockquote, figcaption,
   td, th,
   .section-title, .subsection-title,
@@ -390,9 +390,67 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy, #music";
 #about { padding-top: 2.5rem; }
 
 // "See the full list" link under the selected-publications list.
+// Research vision: intro text alongside the MOGU Lab logo.
+.research-vision {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.research-vision__text {
+  flex: 1 1 300px;
+
+  p:first-child { margin-top: 0; }
+  p:last-child { margin-bottom: 0; }
+}
+
+.research-vision__lab {
+  flex: 0 0 auto;
+  width: 200px;
+  max-width: 45%;
+
+  &:hover { text-decoration: none; }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease;
+  }
+  &:hover img { transform: scale(1.03); }
+}
+
+@media (max-width: 576px) {
+  .research-vision__lab { width: 170px; margin: 0 auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .research-vision__lab img { transition: none; }
+}
+
 .pubs-more {
-  margin-top: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
   font-size: 0.95rem;
+}
+
+// Bibliography controls on the dark (tinted) sections.
+#{$tinted-sections} {
+  // White outline for the Abs / PDF / Bib buttons (no underline).
+  .links a.btn,
+  .btn-disabled {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+
+    &:hover { color: #ffe0a3; border-color: #ffe0a3; text-decoration: none; }
+  }
+
+  // Drop the dashed line the collapsed abstract leaves behind; light frame when open.
+  .abstract.hidden { border-color: transparent; }
+  .abstract.hidden.open { border-color: rgba(255, 255, 255, 0.5); }
 }
 
 // Performances sits under Music as a divided sub-section.
