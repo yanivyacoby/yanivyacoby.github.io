@@ -13,8 +13,8 @@ themes:
       Harvard — a seminar for entering CS Ph.D. students that builds professional
       resilience by strengthening their self-regulatory skills and empowering them
       to examine and reshape academic culture, countering the idealized views of
-      research and the isolation and imposter phenomenon common in doctoral
-      programs. See the [SIGCSE paper](https://arxiv.org/abs/2208.12650) and
+      research, the isolation, and the imposter phenomenon common in doctoral
+      programs. See my [SIGCSE paper](https://arxiv.org/abs/2208.12650) and
       [teaching materials](https://yanivyacoby.github.io/harvard-cs290-teaching-materials).
 
   - title: Workshops
@@ -22,7 +22,7 @@ themes:
       I **designed and ran** community-building workshops that surface the
       "hidden curriculum" of academia:
     items:
-      - text: '"Everything I Wish I Knew as I Navigated the Ph.D." @ New York and Carnegie Mellon Universities'
+      - text: '"Everything I Wish I Knew as I Navigated the Ph.D." @ NYU and CMU'
         body: >
           Builds community through discussion and reflection on how academic
           culture and mental health are intertwined; used to jump-start student
@@ -39,12 +39,12 @@ themes:
     items:
       - text: >
           Co-led [InTouch](https://intouch.seas.harvard.edu/), a peer-to-peer
-          support network at Harvard SEAS.
+          support network at Harvard's School of Engineering and Applied Sciences.
       - text: >
-          Mentored Ph.D. applicants — helping them write personal statements and
+          Mentored Ph.D. applicants, helping them write personal statements and
           CVs, practice interviewing, and see past the common myths about Ph.D.
           programs that provoke imposter syndrome and lead applicants to
           self-filter.
       - text: >
-          Served as a mentor for the
+          Served as a mentor for
           [WiDS datathons](https://onefishy.github.io/wids_datathon/).
