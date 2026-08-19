@@ -4,7 +4,7 @@ title: Recording Features
 description: Features on recording projects with friends, including The Boston Imposters, Gapi, and Anna Breger
 hide_description: true
 img: /assets/img/music/studio33_01.jpg
-importance: 6
+importance: 3
 category: misc
 ---
 
@@ -17,8 +17,8 @@ category: misc
 	     Collaborated with <a href="https://annabreger.com" target="_blank" rel="noopener noreferrer">Anna Breger</a> on tracks "Meditation / Polska efter Sven Donat" and "Farewell."
 	</p>
 
-	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1467023620/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=2043138519/transparent=true/" seamless><a href="https://annajova.bandcamp.com/album/in-between">In Between by Anna Jova Breger</a></iframe>
-	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1467023620/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=55375103/transparent=true/" seamless><a href="https://annajova.bandcamp.com/album/in-between">In Between by Anna Jova Breger</a></iframe>
+	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1467023620/size=small/bgcol=000000/linkcol=ffe0a3/artwork=none/track=2043138519/transparent=true/" seamless><a href="https://annajova.bandcamp.com/album/in-between">In Between by Anna Jova Breger</a></iframe>
+	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1467023620/size=small/bgcol=000000/linkcol=ffe0a3/artwork=none/track=55375103/transparent=true/" seamless><a href="https://annajova.bandcamp.com/album/in-between">In Between by Anna Jova Breger</a></iframe>
 
 	<div class="album-links">
 	     <a href="https://annajova.bandcamp.com/album/in-between" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">BandCamp</a>	     
@@ -37,7 +37,7 @@ category: misc
 	     Collaborated with <a href="https://izetrio.com" target="_blank" rel="noopener noreferrer">Ize Trio</a>--<a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a>, <a href="https://lernismusic.com/home" target="_blank" rel="noopener noreferrer">George Lernis</a>, and <a href="https://www.alatrashmusic.com" target="_blank" rel="noopener noreferrer">Naseem Alatrash</a>--on track, "Snæfellsjökull."
 	</p>
 
-	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1498787232/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3480290272/transparent=true/" seamless><a href="https://chasemorrin.bandcamp.com/album/ize-trio-global-prayer">Ize Trio: Global Prayer by Chase Morrin, George Lernis, Naseem Alatrash, Vasilis Kostas, Yaniv Yacoby, and Layth Sidiq</a></iframe>
+	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1498787232/size=small/bgcol=000000/linkcol=ffe0a3/artwork=none/track=3480290272/transparent=true/" seamless><a href="https://chasemorrin.bandcamp.com/album/ize-trio-global-prayer">Ize Trio: Global Prayer by Chase Morrin, George Lernis, Naseem Alatrash, Vasilis Kostas, Yaniv Yacoby, and Layth Sidiq</a></iframe>
 
 	<div class="album-links">
 	     <a href="https://music.apple.com/us/album/ize-trio-global-prayer/1873520898" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Apple</a>
@@ -59,9 +59,9 @@ category: misc
 	     Collaborated with <a href="https://www.daveyharrison.com/" target="_blank" rel="noopener noreferrer">Davey Harrison</a> and Maire Clement of <a href="https://www.thebostonimposters.com/" target="_blank" rel="noopener noreferrer">The Boston Imposters</a> on tracks, "Periphery", "Mournful Dove" and "Old Sea Walls".
 	</p>
 
-	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3707682311/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
-	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3771275373/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
-	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=465768623/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
+	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=000000/linkcol=ffe0a3/artwork=none/track=3707682311/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
+	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=000000/linkcol=ffe0a3/artwork=none/track=3771275373/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
+	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2503558131/size=small/bgcol=000000/linkcol=ffe0a3/artwork=none/track=465768623/transparent=true/" seamless><a href="https://thebostonimposters.bandcamp.com/album/the-boston-imposters">The Boston Imposters by The Boston Imposters</a></iframe>
 
 	<div class="album-links">
 	     <a href="https://music.apple.com/us/album/the-boston-imposters/1488874781" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button">Apple</a>

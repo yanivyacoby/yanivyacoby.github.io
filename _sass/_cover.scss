@@ -262,6 +262,44 @@ html {
 }
 
 /******************************************************************************
+ * Album pages (music collection items) — dark canvas to match the black nav/footer
+ ******************************************************************************/
+
+body.music-album {
+  // Flip the theme's color variables to a dark palette (recolors text, links,
+  // background, dividers via the theme's existing var() usage).
+  --global-bg-color: #000000;
+  --global-text-color: #ffffff;
+  --global-text-color-light: rgba(255, 255, 255, 0.7);
+  --global-theme-color: #ffe0a3;   // warm-gold links/accents (like the tinted sections)
+  --global-hover-color: #ffffff;
+  --global-divider-color: rgba(255, 255, 255, 0.15);
+  --global-card-bg-color: #111111;
+
+  a:hover,
+  a:focus { color: #fff; }
+
+  .caption { color: rgba(255, 255, 255, 0.7); }
+
+  // Streaming/store buttons (Apple, Bandcamp, Spotify, …): outlined pills on black.
+  .btn {
+    color: #fff;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 999px;
+    box-shadow: none;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+
+    &:hover,
+    &:focus {
+      color: #ffe0a3;
+      border-color: #ffe0a3;
+      background: rgba(255, 255, 255, 0.06);
+    }
+  }
+}
+
+/******************************************************************************
  * Content sections
  ******************************************************************************/
 

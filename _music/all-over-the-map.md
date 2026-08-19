@@ -4,7 +4,7 @@ title: All Over the Map
 description: A collaboration with ensemble, Blue Thread, featuring medieval Galago-Portuguese cantigas, as well as Galician and Sephardic love songs from the Iberian Peninsula, reviving melodies from ancient manuscripts.
 hide_description: true
 img: assets/img/music/all-over-the-map.jpeg
-importance: 5
+importance: 6
 category: discography
 ---
 
@@ -22,7 +22,7 @@ category: discography
       	 </p>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-    	 <iframe style="border: 0; width: 100%; height: 850px;" src="https://bandcamp.com/EmbeddedPlayer/album=1054714999/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://bluethread.bandcamp.com/album/all-over-the-map-3">All Over The Map by Blue Thread</a></iframe>
+    	 <iframe style="border: 0; width: 100%; height: 850px;" src="https://bandcamp.com/EmbeddedPlayer/album=1054714999/size=large/bgcol=000000/linkcol=ffe0a3/transparent=true/" seamless><a href="https://bluethread.bandcamp.com/album/all-over-the-map-3">All Over The Map by Blue Thread</a></iframe>
     </div>    
 </div>
 
