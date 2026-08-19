@@ -7,10 +7,10 @@ first_name: Yaniv
 last_name: Yacoby
 email: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Yaniv Yacoby, machine learning researcher and musician based in Boston.
+  Yaniv Yacoby, interdisciplinary researcher and educator developing machine learning and AI methods for suicide research and prevention.
 footer_text: >
   Art inspired by <a href="https://eiblinkoch.com" target="_blank" rel="noopener noreferrer">Eiblin Koch</a>.
-keywords: Probabilistic Machine Learning, Uncertainty Quantification, Approximate Inference, Deep Bayesian Models, Latent Variable Models  # add your own keywords or leave empty
+keywords: Probabilistic Machine Learning, Uncertainty Quantification, Approximate Inference, Deep Bayesian Models, Latent Variable Models, Mental Health, Suicide Prevention  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🐠  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
