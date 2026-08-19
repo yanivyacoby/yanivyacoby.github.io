@@ -93,7 +93,7 @@ html {
   line-height: 1.05;
   // min(vw, vh) so the text also shrinks on short windows and doesn't overflow.
   font-size: clamp(2.6rem, min(9vw, 13vh), 6rem);
-  white-space: nowrap; // one line, so it sets the block's width
+  white-space: nowrap; // keep the greeting on a single line
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45), 0 1px 4px rgba(0, 0, 0, 0.35);
 }
 

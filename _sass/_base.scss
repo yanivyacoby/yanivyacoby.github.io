@@ -339,6 +339,13 @@ footer.fixed-bottom {
   }
 }
 
+// Keeps the "Art inspired by …" credit together as one unit, so when the footer
+// is too narrow to fit it beside the copyright it drops to its own line (starting
+// with "Art inspired by") instead of wrapping mid-phrase.
+.footer-credit {
+  display: inline-block;
+}
+
 footer.sticky-bottom {
     background-color: var(--global-footer-bg-color);
     font-size: 0.835rem;
