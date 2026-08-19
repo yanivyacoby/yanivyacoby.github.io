@@ -88,7 +88,7 @@
     return { N: N, H: H };
   }
 
-  var ARROW_GAP = 14; // stop the edge short of the target circle so the arrowhead shows
+  var ARROW_GAP = 20; // stop the edge short of the target circle so the arrowhead shows
 
   function edgePath(p, c) {
     if (Math.abs(c.y - p.y) < 28) {            // near-horizontal (the offshoot)
@@ -103,7 +103,7 @@
     return 'M' + p.x + ',' + p.y + 'C' + p.x + ',' + my + ' ' + c.x + ',' + my + ' ' + c.x + ',' + ey;
   }
 
-  var LH = 16, R = 9, GAP = 12;
+  var LH = 16, R = 12, GAP = 12; // R = circle radius
   var narrowMode = false; // set per render; disables the `wide` label widening when stacked
   var labelInfo = {};     // per-render: id -> { tspans, maxW } for post-layout alignment
 
@@ -194,7 +194,7 @@
       .attr('id', 'bio-arrow')
       .attr('viewBox', '0 0 10 10')
       .attr('refX', 8).attr('refY', 5)
-      .attr('markerWidth', 7).attr('markerHeight', 7)
+      .attr('markerWidth', 10).attr('markerHeight', 10)
       .attr('orient', 'auto')
       .append('path')
       .attr('class', 'bio-dg2__arrowhead')
@@ -212,8 +212,8 @@
 
     nodes.each(function (d) {
       var g = d3.select(this);
-      if (d.current) g.append('circle').attr('class', 'bio-dg2__ring').attr('r', 11);
-      g.append('circle').attr('class', 'bio-dg2__dot').attr('r', 9);
+      if (d.current) g.append('circle').attr('class', 'bio-dg2__ring').attr('r', R + 3);
+      g.append('circle').attr('class', 'bio-dg2__dot').attr('r', R);
       addLabel(g, d, placementFor(d));
     });
 
