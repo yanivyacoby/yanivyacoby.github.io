@@ -44,6 +44,9 @@ layout: default
           </div>
           <div class="about-bubble">
             {{ content }}
+            {%- if page.about_update %}
+            <p class="about-bubble__update"><span class="about-bubble__update-tag">Update</span> {{ page.about_update | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+            {%- endif %}
           </div>
         </div>
 

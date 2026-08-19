@@ -470,6 +470,29 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   a.about-bubble__lab { text-decoration: none; }
 }
 
+// "Update" callout inside the speech bubble (e.g., a grant announcement).
+.about-bubble__update {
+  margin: 1.5rem 0 0; // extra space above, separating it from the lab line
+  padding: 0.6rem 0.85rem;
+  background: #eef4fb;              // light blue tint
+  border-left: 3px solid #2f5f8f;  // accent, matching the bubble's links
+  border-radius: 6px;
+}
+.about-bubble__update-tag {
+  display: inline-block;
+  margin-right: 0.45rem;
+  padding: 0.08rem 0.5rem;
+  background: #2f5f8f;
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+// The tag text must beat the bubble's dark-text override.
+#about .about-bubble .about-bubble__update-tag { color: #fff; }
+
 // Stacked (narrow): photo on top, bubble below (full width) — flip the tail up.
 @media (max-width: 640px) {
   .about-header__photo,

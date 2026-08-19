@@ -8,6 +8,8 @@ hide_nav: true
 full_bleed: true
 greeting: Hey, I'm Yaniv.
 tagline: I'm an interdisciplinary researcher and educator, working in ML/AI for mental health.
+# About speech-bubble "Update" note (leave blank to hide). Markdown allowed (e.g. **bold**, [links](url)).
+about_update: "I was recently awarded an [**NIH R01**](https://reporter.nih.gov/search/Qv-MXpa_fE67ht1SxfKVOw/project-details/11291684) to develop ML methods for suicide research and prevention."
 ---
 
 I'm an **interdisciplinary researcher and educator** developing machine learning and AI methods for **suicide research and prevention**. My work sits at the intersection of **ML methodology, human-computer interaction, and clinical psychology**.
