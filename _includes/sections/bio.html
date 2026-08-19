@@ -1,17 +1,17 @@
-<!-- Bio: career/education timeline, generated from _data/bio.yml (earliest → now). -->
-<div class="timeline">
-  <ol class="timeline__list">
-    {%- for item in site.data.bio.timeline %}
-    <li class="timeline__item{% if item.current %} timeline__item--current{% endif %}">
-      <span class="timeline__marker" aria-hidden="true"></span>
-      <div class="timeline__body">
-        <h3 class="timeline__role">{{ item.role }}</h3>
-        <p class="timeline__place">{{ item.place | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
-        {%- if item.note %}
-        <p class="timeline__note">{{ item.note | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
-        {%- endif %}
-      </div>
-    </li>
-    {%- endfor %}
-  </ol>
+<!-- Bio: career diagram rendered with D3 into #bio-diagram (see assets/js/bio-diagram.js).
+     The list below is a fallback shown if D3/JS is unavailable; the script replaces it. -->
+<div id="bio-diagram" class="bio-dg2">
+  <ul class="bio-dg2__fallback">
+    <li>Undergrad in Computer Science — <a href="https://www.harvard.edu/" target="_blank" rel="noopener noreferrer">Harvard University</a></li>
+    <li>Master's in Music — <a href="https://necmusic.edu/dual-degree-programs" target="_blank" rel="noopener noreferrer">New England Conservatory</a></li>
+    <li>Ph.D. in Machine Learning — Harvard University, advised by <a href="https://finale.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Finale Doshi-Velez</a></li>
+    <li>Research Intern — <a href="https://www.microsoft.com/en-us/research/theme/biomedical-ml/" target="_blank" rel="noopener noreferrer">Microsoft Research New England</a></li>
+    <li>Postdoctoral Fellow — <a href="https://nocklab.fas.harvard.edu/" target="_blank" rel="noopener noreferrer">Nock Lab</a>, Harvard University &amp; Mass General Hospital</li>
+    <li>Assistant Professor of Computer Science — <a href="https://wellesley.edu/" target="_blank" rel="noopener noreferrer">Wellesley College</a></li>
+    <li>Principal Investigator — <a href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer">MOGU Lab</a></li>
+    <li>Research Affiliations — Harvard University &amp; Mass General Brigham</li>
+  </ul>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js" defer></script>
+<script src="{{ '/assets/js/bio-diagram.js' | relative_url }}" defer></script>

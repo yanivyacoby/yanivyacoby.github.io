@@ -296,18 +296,6 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy, #music";
   p:hover a::before { color: #ffe0a3; }
 }
 
-// Bio — the timeline drawn light on the dark section.
-#bio {
-  .timeline__list::before { background: rgba(255, 255, 255, 0.4); }
-  .timeline__marker {
-    background: transparent;
-    border-color: rgba(255, 255, 255, 0.85);
-  }
-  .timeline__item--current .timeline__marker {
-    background: #fff;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.22);
-  }
-}
 
 // Music — project cards keep their own light background + dark text.
 #music {
@@ -422,68 +410,90 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy, #music";
 }
 
 /******************************************************************************
- * Bio timeline
+ * Bio diagram (D3 — see assets/js/bio-diagram.js)
+ *
+ * B.A. + M.M. ─┐
+ *              ├─▶ Ph.D. ──▶ Research Intern (offshoot, right)
+ *              │      │
+ *              │   Postdoc ─┬─▶ Assistant Professor
+ *              │            ├─▶ Director, MOGU Lab
+ *              │            └─▶ Research affiliations
+ * D3 draws the SVG; these rules give it the original timeline's look
+ * (thin white connectors, hollow circles, filled + ring for present roles).
  ******************************************************************************/
 
-.timeline__list {
-  position: relative;
+.bio-dg2 {
+  width: 100%; // fill the content column (the D3 layout scales to this width)
+}
+
+.bio-dg2__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible; // let node labels spill past the viewBox edges
+}
+
+// Connectors — match the timeline line (2px, translucent white).
+.bio-dg2__edge {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.4);
+  stroke-width: 2px;
+  transition: opacity 0.2s ease, stroke 0.2s ease;
+
+  &.is-hot { stroke: rgba(255, 255, 255, 0.95); }
+  &.is-dim { opacity: 0.22; }
+}
+
+// Arrowheads — match the connector color; follow the edge's stroke where supported.
+.bio-dg2__arrowhead {
+  fill: rgba(255, 255, 255, 0.4);
+  fill: context-stroke;
+}
+
+// Circle markers — hollow by default, filled + ring for the present roles.
+.bio-dg2__dot {
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.85);
+  stroke-width: 3px;
+}
+.bio-dg2__ring {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.25);
+  stroke-width: 4px;
+}
+.bio-dg2__node.is-current .bio-dg2__dot {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.bio-dg2__node {
+  cursor: default;
+  transition: opacity 0.2s ease;
+  &:focus { outline: none; }
+  &:focus-visible .bio-dg2__dot { stroke: #fff; }
+  &.is-dim { opacity: 0.3; }
+}
+
+// Labels — native SVG <text>/<tspan>, so use `fill` (not `color`).
+.bio-dg2__role  { fill: #fff; font-weight: 600; font-size: 0.9rem; }
+.bio-dg2__place { fill: rgba(255, 255, 255, 0.9); font-size: 0.8rem; }
+
+// Linked place lines (inside an SVG <a>) get the warm-gold section link color.
+a .bio-dg2__place {
+  fill: #ffe0a3;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+// No-JS / no-CDN fallback list (replaced by the diagram when D3 loads).
+.bio-dg2__fallback {
   list-style: none;
   margin: 0;
   padding: 0;
-}
+  max-width: 40rem;
 
-// Continuous connector line threading through the markers.
-.timeline__list::before {
-  content: "";
-  position: absolute;
-  left: 8px;
-  top: 0.5rem;
-  bottom: 0.5rem;
-  width: 2px;
-  background: var(--global-divider-color);
-}
-
-.timeline__item {
-  position: relative;
-  padding: 0 0 1.75rem 2.5rem;
-
-  &:last-child { padding-bottom: 0; }
-}
-
-.timeline__marker {
-  position: absolute;
-  left: 0;
-  top: 0.3rem;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: var(--global-bg-color);
-  border: 3px solid var(--global-theme-color);
-  box-sizing: border-box;
-}
-
-// The present role gets a filled marker with a soft accent ring.
-.timeline__item--current .timeline__marker {
-  background: var(--global-theme-color);
-  box-shadow: 0 0 0 4px rgba(232, 76, 51, 0.18); // $red-color, the light-theme accent
-}
-
-.timeline__role {
-  margin: 0 0 0.2rem;
-  font-size: 1.15rem;
-  font-weight: 600;
-  line-height: 1.25;
-}
-
-.timeline__place {
-  margin: 0;
-  opacity: 0.9;
-}
-
-// Secondary line under a role (e.g. research affiliations) — matches the place line.
-.timeline__note {
-  margin: 0.3rem 0 0;
-  opacity: 0.9;
+  li { padding: 0.35rem 0; border-top: 1px solid rgba(255, 255, 255, 0.18); }
+  li:first-child { border-top: 0; }
 }
 
 /******************************************************************************
