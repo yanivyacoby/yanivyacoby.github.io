@@ -24,8 +24,8 @@
         { text: '& Mass General Hospital' }
       ] },
     { id: 'prof',    role: 'Assistant Professor of Computer Science', place: 'Wellesley College',              url: 'https://wellesley.edu/', current: true, side: 'right' },
-    { id: 'dir',     role: 'Principal Investigator',                  place: 'MOGU Lab',                       url: 'https://mogu-lab.github.io/', current: true, side: 'right' },
-    { id: 'aff',     role: 'Research Affiliations',                   roleMax: 24, current: true, place: [
+    { id: 'dir',     role: 'Principal Investigator',                  place: 'MOGU Lab',                       url: 'https://mogu-lab.github.io/', current: true, side: 'left' },
+    { id: 'aff',     role: 'Research Affiliations',                   roleMax: 24, current: true, side: 'right', place: [
         { text: 'Harvard University' },
         { text: '& Mass General Brigham' }
       ] }
@@ -79,7 +79,11 @@
       N.msr = { x: Math.min(0.74 * w, w - 150), y: Yn(2) };
       // Roles reversed vs. their row index so that, after the vertical flip, the
       // stacked order reads Assistant Professor -> PI -> Affiliations (matching wide).
-      N.aff = { x: 0.50 * w, y: Yn(3) }; N.dir = { x: 0.50 * w, y: Yn(4) }; N.prof = { x: 0.50 * w, y: Yn(5) };
+      // Fan them left/center/right so all three read as branching out of Postdoc
+      // (a fork) instead of collapsing into one vertical line (a chain).
+      N.prof = { x: 0.50 * w, y: Yn(5) };                      // straight up from Postdoc
+      N.dir  = { x: Math.max(0.36 * w, 158), y: Yn(4) };       // branch left; label points left (off the lines)
+      N.aff  = { x: Math.min(0.64 * w, w - 175), y: Yn(3) };   // branch right; label points right (off the lines)
       H = Yn(5) + 96;
     }
     // Flip vertically so the most recent roles sit at the top (arrows point upward).
