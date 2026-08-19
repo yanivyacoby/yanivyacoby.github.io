@@ -424,6 +424,7 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy, #music";
 
 .bio-dg2 {
   width: 100%; // fill the content column (the D3 layout scales to this width)
+  margin-top: 1.25rem; // extra breathing room below the "Bio" heading
 }
 
 .bio-dg2__svg {

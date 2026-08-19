@@ -15,9 +15,10 @@
     { id: 'mm',      role: "Master's in Music",                       place: 'New England Conservatory',       url: 'https://necmusic.edu/dual-degree-programs' },
     { id: 'phd',     role: 'Ph.D. in Machine Learning',              side: 'left', place: [
         { text: 'Harvard University' },
-        { text: 'advised by Finale Doshi-Velez', url: 'https://finale.seas.harvard.edu/' }
+        { text: 'advised by' },
+        { text: 'Finale Doshi-Velez', url: 'https://finale.seas.harvard.edu/' }
       ] },
-    { id: 'msr',     role: 'Research Intern',                         place: 'Microsoft Research NE',          url: 'https://www.microsoft.com/en-us/research/theme/biomedical-ml/', side: 'right' },
+    { id: 'msr',     role: 'Research Intern',                         place: 'Microsoft Research New England',          url: 'https://www.microsoft.com/en-us/research/theme/biomedical-ml/', side: 'right' },
     { id: 'postdoc', role: 'Postdoctoral Fellow',                     side: 'left', place: [
         { text: 'Nock Lab', url: 'https://nocklab.fas.harvard.edu/' },
         { text: 'Harvard University & Mass General Hospital' }
@@ -55,21 +56,27 @@
 
   // --- layout ----------------------------------------------------------------
   function layout(w) {
-    var N = {};
+    var N = {}, H;
     if (w >= 560) {
-      var rh = 132, y0 = 40, Y = [y0, y0 + rh, y0 + 2 * rh, y0 + 3 * rh];
+      var rh = 132, y0 = 72, Y = [y0, y0 + rh, y0 + 2 * rh, y0 + 3 * rh];
       N.ba = { x: 0.26 * w, y: Y[0] };  N.mm = { x: 0.54 * w, y: Y[0] };
       N.phd = { x: 0.40 * w, y: Y[1] }; N.msr = { x: 0.82 * w, y: Y[1] };
       N.postdoc = { x: 0.40 * w, y: Y[2] };
       N.prof = { x: 0.16 * w, y: Y[3] }; N.dir = { x: 0.40 * w, y: Y[3] }; N.aff = { x: 0.64 * w, y: Y[3] };
-      return { N: N, H: Y[3] + 96 };
+      H = Y[3] + 96;
+    } else {
+      var r = 116, t = 72, Yn = function (k) { return t + k * r; };
+      N.ba = { x: 0.30 * w, y: Yn(0) };  N.mm = { x: 0.70 * w, y: Yn(0) };
+      N.phd = { x: 0.50 * w, y: Yn(1) };
+      N.postdoc = { x: 0.38 * w, y: Yn(2) }; N.msr = { x: 0.80 * w, y: Yn(2) };
+      N.prof = { x: 0.50 * w, y: Yn(3) }; N.dir = { x: 0.50 * w, y: Yn(4) }; N.aff = { x: 0.50 * w, y: Yn(5) };
+      H = Yn(5) + 96;
     }
-    var r = 116, t = 40, Yn = function (k) { return t + k * r; };
-    N.ba = { x: 0.30 * w, y: Yn(0) };  N.mm = { x: 0.70 * w, y: Yn(0) };
-    N.phd = { x: 0.50 * w, y: Yn(1) };
-    N.postdoc = { x: 0.38 * w, y: Yn(2) }; N.msr = { x: 0.80 * w, y: Yn(2) };
-    N.prof = { x: 0.50 * w, y: Yn(3) }; N.dir = { x: 0.50 * w, y: Yn(4) }; N.aff = { x: 0.50 * w, y: Yn(5) };
-    return { N: N, H: Yn(5) + 96 };
+    // Flip vertically so the most recent roles sit at the top (arrows point upward).
+    var ys = Object.keys(N).map(function (k) { return N[k].y; });
+    var lo = Math.min.apply(null, ys), hi = Math.max.apply(null, ys);
+    Object.keys(N).forEach(function (k) { N[k].y = lo + hi - N[k].y; });
+    return { N: N, H: H };
   }
 
   var ARROW_GAP = 14; // stop the edge short of the target circle so the arrowhead shows
