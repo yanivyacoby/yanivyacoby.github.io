@@ -22,7 +22,7 @@ category: discography
       	 </p>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-    	 <iframe style="border: 0; width: 350px; height: 720px;" src="https://bandcamp.com/EmbeddedPlayer/album=1054714999/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://bluethread.bandcamp.com/album/all-over-the-map-3">All Over The Map by Blue Thread</a></iframe>
+    	 <iframe style="border: 0; width: 100%; height: 900px;" src="https://bandcamp.com/EmbeddedPlayer/album=1054714999/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://bluethread.bandcamp.com/album/all-over-the-map-3">All Over The Map by Blue Thread</a></iframe>
     </div>    
 </div>
 
