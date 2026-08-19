@@ -17,12 +17,12 @@ category: discography
 	<p style="text-align: justify;">
 		For this program, Catt and Radan invite multi-instrumentalist Yaniv Yacoby to join the conversation. The inspiration for this program lies in ancient Gallego-Portuguese, the language of love and devotional poetry in medieval Iberia. The starting material for each piece is a tune that we found in a manuscript or borrowed from oral tradition. For the most part, the melodies are clearly set, with hints around rhythm and room for interpretation. Once the melody takes form, we create a new work by weaving together old and new elements through improvisation and arrangement.
 	</p>
-	<p style="font-size: small; text-align: justify;">
+	<p style="text-align: justify;">
 		<i>"Blue Thread, led by the magnificent voice of the soprano Cristi Catt, closed the main stage of the Arts on the Street Festival. Blue Thread is an ensemble of acclaimed artists from different geographical latitudes, who presented in Evora something new from Portuguese songs, in particular, the Cantigas de Amigo. The show also included contemporary themes, adapted with mastery of the sonorities of the past. The performance of Blue Thread revealed a vibrant and playful music that transported us to the rich and varied musical experience of medieval time without abandoning the present."</i> --The Evora News, Evora, Portugal
       	 </p>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-    	 <iframe style="border: 0; width: 100%; height: 900px;" src="https://bandcamp.com/EmbeddedPlayer/album=1054714999/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://bluethread.bandcamp.com/album/all-over-the-map-3">All Over The Map by Blue Thread</a></iframe>
+    	 <iframe style="border: 0; width: 100%; height: 850px;" src="https://bandcamp.com/EmbeddedPlayer/album=1054714999/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://bluethread.bandcamp.com/album/all-over-the-map-3">All Over The Map by Blue Thread</a></iframe>
     </div>    
 </div>
 

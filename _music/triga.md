@@ -19,7 +19,7 @@ category: collaborations
 	</p>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-    	<iframe style="border: 0; width: 100%; height: 850px;" src="https://bandcamp.com/EmbeddedPlayer/album=3804122655/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://trigatrio.bandcamp.com/album/live-from-our-living-room">Live from our Living Room by Triga</a></iframe>	
+    	<iframe style="border: 0; width: 100%; height: 800px;" src="https://bandcamp.com/EmbeddedPlayer/album=3804122655/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://trigatrio.bandcamp.com/album/live-from-our-living-room">Live from our Living Room by Triga</a></iframe>	
     </div>
 </div>
 
