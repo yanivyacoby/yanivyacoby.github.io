@@ -657,7 +657,7 @@ function rebuild() {
   // Match body background to average sky color so elastic-scroll overscroll shows sky, not black
   if (skyAvgN > 0) {
     const r = (skyAvgR / skyAvgN) | 0, g = (skyAvgG / skyAvgN) | 0, b = (skyAvgB / skyAvgN) | 0;
-    (document.getElementById('landing-cover') || document.body).style.background = `rgb(${r},${g},${b})`;
+    (document.getElementById('home') || document.body).style.background = `rgb(${r},${g},${b})`;
   }
 
   // CDF for depth-weighted sampling

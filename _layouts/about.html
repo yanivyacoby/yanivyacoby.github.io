@@ -5,14 +5,14 @@ layout: default
 <!-- about.html — single-page scrolling site -->
 
 <!-- Landing cover: full-viewport WebGL collage with name + tagline just above the horizon -->
-<section id="landing-cover" class="landing-cover">
-  <canvas id="gl" class="landing-cover__canvas"></canvas>
-  <div class="landing-cover__overlay">
-    <div class="landing-cover__text">
-      <h1 class="landing-cover__name">Hey! I'm Yaniv</h1>
-      <p class="landing-cover__tagline">{{ page.tagline | default: "Machine learning researcher &amp; musician" }}</p>
+<section id="home" class="home">
+  <canvas id="gl" class="home__canvas"></canvas>
+  <div class="home__overlay">
+    <div class="home__text">
+      <h1 class="home__name">Hey! I'm Yaniv</h1>
+      <p class="home__tagline">{{ page.tagline | default: "Machine learning researcher &amp; musician" }}</p>
     </div>
-    <a href="#about" class="landing-cover__arrow" aria-label="Scroll to content">
+    <a href="#about" class="home__arrow" aria-label="Scroll to content">
       <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor"
            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <polyline points="6 9 12 15 18 9"></polyline>
@@ -24,13 +24,12 @@ layout: default
 <!-- Sticky one-page nav (black). Sticks to the top once the cover scrolls away. -->
 <nav class="onepage-nav" id="onepage-nav">
   <div class="onepage-nav__inner">
-    <a class="onepage-nav__brand" href="#landing-cover">{{ site.first_name }} {{ site.last_name }}</a>
+    <a class="onepage-nav__brand" href="#home">{{ site.first_name }} {{ site.last_name }}</a>
     <button class="onepage-nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <ul class="onepage-nav__links">
       <li><a href="#about">About</a></li>
-      <li><a href="#bio">Bio</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#teaching">Teaching</a></li>
       <li><a href="#advocacy">Advocacy</a></li>
