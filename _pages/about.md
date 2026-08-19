@@ -18,7 +18,13 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I'm an **interdisciplinary researcher and educator** developing machine learning and AI methods for **suicide research and prevention**. My work sits at the intersection of **ML methodology, human-computer interaction, and clinical psychology**—building models transparent and trustworthy enough for use in **safety-critical settings**.
+I'm an **interdisciplinary researcher and educator** developing machine learning and AI methods for **suicide research and prevention**. My work sits at the intersection of **ML methodology, human-computer interaction, and clinical psychology**.
+
+If this interests you, check out my [lab website](https://mogu-lab.github.io/).
+
+<a class="about-bubble__lab" href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer">
+  <img src="https://mogu-lab.github.io/assets/img/mogu-lab-logo.webp" alt="Model-Guided Uncertainty (MOGU) Lab logo" loading="lazy">
+</a>
 
 <!--
 ## Research

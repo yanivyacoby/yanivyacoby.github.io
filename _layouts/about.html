@@ -32,16 +32,13 @@ layout: default
     <!-- About -->
     <section id="about" class="section reveal">
       <div class="container">
-        <!-- Profile photo + intro text (speech bubble), side by side -->
+        <!-- Profile (animated WebGL "squares" scene) + intro text (speech bubble), side by side.
+             Embedded via iframe so its full-page canvas stays isolated from the cover scene. -->
         <div class="about-header">
           <div class="about-header__photo">
-            {%- if page.profile.image %}
-            {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-            {% include figure.html
-            path=profile_image_path
-            class="img-fluid rounded"
-            alt=page.profile.image -%}
-            {% endif -%}
+            <iframe class="about-header__squares"
+                    src="{{ '/assets/embeds/profile.html' | relative_url }}"
+                    title="Yaniv Yacoby" loading="lazy" scrolling="no"></iframe>
           </div>
           <div class="about-bubble">
             {{ content }}

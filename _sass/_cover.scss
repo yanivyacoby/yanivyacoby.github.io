@@ -340,9 +340,8 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
 }
 
 .about-header__photo {
-  flex: 0 1 auto;
-  width: 220px;
-  max-width: 45%;
+  flex: 1 1 calc(50% - 1rem); // half the row (minus half the 2rem gap)
+  min-width: 0;
 
   figure { margin: 0; }
   img {
@@ -353,11 +352,20 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   }
 }
 
+// Animated WebGL "squares" profile, embedded via iframe: square, rounded, borderless.
+.about-header__squares {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 0;
+  border-radius: 12px;
+}
+
 // Intro text sits in a white speech bubble to the right of the photo.
 .about-bubble {
   position: relative;
-  flex: 1 1 340px;
-  max-width: 40rem;
+  flex: 1 1 calc(50% - 1rem); // other half of the row
+  min-width: 0;
   background: #fff;
   border-radius: 18px;
   padding: 1.25rem 1.5rem;
@@ -365,7 +373,17 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   text-align: left;
 
   p:first-child { margin-top: 0; }
-  p:last-child { margin-bottom: 0; }
+  p:last-of-type { margin-bottom: 0; }
+
+  // Lab logo centered below the intro text, linked to the lab site.
+  &__lab {
+    display: block;
+    text-align: center;
+    margin-top: 0.3rem;
+    line-height: 0;
+
+    img { width: 72px; max-width: 35%; height: auto; }
+  }
 
   // Tail pointing left toward the photo. The header centers its items, so the
   // bubble's vertical center lines up with the photo's — anchor the tail there.
@@ -396,10 +414,15 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
     &:hover,
     &:focus { color: #1e4165; }
   }
+
+  a.about-bubble__lab { text-decoration: none; }
 }
 
-// Stacked (narrow): photo on top, bubble below — flip the tail to point up.
+// Stacked (narrow): photo on top, bubble below (full width) — flip the tail up.
 @media (max-width: 640px) {
+  .about-header__photo,
+  .about-bubble { flex-basis: 100%; }
+
   .about-bubble::after {
     left: 50%;
     top: -12px;
