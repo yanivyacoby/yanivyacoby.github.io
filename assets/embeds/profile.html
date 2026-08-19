@@ -54,7 +54,7 @@ const CFG = Object.assign({
                           // non-beard/moustache squares turn
   alphaCutoff: 45,        // skip a cell whose average alpha is below this (0..255)
   margin:      0.94,      // fraction of the viewport the mosaic fills
-  bg:          '#ffffff', // page background shown behind the subject (dark avatar backdrop removed)
+  bg:          'transparent', // page stays transparent behind the subject (backdrop removed)
   bgRemove: { enabled: true, thresh: 0.16 },  // flood-fill dark cells inward from the image
                           // borders (max-channel brightness < thresh) and drop them, removing the
                           // avatar's backdrop while keeping the subject's interior dark outlines
