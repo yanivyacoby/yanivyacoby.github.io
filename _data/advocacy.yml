@@ -1,0 +1,50 @@
+# Advocacy section: a short mission + three theme cards.
+# Edit the mission, each card's title/body, and its links here.
+
+mission: >
+  I **create and lead** curricular and extracurricular initiatives that build
+  resilient academic communities, normalize mental health, and demystify the
+  "hidden curriculum" of academia.
+
+themes:
+  - title: Curriculum
+    body: >
+      I **created** [CS 290](https://yanivyacoby.github.io/harvard-cs290/) at
+      Harvard — a seminar for entering CS Ph.D. students that builds professional
+      resilience by strengthening their self-regulatory skills and empowering them
+      to examine and reshape academic culture, countering the idealized views of
+      research and the isolation and imposter phenomenon common in doctoral
+      programs. See the [SIGCSE paper](https://arxiv.org/abs/2208.12650) and
+      [teaching materials](https://yanivyacoby.github.io/harvard-cs290-teaching-materials).
+
+  - title: Workshops
+    body: >
+      I **designed and ran** community-building workshops that surface the
+      "hidden curriculum" of academia:
+    items:
+      - text: '"Everything I Wish I Knew as I Navigated the Ph.D." @ New York and Carnegie Mellon Universities'
+        body: >
+          Builds community through discussion and reflection on how academic
+          culture and mental health are intertwined; used to jump-start student
+          well-being advocacy groups.
+      - text: >
+          ["How to Make the Most of Your Ph.D."](https://yanivyacoby.github.io/a-guide-to-your-phd/guide.html) @ Harvard University
+        body: >
+          A guide from current to incoming students that exposes the "hidden
+          curriculum" of doctoral programs.
+
+  - title: Community & Mentorship
+    body: >
+      I **built** support systems for graduate students:
+    items:
+      - text: >
+          Co-led [InTouch](https://intouch.seas.harvard.edu/), a peer-to-peer
+          support network at Harvard SEAS.
+      - text: >
+          Mentored Ph.D. applicants — helping them write personal statements and
+          CVs, practice interviewing, and see past the common myths about Ph.D.
+          programs that provoke imposter syndrome and lead applicants to
+          self-filter.
+      - text: >
+          Served as a mentor for the
+          [WiDS datathons](https://onefishy.github.io/wids_datathon/).

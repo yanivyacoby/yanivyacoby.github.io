@@ -115,8 +115,7 @@ layout: default
     <section id="advocacy" class="section reveal">
       <div class="container">
         <h2 class="section-title">Advocacy</h2>
-        {% capture advocacy_md %}{% include sections/advocacy.md %}{% endcapture %}
-        {{ advocacy_md | markdownify }}
+        {% include sections/advocacy.html %}
       </div>
     </section>
 

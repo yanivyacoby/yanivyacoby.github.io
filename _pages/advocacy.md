@@ -6,4 +6,4 @@ nav: true
 nav_order: 4
 ---
 
-{% include sections/advocacy.md %}
+{% include sections/advocacy.html %}
