@@ -98,6 +98,11 @@ layout: default
         {{ teaching_md | markdownify }}
 
         <div class="subsection">
+          <h3 class="subsection-title">New Courses</h3>
+          {% include sections/courses.html %}
+        </div>
+
+        <div class="subsection">
           <h3 class="subsection-title">Selected Publications</h3>
           <div class="publications">
             {% bibliography -f papers -q @*[pedagogy=true]* %}
