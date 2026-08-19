@@ -612,6 +612,16 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   gap: 1.5rem;
 }
 
+// When the card grids narrow to a single column, let cards fill the whole width
+// instead of sticking to the left. Music uses Masonry (fixed 250px items), so we
+// widen the items to 100%; Advocacy collapses its grid to one full-width track.
+@media (max-width: 540px) {
+  .projects .grid-sizer,
+  .projects .grid-item { width: 100%; }
+
+  .advocacy-cards { grid-template-columns: 1fr; }
+}
+
 .advocacy-card {
   display: flex;
   flex-direction: column;
