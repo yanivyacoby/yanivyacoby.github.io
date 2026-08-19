@@ -344,6 +344,11 @@ footer.fixed-bottom {
 // with "Art inspired by") instead of wrapping mid-phrase.
 .footer-credit {
   display: inline-block;
+  // The broad `… span … { color: var(--global-text-color) }` rule at the top of
+  // this file directly targets spans and would override the footer's (inherited)
+  // text color, turning the credit dark. inherit restores the footer color so the
+  // wrapped credit matches the un-wrapped copyright text beside it.
+  color: inherit;
 }
 
 footer.sticky-bottom {

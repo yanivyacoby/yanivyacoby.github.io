@@ -10,7 +10,9 @@
   --global-theme-color: #{$red-color};
   --global-hover-color: #{$red-color};
   --global-footer-bg-color: #000000;
-  --global-footer-text-color: #{$grey-color-light};
+  // White (not the theme's dim grey) so the footer text — including the
+  // "Art inspired by …" credit — reads as brightly as the white links beside it.
+  --global-footer-text-color: #{$white-color};
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
