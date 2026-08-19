@@ -250,7 +250,7 @@ html {
 #publications { background: #466321; } // deep green
 #teaching     { background: #7c530f; } // deep amber
 #advocacy     { background: #55346b; } // deep purple
-// Music keeps the site's default (light) background so the album cards read cleanly.
+#music        { background: #e0e4f0; } // pale periwinkle — light so the album cards still pop
 
 // Selector group for the saturated sections (Music excluded — it stays light).
 $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
@@ -667,7 +667,7 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   margin-top: 1rem;
 }
 .events-more {
-  background: transparent;
+  background: var(--global-card-bg-color); // match the album cards
   color: var(--global-text-color);
   border: 1px solid var(--global-divider-color);
   border-radius: 999px;
