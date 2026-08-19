@@ -72,7 +72,8 @@ html {
   font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 1.05;
-  font-size: clamp(2.6rem, 9vw, 6rem);
+  // min(vw, vh) so the text also shrinks on short windows and doesn't overflow.
+  font-size: clamp(2.6rem, min(9vw, 13vh), 6rem);
   white-space: nowrap; // one line, so it sets the block's width
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45), 0 1px 4px rgba(0, 0, 0, 0.35);
 }
@@ -88,8 +89,21 @@ html {
   color: rgba(255, 255, 255, 0.94);
   font-weight: 300;
   letter-spacing: 0.02em;
-  font-size: clamp(1.2rem, 3.6vw, 2.1rem);
+  font-size: clamp(1.2rem, min(3.6vw, 5.5vh), 2.1rem);
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+}
+
+// Short viewports: center the text vertically (more room above + below) and let
+// it shrink further, so it fits instead of sitting high and clipping off-screen.
+@media (max-height: 600px) {
+  .home__text {
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  .home__name { font-size: clamp(1.8rem, min(9vw, 13vh), 6rem); }
+  .home__tagline { font-size: clamp(0.95rem, min(3.6vw, 5.5vh), 2.1rem); }
 }
 
 .home__arrow {
@@ -103,6 +117,13 @@ html {
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.45));
   animation: cover-arrow-bob 2s ease-in-out infinite;
   transition: color 0.2s ease;
+
+  // Scale with the window (overrides the SVG's fixed width/height attributes).
+  // min(vw, vh) keeps it from crowding the text on short windows.
+  svg {
+    width: clamp(2.5rem, min(6vw, 9vh), 4.75rem);
+    height: auto;
+  }
 
   &:hover,
   &:focus {

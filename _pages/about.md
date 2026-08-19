@@ -6,7 +6,7 @@ permalink: /
 # Landing cover: drop the navbar and let the WebGL scene fill the viewport.
 hide_nav: true
 full_bleed: true
-greeting: Hey! I'm Yaniv.
+greeting: Hey, I'm Yaniv.
 tagline: I'm an interdisciplinary researcher and educator, working in ML/AI for mental health.
 
 profile:
