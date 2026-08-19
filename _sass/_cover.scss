@@ -55,29 +55,40 @@ html {
 // Text block floats just above the sky/water horizon rather than screen-center.
 .home__text {
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 50%;
   bottom: 60%; // bottom edge ~40% down — a touch above the ~43% horizon
+  transform: translateX(-50%);
+  width: auto;      // shrink-wrap to the (single-line) greeting…
+  max-width: 92vw;  // …but never wider than the viewport
   text-align: center;
   padding: 0 1.5rem;
+  // Angular, geometric display font for the cover only (rest of the site stays on Roboto).
+  font-family: "Chakra Petch", "Helvetica Neue", Arial, sans-serif;
 }
 
 .home__name {
   margin: 0;
   color: #fff;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 1.05;
   font-size: clamp(2.6rem, 9vw, 6rem);
+  white-space: nowrap; // one line, so it sets the block's width
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45), 0 1px 4px rgba(0, 0, 0, 0.35);
 }
 
 .home__tagline {
+  // width:0 keeps the tagline from widening the block, while min-width:100%
+  // stretches it to fill the greeting's width — so it spans edge to edge.
+  width: 0;
+  min-width: 100%;
+  box-sizing: border-box;
   margin: 1rem 0 0;
+  text-wrap: balance;  // keep the wrapped lines roughly even
   color: rgba(255, 255, 255, 0.94);
   font-weight: 300;
   letter-spacing: 0.02em;
-  font-size: clamp(1rem, 2.6vw, 1.5rem);
+  font-size: clamp(1.2rem, 3.6vw, 2.1rem);
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
 }
 
@@ -321,21 +332,62 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   }
 }
 
-.about-header__lab {
-  flex: 0 1 auto;
-  display: inline-flex;
-  width: 240px;
-  max-width: 45%;
+// Intro text sits in a white speech bubble to the right of the photo.
+.about-bubble {
+  position: relative;
+  flex: 1 1 340px;
+  max-width: 40rem;
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
+  text-align: left;
 
-  &:hover { text-decoration: none; }
+  p:first-child { margin-top: 0; }
+  p:last-child { margin-bottom: 0; }
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: transform 0.2s ease;
+  // Tail pointing left toward the photo. The header centers its items, so the
+  // bubble's vertical center lines up with the photo's — anchor the tail there.
+  &::after {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-right: 13px solid #fff;
   }
-  &:hover img { transform: scale(1.03); }
+}
+
+// Dark text + blue links inside the white bubble (override the section's
+// white-on-dark treatment, which otherwise wins by id specificity).
+#about .about-bubble {
+  &,
+  p, li, span, strong, em, b, i, small, div { color: #26313d; }
+
+  a {
+    color: #2f5f8f;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus { color: #1e4165; }
+  }
+}
+
+// Stacked (narrow): photo on top, bubble below — flip the tail to point up.
+@media (max-width: 640px) {
+  .about-bubble::after {
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%);
+    border-top: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 13px solid #fff;
+  }
 }
 
 // Contact + quick links: one column per theme (from _data/contact.yml),
@@ -353,17 +405,6 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
 
   p { margin: 0 0 0.45rem; }
   p:last-child { margin-bottom: 0; }
-}
-
-// Intro text sits below, left-aligned and width-limited for readability.
-.about-bio {
-  max-width: 44rem;
-  margin: 0;
-  text-align: left;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .about-header__lab img { transition: none; }
 }
 
 .section-title {

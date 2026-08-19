@@ -6,15 +6,16 @@ permalink: /
 # Landing cover: drop the navbar and let the WebGL scene fill the viewport.
 hide_nav: true
 full_bleed: true
-tagline: Machine learning researcher &amp; musician
+greeting: Hey! I'm Yaniv.
+tagline: I'm an interdisciplinary researcher and educator, working in ML/AI for mental health.
 
 profile:
   align: left
   image: prof_pic.png
 
-news: false  # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
 I'm an **interdisciplinary researcher and educator** developing machine learning and AI methods for **suicide research and prevention**. My work sits at the intersection of **ML methodology, human-computer interaction, and clinical psychology**—building models transparent and trustworthy enough for use in **safety-critical settings**.

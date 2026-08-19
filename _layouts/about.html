@@ -9,11 +9,11 @@ layout: default
   <canvas id="gl" class="home__canvas"></canvas>
   <div class="home__overlay">
     <div class="home__text">
-      <h1 class="home__name">Hey! I'm Yaniv</h1>
+      <h1 class="home__name">{{ page.greeting | default: "Hey! I'm Yaniv" }}</h1>
       <p class="home__tagline">{{ page.tagline | default: "Machine learning researcher &amp; musician" }}</p>
     </div>
     <a href="#about" class="home__arrow" aria-label="Scroll to content">
-      <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor"
+      <svg viewBox="0 0 24 24" width="54" height="54" fill="none" stroke="currentColor"
            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <polyline points="6 9 12 15 18 9"></polyline>
       </svg>
@@ -46,7 +46,7 @@ layout: default
     <!-- About -->
     <section id="about" class="section reveal">
       <div class="container">
-        <!-- Profile photo + lab logo, side by side -->
+        <!-- Profile photo + intro text (speech bubble), side by side -->
         <div class="about-header">
           <div class="about-header__photo">
             {%- if page.profile.image %}
@@ -57,20 +57,13 @@ layout: default
             alt=page.profile.image -%}
             {% endif -%}
           </div>
-          <a class="about-header__lab" href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer"
-             aria-label="Model-Guided Uncertainty (MOGU) Lab — learn more about my work">
-            <img src="https://mogu-lab.github.io/assets/img/mogu-lab-logo.webp"
-                 alt="Model-Guided Uncertainty (MOGU) Lab logo" loading="lazy">
-          </a>
+          <div class="about-bubble">
+            {{ content }}
+          </div>
         </div>
 
         <!-- Contact + quick links (from _data/contact.yml) -->
         {% include sections/contact.html %}
-
-        <!-- Intro text -->
-        <div class="about-bio">
-          {{ content }}
-        </div>
       </div>
     </section>
 
