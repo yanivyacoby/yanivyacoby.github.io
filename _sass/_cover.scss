@@ -726,16 +726,25 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   fill: none;
   stroke: rgba(255, 255, 255, 0.4);
   stroke-width: 2px;
-  transition: opacity 0.2s ease, stroke 0.2s ease;
-
-  &.is-hot { stroke: rgba(255, 255, 255, 0.95); }
-  &.is-dim { opacity: 0.22; }
+  transition: stroke 0.2s ease;
 }
 
-// Arrowheads — match the connector color; follow the edge's stroke where supported.
+// Arrowhead — exact same color + opacity as the connector line. The line stops
+// at the arrowhead's base, so the two never overlap (no line showing through).
 .bio-dg2__arrowhead {
   fill: rgba(255, 255, 255, 0.4);
-  fill: context-stroke;
+  stroke: none;
+  transition: fill 0.2s ease;
+}
+
+// Hover lineage: brighten (is-hot) or fade (is-dim) the whole edge group so the
+// connector line and its arrowhead always change together.
+.bio-dg2__edge-g {
+  transition: opacity 0.2s ease;
+
+  &.is-hot .bio-dg2__edge { stroke: rgba(255, 255, 255, 0.95); }
+  &.is-hot .bio-dg2__arrowhead { fill: rgba(255, 255, 255, 0.95); }
+  &.is-dim { opacity: 0.22; }
 }
 
 // Circle markers — hollow by default, filled + ring for the present roles.

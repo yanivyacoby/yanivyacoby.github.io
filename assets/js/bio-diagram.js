@@ -89,19 +89,30 @@
     return { N: N, H: H };
   }
 
-  var ARROW_GAP = 20; // stop the edge short of the target circle so the arrowhead shows
+  var ARROW_GAP = 20;         // stop the arrowhead short of the target circle
+  var AH_LEN = 14, AH_HW = 6; // arrowhead length + half-width (px)
 
-  function edgePath(p, c) {
+  // Geometry for one edge: the connector line (which stops at the arrowhead's
+  // base so the two never overlap) plus a filled arrowhead triangle at the end.
+  function edgeGeom(p, c) {
     if (Math.abs(c.y - p.y) < 28) {            // near-horizontal (the offshoot)
       var dir = c.x >= p.x ? 1 : -1;
-      var ex = c.x - dir * ARROW_GAP;
-      var mx = (p.x + ex) / 2;
-      return 'M' + p.x + ',' + p.y + 'C' + mx + ',' + p.y + ' ' + mx + ',' + c.y + ' ' + ex + ',' + c.y;
+      var tipX = c.x - dir * ARROW_GAP;
+      var baseX = tipX - dir * AH_LEN;
+      var mx = (p.x + baseX) / 2;
+      return {
+        line: 'M' + p.x + ',' + p.y + 'C' + mx + ',' + p.y + ' ' + mx + ',' + c.y + ' ' + baseX + ',' + c.y,
+        head: 'M' + tipX + ',' + c.y + ' L' + baseX + ',' + (c.y - AH_HW) + ' L' + baseX + ',' + (c.y + AH_HW) + ' Z'
+      };
     }
     var diry = c.y >= p.y ? 1 : -1;            // vertical S-curve (merge/fork)
-    var ey = c.y - diry * ARROW_GAP;
-    var my = (p.y + ey) / 2;
-    return 'M' + p.x + ',' + p.y + 'C' + p.x + ',' + my + ' ' + c.x + ',' + my + ' ' + c.x + ',' + ey;
+    var tipY = c.y - diry * ARROW_GAP;
+    var baseY = tipY - diry * AH_LEN;
+    var my = (p.y + baseY) / 2;
+    return {
+      line: 'M' + p.x + ',' + p.y + 'C' + p.x + ',' + my + ' ' + c.x + ',' + my + ' ' + c.x + ',' + baseY,
+      head: 'M' + c.x + ',' + tipY + ' L' + (c.x - AH_HW) + ',' + baseY + ' L' + (c.x + AH_HW) + ',' + baseY + ' Z'
+    };
   }
 
   var LH = 16, R = 12, GAP = 12; // R = circle radius
@@ -190,21 +201,18 @@
       .attr('width', '100%').attr('height', lay.H)
       .attr('role', 'img').attr('aria-label', 'Diagram of career and education path');
 
-    // Arrowhead marker (shared by all edges).
-    svg.append('defs').append('marker')
-      .attr('id', 'bio-arrow')
-      .attr('viewBox', '0 0 10 10')
-      .attr('refX', 8).attr('refY', 5)
-      .attr('markerWidth', 10).attr('markerHeight', 10)
-      .attr('orient', 'auto')
-      .append('path')
-      .attr('class', 'bio-dg2__arrowhead')
-      .attr('d', 'M0,0 L10,5 L0,10 Z');
+    // Edges: each is a group holding the connector line + its own arrowhead, so
+    // hover can brighten both together (a single shared marker couldn't follow).
+    var edgeG = svg.append('g').selectAll('g').data(LINKS).join('g')
+      .attr('class', 'bio-dg2__edge-g');
 
-    var edges = svg.append('g').selectAll('path').data(LINKS).join('path')
+    var edges = edgeG.append('path')
       .attr('class', 'bio-dg2__edge')
-      .attr('marker-end', 'url(#bio-arrow)')
-      .attr('d', function (d) { return edgePath(N[d[0]], N[d[1]]); });
+      .attr('d', function (d) { return edgeGeom(N[d[0]], N[d[1]]).line; });
+
+    var heads = edgeG.append('path')
+      .attr('class', 'bio-dg2__arrowhead')
+      .attr('d', function (d) { return edgeGeom(N[d[0]], N[d[1]]).head; });
 
     var nodes = svg.append('g').selectAll('g').data(NODES).join('g')
       .attr('class', function (d) { return 'bio-dg2__node' + (d.current ? ' is-current' : ''); })
@@ -232,19 +240,19 @@
     function focusOn(id) {
       var keep = lineage(id);
       nodes.classed('is-dim', function (n) { return !keep[n.id]; });
-      edges.classed('is-dim', function (e) { return !(keep[e[0]] && keep[e[1]]); })
+      edgeG.classed('is-dim', function (e) { return !(keep[e[0]] && keep[e[1]]); })
            .classed('is-hot', function (e) { return keep[e[0]] && keep[e[1]]; });
     }
     function clearFocus() {
       nodes.classed('is-dim', false);
-      edges.classed('is-dim', false).classed('is-hot', false);
+      edgeG.classed('is-dim', false).classed('is-hot', false);
     }
     nodes.on('mouseenter', function (_, d) { focusOn(d.id); })
          .on('mouseleave', clearFocus)
          .on('focusin', function (_, d) { focusOn(d.id); })
          .on('focusout', clearFocus);
 
-    return { edges: edges, nodes: nodes };
+    return { edges: edges, heads: heads, nodes: nodes };
   }
 
   function playIntro(sel) {
@@ -254,6 +262,11 @@
       d3.select(this).attr('stroke-dasharray', L).attr('stroke-dashoffset', L);
     }).transition().delay(function (d, i) { return i * 70; }).duration(500)
       .attr('stroke-dashoffset', 0);
+    if (sel.heads) {
+      sel.heads.style('opacity', 0).transition()
+        .delay(function (d, i) { return i * 70 + 460; }).duration(200)
+        .style('opacity', 1);
+    }
     sel.nodes.style('opacity', 0).transition()
       .delay(function (d, i) { return 180 + i * 60; }).duration(380)
       .style('opacity', 1);
