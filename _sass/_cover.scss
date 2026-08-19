@@ -12,6 +12,9 @@ body.full-bleed-page {
 
 // Smooth-scroll for the in-page anchor navigation.
 html {
+  // Global text scale: ~18px base (up from the 16px default). Because nearly all
+  // sizing is in rem, this enlarges text site-wide (and spacing proportionally).
+  font-size: 112.5%;
   scroll-behavior: smooth;
 }
 

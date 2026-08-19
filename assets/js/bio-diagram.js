@@ -18,7 +18,7 @@
         { text: 'Finale Doshi-Velez', url: 'https://finale.seas.harvard.edu/' }
       ] },
     { id: 'msr',     role: 'Research Intern',                         place: 'Microsoft Research New England',          url: 'https://www.microsoft.com/en-us/research/theme/biomedical-ml/', side: 'right' },
-    { id: 'postdoc', role: 'Postdoctoral Fellow',                     side: 'left', wide: true, place: [
+    { id: 'postdoc', role: 'Postdoc in Clinical Psychology',          side: 'left', wide: true, place: [
         { text: 'Nock Lab', url: 'https://nocklab.fas.harvard.edu/' },
         { text: 'Harvard University' },
         { text: '& Mass General Hospital' }
