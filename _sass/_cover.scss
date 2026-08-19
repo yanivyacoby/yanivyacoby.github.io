@@ -22,21 +22,24 @@ html {
   html { scroll-behavior: auto; }
 }
 
-// iOS safe areas (viewport-fit=cover): section/nav backgrounds run edge-to-edge,
-// but the text is inset so it never tucks under the camera/notch — this is
-// non-zero mainly in landscape, where the notch sits on a side. Backgrounds
-// (full-width sections) are unaffected.
+// Content gutter + iOS safe areas (viewport-fit=cover): section/nav backgrounds
+// run edge-to-edge, but the text keeps a comfortable gutter from the screen edge
+// — and grows to clear the camera/notch in landscape. max() keeps whichever is
+// larger; on desktop the window is far wider than the 1000px column, so this
+// gutter just sits inside the centered content. Full-width backgrounds unaffected.
 .container {
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
+  padding-left: max(1.25rem, env(safe-area-inset-left));
+  padding-right: max(1.25rem, env(safe-area-inset-right));
 }
 
 .home {
   position: relative;
   width: 100%;
-  height: 100vh;
-  // Fallback to small-viewport-height on mobile so browser chrome doesn't clip it.
-  height: 100svh;
+  height: 100vh;   // fallback for older browsers
+  height: 100svh;  // fallback for svh-but-not-dvh browsers
+  // Dynamic viewport height fills the live visible area edge-to-edge, including the
+  // top/bottom safe-area strips (notch / home indicator), instead of stopping short.
+  height: 100dvh;
   overflow: hidden;
   // Neutral base color shown for the split second before the scene paints.
   background: #6f9bbb;
