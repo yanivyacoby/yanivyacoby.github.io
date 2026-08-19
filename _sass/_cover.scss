@@ -22,6 +22,15 @@ html {
   html { scroll-behavior: auto; }
 }
 
+// iOS safe areas (viewport-fit=cover): section/nav backgrounds run edge-to-edge,
+// but the text is inset so it never tucks under the camera/notch — this is
+// non-zero mainly in landscape, where the notch sits on a side. Backgrounds
+// (full-width sections) are unaffected.
+.container {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
 .home {
   position: relative;
   width: 100%;
@@ -62,7 +71,10 @@ html {
   bottom: 60%; // bottom edge ~40% down — a touch above the ~43% horizon
   transform: translateX(-50%);
   width: auto;      // shrink-wrap to the (single-line) greeting…
-  max-width: 92vw;  // …but never wider than the viewport
+  // …but never wider than the viewport, and never into the camera/notch. Because
+  // the block is centered, we subtract twice the larger side inset so clearing one
+  // side pulls both in equally. Insets are 0 (so this stays 92vw) without a cutout.
+  max-width: min(92vw, calc(100vw - 2 * max(env(safe-area-inset-left), env(safe-area-inset-right))));
   text-align: center;
   padding: 0 1.5rem;
   // Angular, geometric display font for the cover only (rest of the site stays on Roboto).
@@ -161,7 +173,8 @@ html {
   max-width: $max-content-width;
   margin: 0 auto;
   min-height: $onepage-nav-height;
-  padding: 0 1rem;
+  // Keep the brand/links clear of the camera/notch in landscape (bar stays full-width).
+  padding: 0 max(1rem, env(safe-area-inset-right)) 0 max(1rem, env(safe-area-inset-left));
   display: flex;
   align-items: center;
   justify-content: space-between;
