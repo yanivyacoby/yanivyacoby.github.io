@@ -73,16 +73,14 @@ html {
 // Text block floats just above the sky/water horizon rather than screen-center.
 .home__text {
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
   bottom: 60%; // bottom edge ~40% down — a touch above the ~43% horizon
-  transform: translateX(-50%);
-  width: auto;      // shrink-wrap to the (single-line) greeting…
-  // …but never wider than the viewport, and never into the camera/notch. Because
-  // the block is centered, we subtract twice the larger side inset so clearing one
-  // side pulls both in equally. Insets are 0 (so this stays 92vw) without a cutout.
-  max-width: min(92vw, calc(100vw - 2 * max(env(safe-area-inset-left), env(safe-area-inset-right))));
-  text-align: center;
-  padding: 0 1.5rem;
+  text-align: center; // centers the greeting reliably, whatever its width
+  // Base gutter, widened to the safe-area inset so the text clears a side camera
+  // in landscape. Insets are 0 in portrait, so this is just a symmetric gutter.
+  padding-left: max(1.5rem, env(safe-area-inset-left));
+  padding-right: max(1.5rem, env(safe-area-inset-right));
   // Angular, geometric display font for the cover only (rest of the site stays on Roboto).
   font-family: "Chakra Petch", "Helvetica Neue", Arial, sans-serif;
 }
@@ -120,7 +118,7 @@ html {
   .home__text {
     top: 50%;
     bottom: auto;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%); // left/right:0 already center it horizontally
   }
 
   .home__name { font-size: clamp(1.8rem, min(9vw, 13vh), 6rem); }
