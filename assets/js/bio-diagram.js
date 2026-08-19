@@ -81,9 +81,11 @@
       // stacked order reads Assistant Professor -> PI -> Affiliations (matching wide).
       // Fan them left/center/right so all three read as branching out of Postdoc
       // (a fork) instead of collapsing into one vertical line (a chain).
+      // (Labels shrink on narrow screens via CSS so these clamps can keep the
+      // fan spread without the side labels running off the edge.)
       N.prof = { x: 0.50 * w, y: Yn(5) };                      // straight up from Postdoc
-      N.dir  = { x: Math.max(0.36 * w, 158), y: Yn(4) };       // branch left; label points left (off the lines)
-      N.aff  = { x: Math.min(0.64 * w, w - 175), y: Yn(3) };   // branch right; label points right (off the lines)
+      N.dir  = { x: Math.max(0.34 * w, 128), y: Yn(4) };       // branch left; label points left (off the lines)
+      N.aff  = { x: Math.min(0.66 * w, w - 148), y: Yn(3) };   // branch right; label points right (off the lines)
       H = Yn(5) + 96;
     }
     // Flip vertically so the most recent roles sit at the top (arrows point upward).

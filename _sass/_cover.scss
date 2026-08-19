@@ -924,6 +924,13 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
 .bio-dg2__role  { fill: #fff; font-weight: 600; font-size: 0.9rem; }
 .bio-dg2__place { fill: rgba(255, 255, 255, 0.9); font-size: 0.8rem; }
 
+// Narrow screens: smaller labels so the stacked side labels fit and the top-row
+// fan keeps its spread (the diagram measures these sizes when it lays out).
+@media (max-width: 540px) {
+  .bio-dg2__role  { font-size: 0.78rem; }
+  .bio-dg2__place { font-size: 0.7rem; }
+}
+
 // Linked place lines (inside an SVG <a>) get the warm-gold section link color.
 a .bio-dg2__place {
   fill: #ffe0a3;
