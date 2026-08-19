@@ -18,7 +18,7 @@
 
     <!-- Styles -->
     {% if site.icon.size < 3 %}
-    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22Apple%20Color%20Emoji,Segoe%20UI%20Emoji,Noto%20Color%20Emoji,sans-serif%22>{{ site.icon }}</text></svg>">
     {% elsif site.icon != blank %}
     <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url}}"/>
     {% endif %}
