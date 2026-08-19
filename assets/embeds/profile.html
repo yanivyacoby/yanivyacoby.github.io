@@ -38,6 +38,7 @@ const CONFIG = {};
 const CFG = Object.assign({
   cols:        84,        // grid columns; rows derived from the image aspect ratio
   overlap:     0.45,      // how much each square oversizes its cell (0 = exact tile, >0 = overlap)
+  pieceScale:  1.0,       // global multiplier on every piece's base size (all shapes scale with it)
   triScale:    1.5,       // beard triangles are this much larger than their cell
   triHeight:   1.5,       // ...and this much taller again (extra vertical stretch)
   mustacheScale: 0.8,     // moustache triangle size relative to beard (1 = same)
@@ -73,7 +74,7 @@ const CFG = Object.assign({
     pupilDark:  0.42,     // also include dark (max-channel < this) cells next to the masked eyes
     backing:    [0.92, 0.92, 0.89],  // white-ish square drawn behind the moving eye (eye white)
     backingBlend: 0.4,    // blend the white backing this far toward nearby pixels (0 = pure white)
-    move:       0.5,      // look amplitude, in cells (subtle)
+    move:       0.35,     // look amplitude, in cells (subtle)
     speed:      0.8,      // look oscillation speed
   },
   twinkle: {              // dark spots in the sweater pulse (twinkle) toward a light colour
@@ -380,7 +381,7 @@ function sampleImage(img, masks, eyesImg, mustacheImg) {
   const cw   = IMG_W / cols;
   const rows = Math.max(1, Math.round(IMG_H / cw));
   const ch   = IMG_H / rows;
-  CELL = Math.min(cw, ch);
+  CELL = Math.min(cw, ch) * (CFG.pieceScale || 1);   // piece base size (a_size) = cell × pieceScale
   const N = cols * rows;
 
   // Mark cells where the photo differs from a feature mask (mask may be lower-res: each photo

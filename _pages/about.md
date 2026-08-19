@@ -8,14 +8,6 @@ hide_nav: true
 full_bleed: true
 greeting: Hey, I'm Yaniv.
 tagline: I'm an interdisciplinary researcher and educator, working in ML/AI for mental health.
-
-profile:
-  align: left
-  image: prof_pic.png
-
-news: false # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
 ---
 
 I'm an **interdisciplinary researcher and educator** developing machine learning and AI methods for **suicide research and prevention**. My work sits at the intersection of **ML methodology, human-computer interaction, and clinical psychology**.

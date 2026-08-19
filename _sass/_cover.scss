@@ -295,8 +295,7 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   p, div, li, ul, ol, dl, dt, dd,
   strong, em, b, i, span, small, blockquote, figcaption,
   td, th,
-  .section-title, .subsection-title,
-  .timeline__role, .timeline__place, .timeline__note {
+  .section-title, .subsection-title {
     color: #fff;
   }
 
@@ -670,19 +669,6 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
 .course__body p { text-align: left; }
 .course__name { font-weight: 600; } // course name as a bold, inline lead-in to the description
 .course__note { font-size: 0.9rem; opacity: 0.85; }
-
-.course__tag {
-  display: inline-block;
-  margin-left: 0.4rem;
-  padding: 0.1rem 0.5rem;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  border-radius: 999px;
-  vertical-align: middle;
-}
 
 @media (max-width: 560px) {
   // Courses stack into one column. A sideways fork can't point at a vertical
