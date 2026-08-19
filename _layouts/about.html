@@ -10,7 +10,9 @@ layout: default
   <div class="home__overlay">
     <div class="home__text">
       <h1 class="home__name">{{ page.greeting | default: "Hey! I'm Yaniv" }}</h1>
+      {%- comment -%} Tagline removed — greeting only.
       <p class="home__tagline">{{ page.tagline | default: "Machine learning researcher &amp; musician" }}</p>
+      {%- endcomment -%}
     </div>
     <a href="#about" class="home__arrow" aria-label="Scroll to content">
       <svg viewBox="0 0 24 24" width="76" height="76" fill="none" stroke="currentColor"
