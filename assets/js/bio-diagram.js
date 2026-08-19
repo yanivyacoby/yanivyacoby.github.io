@@ -201,9 +201,13 @@
       .attr('width', '100%').attr('height', lay.H)
       .attr('role', 'img').attr('aria-label', 'Diagram of career and education path');
 
+    // Everything lives in one group so we can translate it to horizontally center
+    // the drawn content (nodes + labels) within the viewBox.
+    var root = svg.append('g');
+
     // Edges: each is a group holding the connector line + its own arrowhead, so
     // hover can brighten both together (a single shared marker couldn't follow).
-    var edgeG = svg.append('g').selectAll('g').data(LINKS).join('g')
+    var edgeG = root.append('g').selectAll('g').data(LINKS).join('g')
       .attr('class', 'bio-dg2__edge-g');
 
     var edges = edgeG.append('path')
@@ -214,7 +218,7 @@
       .attr('class', 'bio-dg2__arrowhead')
       .attr('d', function (d) { return edgeGeom(N[d[0]], N[d[1]]).head; });
 
-    var nodes = svg.append('g').selectAll('g').data(NODES).join('g')
+    var nodes = root.append('g').selectAll('g').data(NODES).join('g')
       .attr('class', function (d) { return 'bio-dg2__node' + (d.current ? ' is-current' : ''); })
       .attr('transform', function (d) { return 'translate(' + N[d.id].x + ',' + N[d.id].y + ')'; })
       .attr('tabindex', 0);
@@ -236,6 +240,11 @@
         grp.forEach(function (li) { li.tspans.forEach(function (t) { t.setAttribute('x', xL); }); });
       }
     }
+
+    // Center the whole diagram horizontally within the viewBox, based on the
+    // actual bounds of the drawn content (nodes + spilling labels).
+    var bb = root.node().getBBox();
+    root.attr('transform', 'translate(' + (((w - bb.width) / 2) - bb.x) + ',0)');
 
     function focusOn(id) {
       var keep = lineage(id);

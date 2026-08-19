@@ -19,11 +19,8 @@
         <img src="https://mogu-lab.github.io/cs245/_static/logo.png" alt="CS 245 logo" loading="lazy">
       </a>
       <div class="course__body">
-        <h4 class="course__title">
-          <a href="https://mogu-lab.github.io/cs245/" target="_blank" rel="noopener noreferrer">CS 245: Probabilistic Foundations of ML</a>
-        </h4>
         {% capture cs245_desc %}{% include sections/course-cs245.md %}{% endcapture %}
-        {{ cs245_desc | markdownify }}
+        <p><a class="course__name" href="https://mogu-lab.github.io/cs245/" target="_blank" rel="noopener noreferrer">CS 245: Probabilistic Foundations of ML</a>. {{ cs245_desc | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
       </div>
     </div>
 
@@ -32,12 +29,8 @@
         <img src="https://mogu-lab.github.io/cs345/_static/logo.png" alt="CS 345 logo" loading="lazy">
       </a>
       <div class="course__body">
-        <h4 class="course__title">
-          <a href="https://mogu-lab.github.io/cs345/" target="_blank" rel="noopener noreferrer">CS 345: Probabilistic and Bayesian Deep Learning</a>
-          <span class="course__tag">New</span>
-        </h4>
         {% capture cs345_desc %}{% include sections/course-cs345.md %}{% endcapture %}
-        {{ cs345_desc | markdownify }}
+        <p><a class="course__name" href="https://mogu-lab.github.io/cs345/" target="_blank" rel="noopener noreferrer">CS 345: Probabilistic and Bayesian Deep Learning</a>. {{ cs345_desc | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
         <p class="course__note"><em>Under development; to be offered in Spring 2027.</em></p>
       </div>
     </div>
