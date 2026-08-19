@@ -375,14 +375,26 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   p:first-child { margin-top: 0; }
   p:last-of-type { margin-bottom: 0; }
 
-  // Lab logo centered below the intro text, linked to the lab site.
+  // Call-to-action: lab logo on the left, text on the right. The text is the only
+  // in-flow child, so it sets the height; padding-left reserves room for the logo.
+  &__cta {
+    position: relative;
+    margin-top: 1.5rem;     // extra separation from the paragraph above
+    padding-left: 3rem;
+
+    p { margin: 0; }
+  }
+
+  // Lab logo pinned to the left, stretched top-to-bottom so its height is exactly
+  // the text's height; the image keeps its aspect ratio, so width follows.
   &__lab {
-    display: block;
-    text-align: center;
-    margin-top: 0.3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
     line-height: 0;
 
-    img { width: 72px; max-width: 35%; height: auto; }
+    img { height: 100%; width: auto; display: block; }
   }
 
   // Tail pointing left toward the photo. The header centers its items, so the

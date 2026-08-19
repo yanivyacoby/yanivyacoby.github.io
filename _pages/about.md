@@ -20,11 +20,10 @@ social: false # includes social icons at the bottom of the page
 
 I'm an **interdisciplinary researcher and educator** developing machine learning and AI methods for **suicide research and prevention**. My work sits at the intersection of **ML methodology, human-computer interaction, and clinical psychology**.
 
-If this interests you, check out my [lab website](https://mogu-lab.github.io/).
-
-<a class="about-bubble__lab" href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer">
-  <img src="https://mogu-lab.github.io/assets/img/mogu-lab-logo.webp" alt="Model-Guided Uncertainty (MOGU) Lab logo" loading="lazy">
-</a>
+<div class="about-bubble__cta">
+  <p>If you're interested,<br>check out my <a href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer">lab website</a>.</p>
+  <a class="about-bubble__lab" href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer"><img src="https://mogu-lab.github.io/assets/img/mogu-lab-logo.webp" alt="Model-Guided Uncertainty (MOGU) Lab logo" loading="lazy"></a>
+</div>
 
 <!--
 ## Research

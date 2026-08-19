@@ -42,6 +42,8 @@ const CFG = Object.assign({
   triHeight:   1.5,       // ...and this much taller again (extra vertical stretch)
   mustacheScale: 0.8,     // moustache triangle size relative to beard (1 = same)
   mustacheSway: 0.3,      // moustache tip sway relative to the beard's — moves a little, less than beard
+  beardTwinkle: { amp: 0.22, speed: 1.05 }, // subtle glint on the beard/moustache triangles
+                          // (colour pulses toward the twinkle colour; reuses twinkle.sharp)
   swayAmp:     0.25,      // beard tip swing as a fraction of triangle width (base stays pinned)
   speed:       1.1,       // animation speed multiplier
   wavelength:  220,       // spatial wavelength of the sway wave, image px (shorter = less in unison)
@@ -87,6 +89,9 @@ const CFG = Object.assign({
     minSize: 1.35,        // min piece dimension, × cell (keeps overlap so no gaps)
     sizeVar: 1.2,         // random extra size range, × cell (independent per axis → rectangles)
     rot:     0.55,        // max random rotation, radians (~31°)
+    colorYMin: 0.42, colorSatMax: 0.30, colorVMin: 0.5,   // cream (low-sat, light) cells this far
+                          // down count as sweater even above sweaterYMin — catches the
+                          // shoulders/collar that would otherwise render as plain squares
   },
   hat: {                  // beanie pieces: irregular too, but half as much as the sweater
     yMax: 0.30, sat: 0.35, vMin: 0.22,   // detection: colourful cells in the top band
@@ -103,8 +108,8 @@ const CFG = Object.assign({
   skin: {                 // face skin: a bit irregular (subtle)
     yMax: 0.60, hMin: 8, hMax: 45, sMin: 0.18, sMax: 0.62, vMin: 0.55,   // detection (peachy)
     minSize: 1.25,        // min piece dimension, × cell
-    sizeVar: 0.4,         // gentle size variation
-    rot:     0.16,        // small rotation, radians (~9°)
+    sizeVar: 0.6,         // size variation
+    rot:     0.28,        // rotation, radians (~16°)
   },
 }, (typeof CONFIG !== 'undefined' ? CONFIG : {}));
 
@@ -156,6 +161,8 @@ uniform float u_skMin;       // skin piece min size, × cell (shape 9)
 uniform float u_skVar;       // skin piece random size range, × cell
 uniform float u_skRot;       // skin piece max rotation, radians
 uniform float u_mustacheSway;// moustache sway relative to beard (shape 2)
+uniform float u_beardTwAmp;  // beard/moustache glint amount
+uniform float u_beardTwSpeed;// beard/moustache glint rate
 uniform float u_speed;
 uniform float u_waveLen;     // image px
 uniform vec2  u_waveDir;     // unit vector
@@ -242,6 +249,14 @@ void main() {
     float wave = dot(a_center, u_waveDir) / u_waveLen;
     float t    = u_time * u_speed + a_phase + wave * TAU;
     p.x += sin(t) * sway * triW * (a_pos.y + 0.5);
+    // Subtle glint on the beard only (not the moustache, under the nose): pulse toward the
+    // twinkle colour with a per-piece random phase (hash of the cell centre) so pieces sparkle
+    // independently rather than in waves.
+    if (a_shape < 1.5) {
+      float rnd = fract(sin(dot(a_center, vec2(12.9898, 78.233))) * 43758.5453);
+      float bt = pow(0.5 + 0.5 * sin(u_time * u_beardTwSpeed + rnd * TAU), u_twSharp);
+      outCol = mix(a_color, u_twColor, u_beardTwAmp * bt);
+    }
   } else {
     p = a_pos * side;                     // static square
   }
@@ -281,6 +296,7 @@ const uOrigin = U('u_origin'), uScale = U('u_scale'), uRes = U('u_res'),
       uHpWmin = U('u_hpWmin'), uHpWvar = U('u_hpWvar'), uHpHmin = U('u_hpHmin'), uHpHvar = U('u_hpHvar'), uHpRot = U('u_hpRot'),
       uSkMin = U('u_skMin'), uSkVar = U('u_skVar'), uSkRot = U('u_skRot'),
       uMustacheSway = U('u_mustacheSway'), uMustacheScale = U('u_mustacheScale'),
+      uBeardTwAmp = U('u_beardTwAmp'), uBeardTwSpeed = U('u_beardTwSpeed'),
       uTriScale = U('u_triScale'), uTriHeight = U('u_triHeight'),
       uSpeed = U('u_speed'), uWaveLen = U('u_waveLen'), uWaveDir = U('u_waveDir');
 
@@ -612,18 +628,24 @@ function sampleImage(img, masks, eyesImg, mustacheImg) {
         insts.push([cx, cy, CELL, cR[s], cG[s], cB[s], 0, 4]);
         continue;
       }
-      const g = grp[s];
-      const turn = g === 0 && cy / IMG_H < CFG.sweaterYMin;   // non-hair face/head, above sweater
-      // Every cell gets a background square: face/head squares turn (shape 3), dark sweater
-      // spots twinkle (shape 5), the rest are static (shape 0). Beard/moustache cells ALSO get
-      // a triangle on top; the same-coloured square behind stops the page background showing.
+      const g = grp[s], cyN = cy / IMG_H, SW = CFG.sweater;
+      // Sweater = cells at/below sweaterYMin, PLUS cream (low-sat, light) cells above it (the
+      // shoulders/collar) so they're irregular too instead of plain squares.
+      let isSweater = g === 0 && cyN >= CFG.sweaterYMin;
+      if (!isSweater && g === 0 && cyN > SW.colorYMin) {
+        const [, sa, v] = rgb2hsv(cR[s], cG[s], cB[s]);
+        if (sa <= SW.colorSatMax && v >= SW.colorVMin) isSweater = true;
+      }
+      // Background square per cell: hat/headphones/skin/twinkle/sweater get their own shape;
+      // remaining face/head cells are plain (shape 3). Beard/moustache cells stay shape 0
+      // (their triangle draws on top of this backing square).
       let sqShape = 0, sqPhase = 0;
-      if (hat[s]) { sqShape = 7; sqPhase = Math.random() * 6.2832; }            // irregular hat
-      else if (hp[s]) { sqShape = 8; sqPhase = Math.random() * 6.2832; }       // vertical headphone rects
-      else if (skin[s]) { sqShape = 9; sqPhase = Math.random() * 6.2832; }     // gently irregular skin
-      else if (turn) { sqShape = 3; sqPhase = Math.random() * CFG.phaseJitter; }
+      if (hat[s]) { sqShape = 7; sqPhase = Math.random() * 6.2832; }
+      else if (hp[s]) { sqShape = 8; sqPhase = Math.random() * 6.2832; }
+      else if (skin[s]) { sqShape = 9; sqPhase = Math.random() * 6.2832; }
       else if (twinkle[s]) { sqShape = 5; sqPhase = Math.random() * 6.2832; }
-      else if (g === 0 && cy / IMG_H >= CFG.sweaterYMin) { sqShape = 6; sqPhase = Math.random() * 6.2832; }  // irregular sweater
+      else if (isSweater) { sqShape = 6; sqPhase = Math.random() * 6.2832; }
+      else if (g === 0 && cyN < CFG.sweaterYMin) { sqShape = 3; sqPhase = Math.random() * CFG.phaseJitter; }
       insts.push([cx, cy, CELL, cR[s], cG[s], cB[s], sqPhase, sqShape]);
       // Triangle carries the same base size as its square (CELL); the shader derives the
       // triangle's own size (incl. the moustache shrink) so it can align to the square's top.
@@ -699,6 +721,9 @@ function start() {
   gl.uniform1f(uSkVar, sk.sizeVar || 0);
   gl.uniform1f(uSkRot, sk.rot || 0);
   gl.uniform1f(uMustacheSway, CFG.mustacheSway);
+  const bt = CFG.beardTwinkle || {};
+  gl.uniform1f(uBeardTwAmp, bt.amp || 0);
+  gl.uniform1f(uBeardTwSpeed, bt.speed || 0);
   gl.uniform1f(uSpeed, CFG.speed);
   gl.uniform1f(uWaveLen, CFG.wavelength);
   const a = CFG.waveDir * Math.PI / 180;
