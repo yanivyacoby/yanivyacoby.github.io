@@ -250,10 +250,10 @@ html {
 #publications { background: #466321; } // deep green
 #teaching     { background: #7c530f; } // deep amber
 #advocacy     { background: #55346b; } // deep purple
-#music        { background: #33468f; } // deep indigo
+// Music keeps the site's default (light) background so the album cards read cleanly.
 
-// Selector group for the saturated sections.
-$tinted-sections: "#about, #bio, #publications, #teaching, #advocacy, #music";
+// Selector group for the saturated sections (Music excluded — it stays light).
+$tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
 
 // White text + warm-gold links across the saturated sections.
 #{$tinted-sections} {
@@ -296,20 +296,6 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy, #music";
   p:hover a::before { color: #ffe0a3; }
 }
 
-
-// Music — project cards keep their own light background + dark text.
-#music {
-  .grid a,
-  .card a { text-decoration: none; }
-  .card,
-  .card-title,
-  .card-text,
-  .card-body,
-  .card-body * { color: var(--global-text-color); }
-
-  // Keep event-row hover subtle so white text stays legible.
-  .events-table tbody:hover { background-color: rgba(255, 255, 255, 0.1); }
-}
 
 // About header: profile photo + lab logo, side by side and centered.
 .about-header {
@@ -673,6 +659,31 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy, #music";
   margin-top: 0.15rem;
   font-size: 0.86rem;
   opacity: 0.85;
+}
+
+// "Load more" button for the collapsed Past Events list.
+.events-more-wrap {
+  text-align: center;
+  margin-top: 1rem;
+}
+.events-more {
+  background: transparent;
+  color: var(--global-text-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  padding: 0.4rem 1.1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+
+  &:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
+}
+// White variant on the dark one-page sections.
+#{$tinted-sections} .events-more {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.6);
+
+  &:hover { color: #ffe0a3; border-color: #ffe0a3; }
 }
 
 /******************************************************************************

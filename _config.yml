@@ -9,7 +9,7 @@ email:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Yaniv Yacoby, machine learning researcher and musician based in Boston.
 footer_text: >
-  Adapted from the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Art inspired by <a href="https://eiblinkoch.com" target="_blank" rel="noopener noreferrer">Eiblin Koch</a>.
 keywords: Probabilistic Machine Learning, Uncertainty Quantification, Approximate Inference, Deep Bayesian Models, Latent Variable Models  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
