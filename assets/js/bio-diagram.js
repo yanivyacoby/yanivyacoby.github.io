@@ -73,20 +73,21 @@
       var r = 116, t = 72, Yn = function (k) { return t + k * r; };
       N.ba = { x: 0.30 * w, y: Yn(0) };  N.mm = { x: 0.70 * w, y: Yn(0) };
       N.phd = { x: 0.50 * w, y: Yn(1) };
-      // Clamp so the left/right side labels stay on-screen at any narrow width.
-      // (The floor is raised a bit since these keep the roomier one-line wrap.)
-      N.postdoc = { x: Math.max(0.38 * w, 180), y: Yn(2) };
-      N.msr = { x: Math.min(0.74 * w, w - 150), y: Yn(2) };
-      // Roles reversed vs. their row index so that, after the vertical flip, the
-      // stacked order reads Assistant Professor -> PI -> Affiliations (matching wide).
-      // Fan them left/center/right so all three read as branching out of Postdoc
-      // (a fork) instead of collapsing into one vertical line (a chain).
-      // (Labels shrink on narrow screens via CSS so these clamps can keep the
-      // fan spread without the side labels running off the edge.)
-      N.prof = { x: 0.50 * w, y: Yn(5) };                      // straight up from Postdoc
-      N.dir  = { x: Math.max(0.34 * w, 128), y: Yn(4) };       // branch left; label points left (off the lines)
-      N.aff  = { x: Math.min(0.66 * w, w - 148), y: Yn(3) };   // branch right; label points right (off the lines)
-      H = Yn(5) + 96;
+      // Research Intern is an offshoot from the Ph.D. It gets its OWN row, offset
+      // to the right, so its circle can never land on the Postdoc circle below —
+      // the two used to share a row and overlapped on narrow phones. Clamped so
+      // the right-pointing label stays on-screen at any narrow width.
+      N.msr = { x: Math.min(0.72 * w, w - 120), y: Yn(2) };
+      N.postdoc = { x: 0.50 * w, y: Yn(3) };                   // main path, straight below the Ph.D.
+      // Fan the three present roles left/center/right out of Postdoc so they read
+      // as a fork (not a chain), each on its own row. After the vertical flip below
+      // the stacked order reads Assistant Professor -> PI -> Affiliations (matching
+      // wide). Labels shrink on narrow screens via CSS so these clamps can keep the
+      // fan spread without the side labels running off the edge.
+      N.aff  = { x: Math.min(0.66 * w, w - 148), y: Yn(4) };   // branch right; label points right (off the lines)
+      N.dir  = { x: Math.max(0.34 * w, 128), y: Yn(5) };       // branch left; label points left (off the lines)
+      N.prof = { x: 0.50 * w, y: Yn(6) };                      // straight up from Postdoc
+      H = Yn(6) + 96;
     }
     // Flip vertically so the most recent roles sit at the top (arrows point upward).
     var ys = Object.keys(N).map(function (k) { return N[k].y; });
