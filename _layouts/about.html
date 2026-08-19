@@ -21,23 +21,9 @@ layout: default
   </div>
 </section>
 
-<!-- Sticky one-page nav (black). Sticks to the top once the cover scrolls away. -->
-<nav class="onepage-nav" id="onepage-nav">
-  <div class="onepage-nav__inner">
-    <a class="onepage-nav__brand" href="#home">{{ site.first_name }} {{ site.last_name }}</a>
-    <button class="onepage-nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="onepage-nav__links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#publications">Research</a></li>
-      <li><a href="#teaching">Teaching</a></li>
-      <li><a href="#advocacy">Advocacy</a></li>
-      <li><a href="#music">Music</a></li>
-      <li><a href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer">Lab&nbsp;&#8599;</a></li>
-    </ul>
-  </div>
-</nav>
+<!-- Sticky one-page nav (black). Sticks to the top once the cover scrolls away.
+     In-page anchors (no prefix) since the sections live on this same page. -->
+{% include onepage-nav.html %}
 
 <!-- Stacked content sections, each revealed on scroll -->
 <main class="landing-content">
@@ -75,7 +61,7 @@ layout: default
       </div>
     </section>
 
-    <!-- Selected publications (full list lives on /publications) -->
+    <!-- Selected publications (full list lives on the MOGU Lab site) -->
     <section id="publications" class="section reveal">
       <div class="container">
         <h2 class="section-title">Research</h2>
@@ -163,19 +149,7 @@ layout: default
       }, { rootMargin: '-45% 0px -50% 0px' });
       sections.forEach(function (s) { spyIO.observe(s); });
     }
-
-    // Mobile nav toggle.
-    var toggle = nav.querySelector('.onepage-nav__toggle');
-    toggle.addEventListener('click', function () {
-      var open = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    nav.querySelectorAll('.onepage-nav__links a').forEach(function (a) {
-      a.addEventListener('click', function () {
-        nav.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
-    });
+    // (Mobile nav toggle is handled inside the onepage-nav.html include.)
   })();
 </script>
 

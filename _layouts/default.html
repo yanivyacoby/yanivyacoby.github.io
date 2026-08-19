@@ -13,10 +13,11 @@ layout: parse
   </head>
 
   <!-- Body -->
-  <body class="{% unless page.hide_nav %}{% if site.navbar_fixed %}fixed-top-nav{% endif %}{% endunless %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}{% if page.full_bleed %} full-bleed-page{% endif %}">
+  <body class="{% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}{% if page.full_bleed %} full-bleed-page{% endif %}">
 
-    <!-- Header -->
-    {%- unless page.hide_nav %}{% include header.html %}{% endunless %}
+    <!-- Header: shared black nav (standalone pages link back to the home sections).
+         The home page sets hide_nav and renders its own copy after the cover. -->
+    {%- unless page.hide_nav %}{% include onepage-nav.html prefix="/" %}{% endunless %}
 
     <!-- Content -->
     {%- if page.full_bleed %}

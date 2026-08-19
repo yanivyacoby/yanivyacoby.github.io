@@ -31,5 +31,5 @@ My work has also explored how people (mis)understand popular techniques for expl
 
 ## Teaching
 
-My goal is to create classroom environments and mentorship experiences that (a) build student ability to independently interrogate technological systems in societal contexts, (b) that develop effective research skills (e.g. technical reading, writing, communication), and (c) help students overcome common psychological barriers to learning (e.g. imposter phenomenon) using cohort-building and discussion of academic culture. See my [here](/advocacy) for more info.
+My goal is to create classroom environments and mentorship experiences that (a) build student ability to independently interrogate technological systems in societal contexts, (b) that develop effective research skills (e.g. technical reading, writing, communication), and (c) help students overcome common psychological barriers to learning (e.g. imposter phenomenon) using cohort-building and discussion of academic culture. See my [here](#advocacy) for more info.
 -->
