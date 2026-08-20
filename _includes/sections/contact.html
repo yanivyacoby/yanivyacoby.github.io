@@ -3,7 +3,7 @@
   {%- for col in site.data.contact.columns %}
   <div class="about-links__col social-list">
     {%- for item in col.items %}
-    <p><i class="{{ item.icon }}"></i>{% if item.text %} {{ item.text }}{% endif %}{% if item.url %} <a href="{{ item.url }}"{% if item.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.label }}</a>{% endif %}</p>
+    <p><i class="{{ item.icon }}"></i>{% if item.text %}{{ item.text }}{% endif %}{% if item.url %}{% if item.text %} {% endif %}<a href="{{ item.url }}"{% if item.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.label }}</a>{% endif %}</p>
     {%- endfor %}
   </div>
   {%- endfor %}
