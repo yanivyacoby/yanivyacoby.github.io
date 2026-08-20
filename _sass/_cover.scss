@@ -554,25 +554,39 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
 
 // "See the full list" link under the selected-publications list.
 // Research vision: intro text alongside the MOGU Lab logo.
+// Stacked: paragraph, then the research-interests figure, then the lab button.
 .research-vision {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1.25rem 2rem;
+  flex-direction: column;
+  align-items: center;   // center the figure + button; the text stretches full-width
+  gap: 1.5rem;
   margin-bottom: 1.75rem;
 }
 
 .research-vision__text {
-  flex: 1 1 300px;
+  align-self: stretch;   // paragraph spans the full content width
 
   p:first-child { margin-top: 0; }
   p:last-child { margin-bottom: 0; }
 }
 
+// Research-interests diagram, full content width beneath the paragraph.
+.research-vision__figure {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+// Lab logo, floated to the right of the opening line (no card — bare logo); the
+// intro text wraps neatly to its left. Hover scales the logo (matches CS 245).
 .research-vision__lab {
-  flex: 0 0 auto;
+  display: block;
+  float: right;
   width: 200px;
-  max-width: 45%;
+  max-width: 40%;
+  margin: 0.25rem 0 1rem 1.75rem;   // breathing room below + left of the text wrap
 
   &:hover { text-decoration: none; }
 
@@ -586,7 +600,8 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
 }
 
 @media (max-width: 576px) {
-  .research-vision__lab { width: 170px; margin: 0 auto; }
+  // Too narrow to float beside the text — center it above instead.
+  .research-vision__lab { float: none; width: 170px; margin: 0 auto 1.25rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
