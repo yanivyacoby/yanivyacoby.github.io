@@ -195,6 +195,12 @@ html {
     border-bottom: 2px solid transparent;
     transition: color 0.15s ease, border-color 0.15s ease;
 
+    // Trailing icon (e.g. the Lab flask): a touch smaller so it sits within the
+    // text's cap height instead of towering over it. Inherits the link color.
+    i {
+      font-size: 0.85em;
+    }
+
     &:hover,
     &:focus {
       color: #fff;
