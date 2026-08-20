@@ -12,7 +12,7 @@ footer_text: >
   Moving art inspired by <a href="https://eiblinkoch.com" target="_blank" rel="noopener noreferrer">Eiblin Koch</a>.
 keywords: Probabilistic Machine Learning, Uncertainty Quantification, Approximate Inference, Deep Bayesian Models, Latent Variable Models, Mental Health, Suicide Prevention # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🐠️ # emoji favicon (variation selector requests color rendering)
+icon: favicon.ico # favicon file under assets/img/ (wired in _includes/head.html)
 
 url: https://yanivyacoby.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
