@@ -1,7 +1,7 @@
     {% if site.footer_fixed %}
     <footer class="fixed-bottom">
       <div class="container mt-0" style="text-align: center;">
-        &copy; Copyright {{ site.time | date: '%Y' }} <a href="/">{{ site.first_name }} {{ site.last_name }}</a>. <span class="footer-credit">{{ site.footer_text }}</span>
+        &copy; Copyright {{ site.time | date: '%Y' }} <a href="/">{{ site.first_name }} {{ site.last_name }}</a>. <span class="footer-credit"><i class="fas fa-palette" aria-hidden="true"></i>&nbsp;{{ site.footer_text }}</span>
         {%- if site.impressum_path -%}
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
         {%- endif -%}
@@ -13,7 +13,7 @@
     {%- else -%}
     <footer class="sticky-bottom">
       <div class="container" style="text-align: center;">
-        &copy; Copyright {{ site.time | date: '%Y' }} <a href="/">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</a>. <span class="footer-credit">{{ site.footer_text }}</span>
+        &copy; Copyright {{ site.time | date: '%Y' }} <a href="/">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</a>. <span class="footer-credit"><i class="fas fa-palette" aria-hidden="true"></i>&nbsp;{{ site.footer_text }}</span>
         {%- if site.impressum_path -%}
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
         {%- endif -%}

@@ -348,6 +348,12 @@ footer.fixed-bottom {
 // with "Art inspired by") instead of wrapping mid-phrase.
 .footer-credit {
   display: inline-block;
+
+  // The art mark (Font Awesome palette): a touch smaller so it reads as a small
+  // inline mark like the © beside it. It inherits the footer text color already.
+  .fa-palette {
+    font-size: 0.85em;
+  }
 }
 
 footer.sticky-bottom {
