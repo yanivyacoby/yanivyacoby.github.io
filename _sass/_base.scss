@@ -2,9 +2,13 @@ n/******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
-// Typography
-
-p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
+// Typography — default content text color.
+// NOTE: deliberately excludes the generic containers `span` and `div`. Coloring
+// those directly makes them override the color they'd otherwise inherit from a
+// specially-colored ancestor (e.g. the black footer, the nav), which silently
+// breaks contextual coloring — a real footgun. Leave them to inherit; the
+// elements below are content-semantic and safe to color explicitly.
+p, h1, h2, h3, h4, h5, h6, em, li, strong {
   color: var(--global-text-color);
 }
 
@@ -344,11 +348,6 @@ footer.fixed-bottom {
 // with "Art inspired by") instead of wrapping mid-phrase.
 .footer-credit {
   display: inline-block;
-  // The broad `… span … { color: var(--global-text-color) }` rule at the top of
-  // this file directly targets spans and would override the footer's (inherited)
-  // text color, turning the credit dark. inherit restores the footer color so the
-  // wrapped credit matches the un-wrapped copyright text beside it.
-  color: inherit;
 }
 
 footer.sticky-bottom {

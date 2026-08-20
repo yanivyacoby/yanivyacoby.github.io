@@ -7,7 +7,6 @@ permalink: /
 hide_nav: true
 full_bleed: true
 greeting: Hey, I'm Yaniv.
-tagline: I'm an interdisciplinary researcher and educator, working in ML/AI for mental health.
 # About speech-bubble "Update" note (leave blank to hide). Markdown allowed (e.g. **bold**, [links](url)).
 about_update: "I was recently awarded an [**NIH R01**](https://reporter.nih.gov/search/Qv-MXpa_fE67ht1SxfKVOw/project-details/11291684) grant to support this work."
 ---

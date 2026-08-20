@@ -97,21 +97,6 @@ html {
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45), 0 1px 4px rgba(0, 0, 0, 0.35);
 }
 
-.home__tagline {
-  // width:0 keeps the tagline from widening the block, while min-width:100%
-  // stretches it to fill the greeting's width — so it spans edge to edge.
-  width: 0;
-  min-width: 100%;
-  box-sizing: border-box;
-  margin: 1rem 0 0;
-  text-wrap: balance;  // keep the wrapped lines roughly even
-  color: rgba(255, 255, 255, 0.94);
-  font-weight: 300;
-  letter-spacing: 0.02em;
-  font-size: clamp(1.2rem, min(3.6vw, 5.5vh), 2.1rem);
-  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
-}
-
 // Short viewports: center the text vertically (more room above + below) and let
 // it shrink further, so it fits instead of sitting high and clipping off-screen.
 @media (max-height: 600px) {
@@ -122,7 +107,6 @@ html {
   }
 
   .home__name { font-size: clamp(1.8rem, min(9vw, 13vh), 6rem); }
-  .home__tagline { font-size: clamp(0.95rem, min(3.6vw, 5.5vh), 2.1rem); }
 }
 
 .home__arrow {
