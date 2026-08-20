@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Recording Features
-description: Features on recording projects with friends, including The Boston Imposters, Gapi, and Anna Breger
+description: Features on recording projects with friends, including The Boston Imposters, Gapi, Anna Breger, and Ize Trio
 hide_description: true
 img: /assets/img/music/studio33_01.jpg
 importance: 3
