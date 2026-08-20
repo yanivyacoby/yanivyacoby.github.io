@@ -148,6 +148,17 @@ layout: default
       }, { rootMargin: '-45% 0px -50% 0px' });
       sections.forEach(function (s) { spyIO.observe(s); });
     }
+    // Size the profile iframe to the avatar's aspect ratio (the embed broadcasts it
+    // once ready), so the content fills the column width without letterboxing.
+    var squares = document.querySelector('.about-header__squares');
+    if (squares) {
+      window.addEventListener('message', function (e) {
+        if (e.data && e.data.type === 'profile-aspect' && e.data.ratio > 0) {
+          squares.style.aspectRatio = String(e.data.ratio);
+        }
+      });
+    }
+
     // (Mobile nav toggle is handled inside the onepage-nav.html include.)
   })();
 </script>

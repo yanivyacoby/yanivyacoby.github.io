@@ -876,6 +876,11 @@ function resize() {
   gl.uniform2f(uRes, w, h);
   gl.uniform2f(uOrigin, ox, oy);
   gl.uniform1f(uScale, scale);
+  // Broadcast the content's aspect ratio so an embedding page can size the iframe
+  // to match (no letterboxing). VIEW is constant, so this is effectively one-time.
+  if (window.parent !== window) {
+    window.parent.postMessage({ type: 'profile-aspect', ratio: VIEW.w / VIEW.h }, '*');
+  }
 }
 
 // ── Static uniforms + render loop ──────────────────────────────────────────────

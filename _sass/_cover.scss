@@ -380,7 +380,7 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
 .about-header {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center; // each column sizes to its content; the shorter one centers
   justify-content: center;
   gap: 2rem;
   margin-bottom: 1.75rem;
@@ -399,11 +399,14 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   }
 }
 
-// Animated WebGL "squares" profile, embedded via iframe: square, rounded, borderless.
+// Animated WebGL "squares" profile, embedded via iframe. It fills the column width;
+// its height follows the avatar's own aspect ratio so the content isn't letterboxed.
+// The exact ratio is set at runtime from the embed (postMessage → about.html); the
+// aspect-ratio here is only the pre-load fallback (the avatar is a bit taller than wide).
 .about-header__squares {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 5 / 6;
   border: 0;
   border-radius: 12px;
 }
