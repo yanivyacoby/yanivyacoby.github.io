@@ -1,6 +1,7 @@
 $(document).ready(function() {
   // Init Masonry
   var $grid = $('.grid').masonry({
+    columnWidth: '.grid-sizer', // fluid: column width tracks the sizer's (%-based) width
     gutter: 10,
     horizontalOrder: true,
     itemSelector: '.grid-item',
