@@ -4,7 +4,7 @@ title: The Corn Knight
 description: A story-piece for marimba and piano, composed and performed in collaboration with pianist Chase Morrin.
 img: assets/img/music/ck-front.jpg
 hide_description: true
-importance: 1
+importance: 3
 category: discography
 light_page: true # keep this album page on the default light theme (not the dark album canvas)
 ---

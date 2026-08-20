@@ -4,7 +4,7 @@ title: Triga
 description: A folk music trio formed on a Boston rooftop, rooted in traditions from Austria to Sweden to Quebec.
 hide_description: true
 img: assets/img/music/triga-ep-cover.png
-importance: 2
+importance: 1
 category: collaborations
 ---
 
