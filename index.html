@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+    
+    <!-- Website verification -->
+    <meta name="google-site-verification" content="Bik7o47t8LWfR18eH4FK_fZzR3_xWyOReXlg-WUpm-I" />
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yaniv Yacoby</title>
+    <meta name="author" content="Yaniv Yacoby" />
+    <meta name="description" content="Yaniv Yacoby, interdisciplinary researcher and educator developing machine learning and AI methods for suicide research and prevention.
+" />
+    <meta name="keywords" content="Probabilistic Machine Learning, Uncertainty Quantification, Approximate Inference, Deep Bayesian Models, Latent Variable Models, Mental Health, Suicide Prevention" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <!-- Landing-cover display font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="/assets/img/favicon.ico"/>
+    
+    <!-- ?v=<build-time> busts the browser cache each rebuild, so CSS edits show up
+         without a manual hard-refresh (the URL is otherwise identical every build). -->
+    <link rel="stylesheet" href="/assets/css/main.css?v=1787321498">
+    <link rel="canonical" href="https://yanivyacoby.github.io/">
+    
+    <!-- Dark Mode -->
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="sticky-bottom-footer full-bleed-page">
+
+    <!-- Header: shared black nav (standalone pages link back to the home sections).
+         The home page sets hide_nav and renders its own copy after the cover. -->
+
+    <!-- Content -->
+    <!-- about.html — single-page scrolling site -->
+
+<!-- Landing cover: full-viewport WebGL collage with the greeting just above the horizon -->
+<section id="home" class="home">
+  <canvas id="gl" class="home__canvas"></canvas>
+  <div class="home__overlay">
+    <div class="home__text">
+      <h1 class="home__name">Hey, I'm Yaniv.</h1>
+    </div>
+    <a href="#about" class="home__arrow" aria-label="Scroll to content">
+      <svg viewbox="0 0 24 24" width="76" height="76" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- Sticky one-page nav (black). Sticks to the top once the cover scrolls away.
+     In-page anchors (no prefix) since the sections live on this same page. -->
+<nav class="onepage-nav" id="onepage-nav">
+  <div class="onepage-nav__inner">
+    <a class="onepage-nav__brand" href="#home">Yaniv Yacoby</a>
+    <button class="onepage-nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="onepage-nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#publications">Research</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#advocacy">Advocacy</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer noopener noreferrer">Lab <i class="fas fa-flask" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</nav>
+<script>
+  (function () {
+    var nav = document.getElementById('onepage-nav');
+    if (!nav || nav.dataset.navBound) return;
+    nav.dataset.navBound = '1';
+    var toggle = nav.querySelector('.onepage-nav__toggle');
+    if (!toggle) return;
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('.onepage-nav__links a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+</script>
+
+
+<!-- Stacked content sections, each revealed on scroll -->
+<main class="landing-content">
+  <!-- Each section is full-width (own background); content stays centered in .container -->
+
+    <!-- About -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <!-- Profile (animated WebGL "squares" scene) + intro text (speech bubble), side by side.
+             Embedded via iframe so its full-page canvas stays isolated from the cover scene. -->
+        <div class="about-header">
+          <div class="about-header__photo">
+            <iframe class="about-header__squares" src="/assets/embeds/profile.html" title="Yaniv Yacoby" loading="lazy" scrolling="no"></iframe>
+          </div>
+          <div class="about-bubble">
+            <p>I’m an <strong>interdisciplinary researcher and educator</strong> developing machine learning and AI methods for <strong>suicide research and prevention</strong>. My work sits at the intersection of <strong>ML methodology, human-computer interaction, and clinical psychology</strong>.</p>
+
+<div class="about-bubble__cta">
+  <p>If you're interested,<br>check out my <a href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer noopener noreferrer">lab website</a>.</p>
+  <a class="about-bubble__lab" href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer noopener noreferrer"><img src="https://mogu-lab.github.io/assets/img/mogu-lab-logo.webp" alt="Model-Guided Uncertainty (MOGU) Lab logo" loading="lazy"></a>
+</div>
+
+            <p class="about-bubble__update"><span class="about-bubble__update-tag">Update</span> I was recently awarded an <a href="https://reporter.nih.gov/search/Qv-MXpa_fE67ht1SxfKVOw/project-details/11291684" target="_blank" rel="noopener noreferrer"><strong>NIH R01 grant</strong></a> to support this work.</p>
+          </div>
+        </div>
+
+        <!-- Contact + quick links (from _data/contact.yml) -->
+        <!-- About contact / quick links, generated from _data/contact.yml (grouped by theme). -->
+<div class="about-links">
+  <div class="about-links__col social-list">
+    <p><i class="fas fa-landmark"></i>Faculty @<a href="https://www.wellesley.edu/departments-programs/department/computer-science" target="_blank" rel="noopener noreferrer">Wellesley CS</a></p>
+    <p><i class="fas fa-paw"></i>he/they</p>
+  </div>
+  <div class="about-links__col social-list">
+    <p><i class="fas fa-envelope"></i>yy109[at]wellesley[dot]edu</p>
+    <p><i class="fas fa-location-dot"></i><a href="https://www.google.com/maps/place/42%C2%B017'37.8%22N+71%C2%B018'10.2%22W/@42.2938392,-71.3033434,17.6z/data=!3m1!5s0x89e386c429b213d5:0x79736835f6323310!4m12!1m7!3m6!1s0x89e386c3eaae82cf:0x6ef22d5031dedc96!2sScience+Center!8m2!3d42.2940907!4d-71.3072745!16s%2Fg%2F1thvz8wk!3m3!8m2!3d42.293844!4d-71.302835" target="_blank" rel="noopener noreferrer noopener noreferrer">Science Center W126</a></p>
+  </div>
+  <div class="about-links__col social-list">
+    <p><i class="fas fa-book"></i><a href="https://scholar.google.com/citations?hl=en&amp;user=nEhVgawAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer noopener noreferrer">Google Scholar</a></p>
+    <p><i class="fas fa-seedling"></i><a href="/assets/pdf/Yaniv_Yacoby_cv.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a></p>
+  </div>
+</div>
+
+      </div>
+    </section>
+
+    <!-- Bio -->
+    <section id="bio" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Bio</h2>
+        <!-- Bio: career diagram rendered with D3 into #bio-diagram (see assets/js/bio-diagram.js).
+     The list below is a fallback shown if D3/JS is unavailable; the script replaces it. -->
+<div id="bio-diagram" class="bio-dg2">
+  <ul class="bio-dg2__fallback">
+    <li>Undergrad in Computer Science — <a href="https://www.harvard.edu/" target="_blank" rel="noopener noreferrer noopener noreferrer">Harvard University</a>
+</li>
+    <li>Master's in Music — <a href="https://necmusic.edu/dual-degree-programs" target="_blank" rel="noopener noreferrer noopener noreferrer">New England Conservatory</a>
+</li>
+    <li>Ph.D. in Machine Learning — Harvard University, advised by <a href="https://finale.seas.harvard.edu/" target="_blank" rel="noopener noreferrer noopener noreferrer">Finale Doshi-Velez</a>
+</li>
+    <li>Research Intern — <a href="https://www.microsoft.com/en-us/research/theme/biomedical-ml/" target="_blank" rel="noopener noreferrer noopener noreferrer">Microsoft Research New England</a>
+</li>
+    <li>Postdoc in Clinical Psychology — <a href="https://nocklab.fas.harvard.edu/" target="_blank" rel="noopener noreferrer noopener noreferrer">Nock Lab</a>, Harvard University &amp; Mass General Hospital</li>
+    <li>Assistant Professor of Computer Science — <a href="https://wellesley.edu/" target="_blank" rel="noopener noreferrer noopener noreferrer">Wellesley College</a>
+</li>
+    <li>Principal Investigator — <a href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer noopener noreferrer">MOGU Lab</a>
+</li>
+    <li>Research Affiliations — Harvard University &amp; Mass General Brigham</li>
+  </ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js" defer></script>
+<script src="/assets/js/bio-diagram.js" defer></script>
+
+      </div>
+    </section>
+
+    <!-- Selected publications (full list lives on the MOGU Lab site) -->
+    <section id="publications" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+        <!-- Research: vision + MOGU lab, then a selection of publications (full list on /publications). -->
+<div class="research-vision">
+  <div class="research-vision__text">
+    <a class="research-vision__lab" href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer noopener noreferrer" aria-label="Visit the Model-Guided Uncertainty (MOGU) Lab website">
+      <img src="https://mogu-lab.github.io/assets/img/mogu-lab-logo.webp" alt="Model-Guided Uncertainty (MOGU) Lab logo" loading="lazy">
+    </a>
+    
+    <p>I lead the <strong><a href="https://mogu-lab.github.io/" target="_blank" rel="noopener noreferrer">Model-Guided Uncertainty (MOGU) Lab</a></strong>, where we develop ML/AI methods to better <strong>understand, predict, and prevent suicide</strong>.</p>
+
+<p><strong>Challenges.</strong> Mental health data is often <strong>sparse, noisy, and messy</strong>, so purely data-driven ML/AI <strong>struggles</strong> to (a) reliably <strong>identify when</strong> people are at risk, and (b) <strong>explain how</strong> the dynamics of suicide evolve over time.</p>
+
+<p><strong>Our Approach.</strong> We lean on <strong>human expertise</strong>. But much of what makes clinicians effective, and much of what each of us understands about our own experiences, can be <strong>tacit and difficult to put into words</strong>, let alone to translate into a predictive model. So we develop probabilistic (and Bayesian) methods that <strong>elicit this hard-to-verbalize expertise from clinicians and patients</strong> and <strong>embed it directly into a model’s structure and assumptions</strong>, rather than bolting it on after the fact.</p>
+
+<p>We therefore work in the various <strong>intersections</strong> of three areas:</p>
+
+  </div>
+
+  <img class="research-vision__figure" src="https://mogu-lab.github.io/assets/img/research-interests.png" alt="The MOGU Lab's research interests" loading="lazy">
+</div>
+
+<div class="subsection">
+  <h3 class="subsection-title">Selected Publications</h3>
+  <p class="pubs-more">
+    For a complete list, see my lab's <a href="https://mogu-lab.github.io/publications" target="_blank" rel="noopener noreferrer noopener noreferrer">publications page</a>.
+  </p>
+  <div class="publications">
+    <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr">
+<abbr class="badge">ProbML</abbr><abbr class="badge">ICML MOSS</abbr>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="lu2025neural" class="col-sm-10">
+        
+          <!-- Title -->
+          <div class="title">Neural Stochastic Differential Equations on Compact State Spaces: Theory, Methods, and Application to Suicide Risk Modeling</div>
+          <!-- Author -->
+          <div class="author">
+	    <!-- Define format for author names -->
+	    <a href="https://www.linkedin.com/in/malindalu/" class="undergrad" target="_blank" rel="noopener noreferrer">*M Lu</a>, 
+	    <!-- Define format for author names -->
+	    <a href="https://scholar.google.com/citations?user=EfSfs6MAAAAJ&amp;hl=en" class="undergrad" target="_blank" rel="noopener noreferrer">*Y Liu</a>, 
+	    <!-- Define format for author names -->
+	    <a href="https://nocklab.fas.harvard.edu/people" target="_blank" rel="noopener noreferrer">M Nock</a>, 
+	    <!-- Define format for author names -->
+	    and <em><strong>Y Yacoby</strong></em>
+                
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <!-- Workshop title and date -->
+	  	  
+	  
+          <div class="periodical">
+             Accepted @  <em>ProbML</em> 2026
+
+	    
+	    <br>
+	    Previous version accepted @ <em>ICML MOSS</em>  2025	    
+	    
+          </div>
+
+          
+          
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2508.17090" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>	    
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Ecological Momentary Assessment (EMA) studies enable the collection of high-frequency self-reports of suicidal thoughts and behaviors (STBs) via smartphones. Latent stochastic differential equations (SDEs) are a promising model class for EMA data, as it is irregularly sampled, noisy, and partially observed. But SDE-based models suffer from two key limitations. (a) These models often violate domain constraints, undermining scientific validity and clinical trust of the model. (b) Training is numerically unstable without ad hoc fixes (e.g. oversimplified dynamics) that are ill-suited for high-stakes applications. Here, we develop a novel class of expressive SDEs whose solutions are provably confined to a prescribed compact polyhedral state space, matching the domains of EMA data. In this work, (1) we show why chain-rule based constructions of SDEs on compact domains fail, theoretically and empirically; (2) we derive constraints on drift and diffusion for general and stationary SDEs so their solutions remain in the desired state space; and (3), we introduce a parameterization that maps arbitrary (neural or expert-given) dynamics into constraint-satisfying SDEs. On several real EMA datasets, including a large suicide-risk study, our parameterization improves forecasts and optimization dynamics over standard latent neural SDE baselines. These contributions pave the way for principled, trustworthy continuous-time models of suicide risk and other clinical time series and extend applications of SDE-based methods (e.g. diffusion models) to domains with hard state constraints.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS TS4H</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="hang2025improving" class="col-sm-10">
+        
+          <!-- Title -->
+          <div class="title">Improving Forecasts of Suicide Attempts for Patients with Little Data</div>
+          <!-- Author -->
+          <div class="author">
+	    <!-- Define format for author names -->
+	    <a href="http://www.linkedin.com/in/genesishang1" class="undergrad" target="_blank" rel="noopener noreferrer">G Hang</a>, 
+	    <!-- Define format for author names -->
+	    <a href="https://www.linkedin.com/in/annie-chen-wc134/" class="undergrad" target="_blank" rel="noopener noreferrer">A Chen</a>, 
+	    <!-- Define format for author names -->
+	    <a href="https://h-nev.github.io/site/" target="_blank" rel="noopener noreferrer">H Neveux</a>, 
+	    <!-- Define format for author names -->
+	    <a href="https://nocklab.fas.harvard.edu/people" target="_blank" rel="noopener noreferrer">M Nock</a>, 
+	    <!-- Define format for author names -->
+	    and <em><strong>Y Yacoby</strong></em>
+                
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <!-- Workshop title and date -->
+	  	  
+	  
+          <div class="periodical">
+             Accepted @  <em>NeurIPS TS4H</em> 2025
+
+	    
+          </div>
+
+          
+          
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2511.18199" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>	    
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Ecological Momentary Assessment provides real-time data on suicidal thoughts and behaviors, but predicting suicide attempts remains challenging due to their rarity and patient heterogeneity. We show that single models fit to all patients perform poorly, while individualized models overfit with limited data. To address this, we introduce a Latent Similarity Gaussian Process (LSGP) that models patient heterogeneity, enabling those with little data to leverage similar patients’ trends. Preliminary results show improved sensitivity over baselines and offer new understanding of patient similarity.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr">
+<abbr class="badge">JMLR</abbr><abbr class="badge">ICML UDL</abbr>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="yacoby2019mitigating" class="col-sm-10">
+        
+          <!-- Title -->
+          <div class="title">Mitigating the Effects of Non-Identifiability on Inference for Bayesian Neural Networks with Latent Variables</div>
+          <!-- Author -->
+          <div class="author">
+	    <!-- Define format for author names -->
+	    
+                  <em><strong>*Y Yacoby</strong></em>, 
+	    <!-- Define format for author names -->
+	    <a href="https://onefishy.github.io/" target="_blank" rel="noopener noreferrer">*W Pan</a>, 
+	    <!-- Define format for author names -->
+	    and <a href="https://finale.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">F Doshi-Velez</a>
+                  
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <!-- Workshop title and date -->
+	  	  
+	  
+          <div class="periodical">
+             Accepted @  <em>JMLR</em> 2022
+
+	    
+	    <br>
+	    Previous version accepted @ <em>ICML UDL</em>  2019
+              <abbr class="badge talk">Spotlight Talk</abbr>	    
+	    
+          </div>
+
+          
+          
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/1911.00569" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>	    
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Bayesian Neural Networks with Latent Variables (BNN+LVs) capture predictive uncertainty by explicitly modeling model uncertainty (via priors on network weights) and environmental stochasticity (via a latent input noise variable). In this work, we first show that BNN+LV suffers from a serious form of non-identifiability: explanatory power can be transferred between the model parameters and latent variables while fitting the data equally well. We demonstrate that as a result, in the limit of infinite data, the posterior mode over the network weights and latent variables is asymptotically biased away from the ground-truth. Due to this asymptotic bias, traditional inference methods may in practice yield parameters that generalize poorly and misestimate uncertainty. Next, we develop a novel inference procedure that explicitly mitigates the effects of likelihood non-identifiability during training and yields high-quality predictions as well as uncertainty estimates. We demonstrate that our inference method improves upon benchmark methods across a range of synthetic and real data-sets.</p>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
+  </div>
+</div>
+
+      </div>
+    </section>
+
+    <!-- Teaching -->
+    <section id="teaching" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Teaching</h2>
+        
+        <p>My goal is to create classroom environments and mentorship experiences that build students’ ability to <strong>independently interrogate technological systems</strong> within their societal contexts; that develop <strong>effective research skills</strong>, such as technical reading, writing, and communication; and that help students <strong>overcome common psychological barriers to learning</strong>—like the imposter phenomenon—through <strong>cohort-building and open discussion of academic culture</strong>.</p>
+
+
+        <div class="subsection">
+          <h3 class="subsection-title">New Courses</h3>
+          <!-- Teaching: my textbook feeds (arrows) into the two featured courses. -->
+<div class="courses">
+
+  <div class="courses__textbook">
+    <a class="textbook-card" href="https://mogu-lab.github.io/probabilistic-foundations-of-ml/" target="_blank" rel="noopener noreferrer noopener noreferrer">
+      <span class="textbook-card__label">Online Textbook</span>
+      <span class="textbook-card__title">Probabilistic Foundations of ML</span>
+    </a>
+  </div>
+
+  <div class="courses__fork" aria-hidden="true">
+    <span class="courses__fork-arm courses__fork-arm--left"></span>
+    <span class="courses__fork-arm courses__fork-arm--right"></span>
+  </div>
+
+  <div class="courses__row">
+    <div class="course">
+      <a class="course__logo" href="https://mogu-lab.github.io/cs245/" target="_blank" rel="noopener noreferrer noopener noreferrer" aria-label="CS 245">
+        <img src="https://mogu-lab.github.io/cs245/_static/logo.png" alt="CS 245 logo" loading="lazy">
+      </a>
+      <div class="course__body">
+        
+        <p><a class="course__name" href="https://mogu-lab.github.io/cs245/" target="_blank" rel="noopener noreferrer noopener noreferrer">CS 245: Probabilistic Foundations of ML</a>. In recent years, ML has been used in novel applications—from generating new art and music to systems that accurately predict outcomes of medical interventions in real-time. In this course, we introduce the foundational concepts behind the probabilistic paradigm of predictive ML: statistical model specification and learning, focusing on connecting theory with real-world applications. Students get hands-on experience building models for specific tasks, taken from healthcare contexts, using a probabilistic programming language, while introducing critical perspectives to examine the ethics of ML within sociotechnical systems.</p>
+      </div>
+    </div>
+
+    <div class="course">
+      <a class="course__logo" href="https://mogu-lab.github.io/cs345/" target="_blank" rel="noopener noreferrer noopener noreferrer" aria-label="CS 345">
+        <img src="https://mogu-lab.github.io/cs345/_static/logo.png" alt="CS 345 logo" loading="lazy">
+      </a>
+      <div class="course__body">
+        
+        <p><a class="course__name" href="https://mogu-lab.github.io/cs345/" target="_blank" rel="noopener noreferrer noopener noreferrer">CS 345: Probabilistic and Bayesian Deep Learning</a>. This course incorporates ideas from modern deep learning into the probabilistic framework of ML to explore uncertainty, interpretability, and decision-making. It develops rigorous understanding and practical fluency with Bayesian neural networks, Gaussian Processes, deep generative models (e.g. Variational Autoencoders), and scalable inference methods (Variational Inference and Markov Chain Monte Carlo), with hands-on experiments in NumPyro.</p>
+        <p class="course__note"><em>Under development; to be offered in Spring 2027.</em></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+        </div>
+
+        <div class="subsection">
+          <h3 class="subsection-title">Selected Publications</h3>
+          <div class="publications">
+            <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">SIGCSE</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="yacoby2026teaching" class="col-sm-10">
+        
+          <!-- Title -->
+          <div class="title">Teaching Probabilistic Machine Learning in the Liberal Arts: Empowering Socially and Mathematically Informed AI Discourse</div>
+          <!-- Author -->
+          <div class="author">
+	    <!-- Define format for author names -->
+	    
+                <em><strong>Y Yacoby</strong></em>
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <!-- Workshop title and date -->
+	  	  
+	  
+          <div class="periodical">
+             Accepted @  <em>SIGCSE</em> 2026
+              <abbr class="badge talk">Oral Presentation</abbr>
+
+	    
+          </div>
+
+          
+          
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2510.25049" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>	    
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>We present a new undergraduate ML course at our institution, a small liberal arts college serving students minoritized in STEM, designed to empower students to critically connect the mathematical foundations of ML with its sociotechnical implications. We propose a "framework-focused" approach, teaching students the language and formalism of probabilistic modeling while leveraging probabilistic programming to lower mathematical barriers. We introduce methodological concepts through a whimsical, yet realistic theme, the "Intergalactic Hypothetical Hospital," to make the content both relevant and accessible. Finally, we pair each technical innovation with counter-narratives that challenge its value using real, open-ended case-studies to cultivate dialectical thinking. By encouraging creativity in modeling and highlighting unresolved ethical challenges, we help students recognize the value and need of their unique perspectives, empowering them to participate confidently in AI discourse as technologists and critical citizens.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">SIGCSE</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="yacoby2023cs290" class="col-sm-10">
+        
+          <!-- Title -->
+          <div class="title">Empowering First-Year Computer Science Ph.D. Students to Create a Culture that Values Community and Mental Health</div>
+          <!-- Author -->
+          <div class="author">
+	    <!-- Define format for author names -->
+	    
+                  <em><strong>Y Yacoby</strong></em>, 
+	    <!-- Define format for author names -->
+	    <a href="https://scholar.harvard.edu/girash/home" target="_blank" rel="noopener noreferrer">J Girash</a>, 
+	    <!-- Define format for author names -->
+	    and <a href="https://parkes.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">D Parkes</a>
+                  
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <!-- Workshop title and date -->
+	  	  
+	  
+          <div class="periodical">
+             Accepted @  <em>SIGCSE</em> 2023
+              <abbr class="badge talk">Oral Presentation</abbr>
+
+	    
+          </div>
+
+          
+          
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2208.12650" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>	    
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Doctoral programs often have high rates of depression, anxiety, isolation, and imposter phenomenon. Consequently, graduating students may feel inadequately prepared for research-focused careers, contributing to an attrition of talent. Prior work identifies an important contributing factor to maladjustment: that, even with prior exposure to research, entering Ph.D. students often have problematically idealized views of science. These preconceptions can become obstacles for students in their own professional growth. Unfortunately, existing curricular and extracurricular programming in many doctoral programs do not include mechanisms to systematically address students’ misconceptions of their profession. In this work, we describe a new initiative at our institution that aims to address Ph.D. mental health via a mandatory seminar for entering doctoral students. The seminar is designed to build professional resilience in students by (1) increasing self-regulatory competence, and (2) teaching students to proactively examine academic cultural values, and to participate in shaping them. Our evaluation indicates that students improved in both areas after completing the seminar.</p>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advocacy -->
+    <section id="advocacy" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Advocacy</h2>
+        <!-- Advocacy: a short mission + three theme cards (from _data/advocacy.yml). -->
+<p class="advocacy-mission">I create and lead curricular and extracurricular initiatives that <strong>build resilient academic communities</strong>, <strong>normalize mental health</strong>, and <strong>demystify the “hidden curriculum”</strong> of academia.</p>
+
+<div class="advocacy-cards">
+  <div class="advocacy-card">
+    <h4 class="advocacy-card__title">Curriculum</h4>
+    <p class="advocacy-card__body">I <strong>created</strong> <a href="https://yanivyacoby.github.io/harvard-cs290/">CS 290</a> at Harvard — a seminar for entering CS Ph.D. students that builds professional resilience by strengthening their self-regulatory skills and empowering them to examine and reshape academic culture, countering the idealized views of research, the isolation, and the imposter phenomenon common in doctoral programs. See my <a href="https://arxiv.org/abs/2208.12650" target="_blank" rel="noopener noreferrer">SIGCSE paper</a> and <a href="https://yanivyacoby.github.io/harvard-cs290-teaching-materials">teaching materials</a>.</p>
+  </div>
+  <div class="advocacy-card">
+    <h4 class="advocacy-card__title">Workshops</h4>
+    <p class="advocacy-card__body">I <strong>designed and ran</strong> community-building workshops that surface the “hidden curriculum” of academia:</p>
+    <ul class="advocacy-card__items">
+      <li>
+        <span class="advocacy-card__item-title">“Everything I Wish I Knew as I Navigated the Ph.D.” @ NYU and CMU</span><span class="advocacy-card__item-body">Builds community through discussion and reflection on how academic culture and mental health are intertwined; used to jump-start student well-being advocacy groups.</span>
+      </li>
+      <li>
+        <span class="advocacy-card__item-title"><a href="https://yanivyacoby.github.io/a-guide-to-your-phd/guide.html">“How to Make the Most of Your Ph.D.”</a> @ Harvard University</span><span class="advocacy-card__item-body">A guide from current to incoming students that exposes the “hidden curriculum” of doctoral programs.</span>
+      </li>
+    </ul>
+  </div>
+  <div class="advocacy-card">
+    <h4 class="advocacy-card__title">Community &amp; Mentorship</h4>
+    <p class="advocacy-card__body">I <strong>built</strong> support systems for graduate students:</p>
+    <ul class="advocacy-card__items">
+      <li>
+        <span class="advocacy-card__item-title">Co-led <a href="https://intouch.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">InTouch</a>, a peer-to-peer support network at Harvard’s School of Engineering and Applied Sciences.</span>
+      </li>
+      <li>
+        <span class="advocacy-card__item-title">Mentored Ph.D. applicants, helping them write personal statements and CVs, practice interviewing, and see past the common myths about Ph.D. programs that provoke imposter syndrome and lead applicants to self-filter.</span>
+      </li>
+      <li>
+        <span class="advocacy-card__item-title">Served as a mentor for <a href="https://onefishy.github.io/wids_datathon/" target="_blank" rel="noopener noreferrer">WiDS datathons</a>.</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      </div>
+    </section>
+
+    <!-- Music (with Performances as a sub-section) -->
+    <section id="music" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Music</h2>
+        <!-- Music: intro blurb + grid of collaborations/discography from the `music` collection. -->
+<!-- Intro paragraph commented out for now:
+<p>
+  I've had the privilege of collaborating with numerous musicians in the Boston area, including
+  fiddler <a href="/music/duo-with-eric">Eric Boodman</a>,
+  baroque violin/nyckelharpa player <a href="https://annabreger.com">Anna Breger</a>,
+  accordionist/singer <a href="/music/duo-with-sunniva">Sunniva Brynnel</a>,
+  pianist <a href="/music/the-corn-knight">Chase Morrin</a>,
+  ensembles <a href="/music/all-over-the-map">Blue Thread</a> and Fade Blue.
+  In 2016, I released my debut album <a href="/music/the-corn-knight">The Corn Knight</a>,
+  an hour long story piece for piano/marimba duo, in collaboration with Chase Morrin.
+  While at the New England Conservatory, I had the privilege of studying with
+  <a href="http://carlakihlstedt.com">Carla Kihlstedt</a>,
+  <a href="http://www.cristicatt.com">Cristi Catt</a>,
+  <a href="https://www.winifred-horan.com">Win Horan</a>,
+  <a href="https://necmusic.edu/faculty/hankus-netsky">Hankus Netsky</a>,
+  <a href="https://www.fiddlegarden.com">Eden MacAdam-Somer</a> and
+  <a href="https://www.bso.org/profiles/daniel-bauch">Dan Bauch</a>.
+</p>
+-->
+
+<div class="projects">
+  <div class="grid">
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/music/triga">
+      <div class="card hoverable">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/music/triga-ep-cover-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/music/triga-ep-cover-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/music/triga-ep-cover-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/music/triga-ep-cover.png" alt="project thumbnail">
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h4 class="card-title">Triga</h4>
+          <p class="card-text">A folk music trio formed on a Boston rooftop, rooted in traditions from Austria to Sweden to Quebec.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/music/recording-features">
+      <div class="card hoverable">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/music/studio33_01-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/music/studio33_01-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/music/studio33_01-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/music/studio33_01.jpg" alt="project thumbnail">
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h4 class="card-title">Recording Features</h4>
+          <p class="card-text">Features on recording projects with friends, including The Boston Imposters, Gapi, Anna Breger, and Ize Trio.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/music/the-corn-knight">
+      <div class="card hoverable">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/music/ck-front-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/music/ck-front-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/music/ck-front-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/music/ck-front.jpg" alt="project thumbnail">
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h4 class="card-title">The Corn Knight</h4>
+          <p class="card-text">A story-piece for marimba and piano, composed and performed in collaboration with pianist Chase Morrin.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/music/duo-with-sunniva">
+      <div class="card hoverable">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/music/yaniv-and-sunniva-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/music/yaniv-and-sunniva-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/music/yaniv-and-sunniva-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/music/yaniv-and-sunniva.jpeg" alt="project thumbnail">
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h4 class="card-title">Duo with Sunniva Brynnel</h4>
+          <p class="card-text">Traditional and new Irish and Scandinavian folk music on Irish bouzouki, accordion and voice.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/music/duo-with-eric">
+      <div class="card hoverable">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/music/Yaniv-and-Eric-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/music/Yaniv-and-Eric-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/music/Yaniv-and-Eric-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/music/Yaniv-and-Eric.jpg" alt="project thumbnail">
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h4 class="card-title">Duo with Eric Boodman</h4>
+          <p class="card-text">Irish and Québécois folk music on Irish bouzouki, fiddle and foot percussion.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/music/all-over-the-map">
+      <div class="card hoverable">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/music/all-over-the-map-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/music/all-over-the-map-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/music/all-over-the-map-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/music/all-over-the-map.jpeg" alt="project thumbnail">
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h4 class="card-title">All Over the Map</h4>
+          <p class="card-text">A collaboration with ensemble, Blue Thread, featuring medieval Galago-Portuguese cantigas, as well as Galician and Sephardic love songs from the Iberian Peninsula, reviving melodies from ancient manuscripts.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/music/solo-marimba">
+      <div class="card hoverable">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/music/ck-yaniv-eggbg-title-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/music/ck-yaniv-eggbg-title-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/music/ck-yaniv-eggbg-title-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/music/ck-yaniv-eggbg-title.png" alt="project thumbnail">
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h4 class="card-title">Solo Marimba</h4>
+          <p class="card-text">Bits and pieces for marimba from a long, long time ago.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+
+  </div>
+</div>
+
+
+        <div class="subsection">
+          <!-- Performances: upcoming + past events from _data/performances. -->
+
+
+<center>
+<h2>Upcoming Events</h2>
+</center>
+
+
+
+
+<table class="events-table">
+
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+    
+    
+    
+							   
+        
+
+</table>
+
+
+<center>
+  None at the moment, but stay tuned! 🎶
+</center>
+
+
+
+<p></p>
+
+<center>
+<h2>Past Events</h2>
+</center>
+
+<div class="events-collapsible" data-initial="0" data-step="5">
+  
+
+
+<table class="events-table">
+
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Triga @ Moho Somerville (House Concert)</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+	    See event details for location.
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Sun, January 28, 2024 at  7:30pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Come listen to the soothing sounds of the amazing songwriter Night Moth, international folk band Triga, and the beautiful ambient collaboration of Cloudroom and the Akiva Condux Band!
+	
+	More info <a href="https://www.facebook.com/events/655120430032203/?active_tab=about" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Triga @ Northern Roots Music Festival Evening Concert</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='72%20Blanche%20Moyse%20Wy,%20Brattleboro,%20VT%2005301'" target="_blank" rel="noopener noreferrer">Northern Roots Music Festival</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Sat, January 27, 2024 at  7:30pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Triga is a folk music trio formed on a Boston rooftop. With roots in various traditions -- Swedish nyckelharpa music, Québécois fiddling, Irish bouzouki, baroque improvisation -- the three members of Triga bring a unique sound to old and new tunes alike.
+	
+	More info <a href="https://bmcvt.org/northern-roots-festival/" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Workshop: Creating counter-melody accompaniment</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='72%20Blanche%20Moyse%20Wy,%20Brattleboro,%20VT%2005301'" target="_blank" rel="noopener noreferrer">Northern Roots Music Festival</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Sat, January 27, 2024 at  3:00pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        
+	
+	More info <a href="https://bmcvt.org/northern-roots-festival/" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Workshop: Introduction to Irish bouzouki accompaniment</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='72%20Blanche%20Moyse%20Wy,%20Brattleboro,%20VT%2005301'" target="_blank" rel="noopener noreferrer">Northern Roots Music Festival</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Sat, January 27, 2024 at  2:00pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        
+	
+	More info <a href="https://bmcvt.org/northern-roots-festival/" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Triga @ Boston Celtic Music Festival</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='47%20Palmer%20St,%20Cambridge,%20MA%2002138'" target="_blank" rel="noopener noreferrer">Club Passim</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Fri, January 12, 2024 at  8:30pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Triga is a folk music trio formed on a Boston rooftop. With roots in various traditions -- Swedish nyckelharpa music, Québécois fiddling, Irish bouzouki, baroque improvisation -- the three members of Triga bring a unique sound to old and new tunes alike.
+	
+	More info <a href="https://www.passim.org/live-music/bcmfest-2024/" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Triga @ Tunnel Vienna Live</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='Florianigasse%2039,%201080%20Wien,%20Austria'" target="_blank" rel="noopener noreferrer">Tunnel Vienna Live</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Wed, May 31, 2023 at  8:00pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Triga is a folk music trio formed on a Boston rooftop. With roots in various traditions -- Swedish nyckelharpa music, Québécois fiddling, Irish bouzouki, baroque improvisation -- the three members of Triga bring a unique sound to old and new tunes alike.
+	
+	More info <a href="https://www.tunnel-vienna-live.at/events/doppelkonzert-violiebe-triga/" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Blue Thread @ Museum Concert Series of Rhode Island</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='1%20Benevolent%20St,%20Providence,%20RI%2002906'" target="_blank" rel="noopener noreferrer">First Unitarian Church of Providence</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Sun, March 08, 2020 at  3:30pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        All Over the Map showcases global ballads migrating through centuries and cultures, with local participation each stop of the way. From Portugal to Greece, India, the Ozarks and beyond, Blue Thread mixes performance and cultural outreach.
+	
+	More info <a href="http://www.museumconcerts.org/chamber-concerts.html" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Blue Thread @ UMass Lowell Saab Center for Portuguese Studies</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='240%20Central%20St,%20Lowell,%20MA%2001852'" target="_blank" rel="noopener noreferrer">Richard and Nancy Donahue Family Academic Arts Center</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Thu, March 05, 2020 at  7:00pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        All Over the Map showcases global ballads migrating through centuries and cultures, with local participation each stop of the way. From Portugal to Greece, India, the Ozarks and beyond, Blue Thread mixes performance and cultural outreach.
+	
+	More info <a href="https://www.facebook.com/UML.Portuguese/photos/gm.3278381642232695/1490124957777905/?type=3&amp;theater" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Eric &amp; Yaniv @ Boston Celtic Music Festival</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='47%20Palmer%20St,%20Cambridge,%20MA%2002138'" target="_blank" rel="noopener noreferrer">Club Passim, Harvard Square, MA</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Sat, January 18, 2020 at  3:45pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Eric Boodman (fiddle) and Yaniv Yacoby (Irish bouzouki), performing Irish and Quebecois traditional music, as well as original tunes.
+	
+	More info <a href="https://www.passim.org/live-music/festivals_summer_series/bcmfest-2-2/?fbclid=IwAR1E3ZbMhYHGmRf3V4EO-Dzg36-NJCCGRJpWVYzxrPcjuwty4FLsVuLGUN0" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Eric &amp; Yaniv @ Boston Celtic Music Festival</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='47%20Palmer%20St,%20Cambridge,%20MA%2002138'" target="_blank" rel="noopener noreferrer">Club Passim, Harvard Square, MA</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Fri, January 17, 2020 at  7:00pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Eric Boodman (fiddle) and Yaniv Yacoby (Irish bouzouki), performing Irish and Quebecois traditional music, as well as original tunes.
+	
+	More info <a href="https://www.passim.org/live-music/festivals_summer_series/bcmfest-2-2/?fbclid=IwAR1E3ZbMhYHGmRf3V4EO-Dzg36-NJCCGRJpWVYzxrPcjuwty4FLsVuLGUN0" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Sunniva Brynnel &amp; Yaniv @ Adamant Community Club</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='Martin%20Rd,%20Calais,%20VT%2005648'" target="_blank" rel="noopener noreferrer">Adamant Community Club, VT</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Sun, October 06, 2019 at  7:00pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Sunniva Brynnel (accordion / voice) and Yaniv Yacoby (Irish bouzouki), performing Swedish traditional music, as well as original tunes.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Fade Blue @ Watermelon Wednesdays</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='West%20Whately%20Chapel,%20Williamsburg,%20MA'" target="_blank" rel="noopener noreferrer">West Whately Chapel, Williamsburg, MA</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Wed, July 10, 2019 at  7:30pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Yaniv Yacoby joins Fade Blue -- Julian Loida (percussion), Lily Honigberg (fiddle) and James Heazlewood-Dale (bass) -- for some celtic traditional music and original compositions.
+	
+	More info <a href="https://www.eventbrite.com/e/fade-blue-tickets-61176567761" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Fade Blue @ Club Passim Summer Series in Danehy Park</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='99%20Sherman%20St,%20Cambridge,%20MA%2002138'" target="_blank" rel="noopener noreferrer">Danehy Park, Cambridge, MA</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Tue, July 09, 2019 at  6:00pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Yaniv Yacoby joins Fade Blue -- Julian Loida (percussion), Lily Honigberg (fiddle) and James Heazlewood-Dale (bass) -- for some celtic traditional music and original compositions.
+	
+	More info <a href="https://www.bandsintown.com/e/101031735" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Fade Blue @ Summer Boston Celtic Music Festival</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='47%20Palmer%20St,%20Cambridge,%20MA%2002138'" target="_blank" rel="noopener noreferrer">Club Passim, Harvard Square, MA</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Sun, July 07, 2019 at  3:45pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Yaniv Yacoby joins Fade Blue -- Julian Loida (percussion), Lily Honigberg (fiddle) and James Heazlewood-Dale (bass) -- for some celtic traditional music and original compositions.
+	
+	More info <a href="https://www.facebook.com/events/344356586465116/" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Eric &amp; Yaniv @ Passim Brunch Series</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='47%20Palmer%20St,%20Cambridge,%20MA%2002138'" target="_blank" rel="noopener noreferrer">Club Passim, Harvard Square, MA</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Sun, June 16, 2019 at 10:30am
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Eric Boodman (fiddle) and Yaniv Yacoby (Irish bouzouki), performing Irish and Quebecois traditional music, as well as original tunes.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Eric &amp; Yaniv @ Boston Celtic Music Festival</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='47%20Palmer%20St,%20Cambridge,%20MA%2002138'" target="_blank" rel="noopener noreferrer">Club Passim, Harvard Square, MA</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Sat, January 19, 2019 at 10:00am
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Eric Boodman (fiddle) and Yaniv Yacoby (Irish bouzouki), performing Irish and Quebecois traditional music, as well as original tunes.
+	
+	More info <a href="https://www.passim.org/live-music/passim-presents/bcmfest-2-2/" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Fade Blue @ Boston Celtic Music Festival</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='47%20Palmer%20St,%20Cambridge,%20MA%2002138'" target="_blank" rel="noopener noreferrer">Club Passim, Harvard Square, MA</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Fri, January 18, 2019 at  8:30pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Yaniv Yacoby joins Fade Blue -- Julian Loida (percussion), Zach Mayer (sax), Lily Honigberg (fiddle) and Chris Overholster (fiddle) -- for the Roots and Branches portion of the festival.
+	
+	More info <a href="https://passim.secure.force.com/ticket/#details_a0S6A0000003Yz7UAE" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Eric &amp; Yaniv @ Boston Celtic Music Festival</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='47%20Palmer%20St,%20Cambridge,%20MA%2002138'" target="_blank" rel="noopener noreferrer">Club Passim, Harvard Square, MA</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Thu, January 17, 2019 at 10:00pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Eric Boodman (fiddle) and Yaniv Yacoby (Irish bouzouki), performing Irish and Quebecois traditional music, as well as original tunes.
+	
+	More info <a href="https://passim.secure.force.com/ticket/#details_a0S6A0000003Yz7UAE" target="_blank" rel="noopener noreferrer">here</a>.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Millpond.Live - Easthampton Irish Fest</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='2%20Ferry%20St,%20Easthampton,%20MA%2001027'" target="_blank" rel="noopener noreferrer">Millside Park, MA</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Sun, September 17, 2017 at  8:00pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Win Horan (fiddle), Utsav Lal (piano), Madelyn Morrell (fiddle) and Yaniv Yacoby (Irish bouzouki), performing Irish traditional music.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Blue Thread - Portugal Tour</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='Casa%20-%20Museu%20MEDEIROS%20E%20ALMEIDA,%20R.%20Rosa%20Araujo%2041,%201250-008%20Lisboa'" target="_blank" rel="noopener noreferrer">Casa-Museu Medeiros e Almeida, Portugal</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Wed, August 30, 2017 at  7:00pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Cristi Catt (voice), Nikola Radan (flute) and Yaniv Yacoby (12-string guitar), performing medieval Galego-Portuguese cantigas with a modern touch, as well as related pieces.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Blue Thread - Portugal Tour</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='Fundacao%20D.Luis%20I,%20Centro%20Cultural%20de%20Cascais,%20Av.%20Rei%20Humberto%20II%20de%20Italia,%202750%20Cascais'" target="_blank" rel="noopener noreferrer">Centro Cultural de Cascais, Portugal</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Mon, August 28, 2017 at  7:00pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Cristi Catt (voice), Nikola Radan (flute) and Yaniv Yacoby (12-string guitar), performing medieval Galego-Portuguese cantigas with a modern touch, as well as related pieces.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Blue Thread - Portugal Tour</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='Praca%20do%20Giraldo%2027,%207000-508%20Evora'" target="_blank" rel="noopener noreferrer">Praça do Giraldo, Évora, Portugal</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Sat, August 26, 2017 at  9:00pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        Cristi Catt (voice), Nikola Radan (flute) and Yaniv Yacoby (12-string guitar), performing medieval Galego-Portuguese cantigas with a modern touch, as well as related pieces.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+    
+    
+    
+							   
+    
+    
+
+    <tbody class="events-table__group">
+    <tr>
+        <td colspan="100%"><strong>Invited Showcase Artist @ Zeltsman Marimba Festival</strong></td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-location-dot" style="padding-right: 10px;"></i></td>
+        <td>
+	    
+            <a href="https://maps.google.com/?q='85%20George%20St,%20New%20Brunswick,%20NJ%2008901'" target="_blank" rel="noopener noreferrer">Nicholas Music Center, Rutgers University, NJ</a>
+	    
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-calendar-days" style="padding-right: 10px;"></i></td>
+        <td>
+            Wed, July 05, 2017 at  6:45pm
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fas fa-circle-info" style="padding-right: 10px;"></i></td>
+        <td>
+        A concert featuring Yaniv Yacoby with pianist Chase Morrin, performing a selection from their collaborative project, The Corn Knight.
+	
+        </td>
+    </tr>
+    </tbody>
+        
+
+</table>
+
+
+
+  <div class="events-more-wrap">
+    <button type="button" class="events-more">Show past events</button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    document.querySelectorAll('.events-collapsible').forEach(function (wrap) {
+      var initial = parseInt(wrap.getAttribute('data-initial'), 10);
+      if (isNaN(initial)) { initial = 5; }
+      var step = parseInt(wrap.getAttribute('data-step'), 10);
+      if (isNaN(step) || step < 1) { step = 5; }
+      var groups = wrap.querySelectorAll('.events-table__group');
+      var moreWrap = wrap.querySelector('.events-more-wrap');
+      var btn = wrap.querySelector('.events-more');
+      if (!btn || groups.length <= initial) { if (moreWrap) { moreWrap.style.display = 'none'; } return; }
+      var shown = initial;
+      function render() {
+        groups.forEach(function (g, i) { g.style.display = i < shown ? '' : 'none'; });
+        moreWrap.style.display = shown >= groups.length ? 'none' : '';
+        btn.textContent = shown === 0 ? 'Show past events' : 'Load more';
+      }
+      btn.addEventListener('click', function () { shown += step; render(); });
+      render();
+    });
+  })();
+</script>
+
+        </div>
+      </div>
+    </section>
+
+</main>
+
+<!-- Reveal-on-scroll + active-link highlighting + mobile nav toggle -->
+<script>
+  (function () {
+    // Reveal: content starts hidden only when JS runs, so it never stays hidden without JS.
+    document.documentElement.classList.add('has-reveal');
+    var revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var revealIO = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('reveal--visible'); revealIO.unobserve(e.target); }
+        });
+      }, { threshold: 0.08 });
+      revealEls.forEach(function (el) { revealIO.observe(el); });
+    } else {
+      revealEls.forEach(function (el) { el.classList.add('reveal--visible'); });
+    }
+
+    // Active nav link: highlight the section currently in view.
+    var nav = document.getElementById('onepage-nav');
+    var linkFor = {};
+    nav.querySelectorAll('.onepage-nav__links a[href^="#"]').forEach(function (a) {
+      linkFor[a.getAttribute('href').slice(1)] = a;
+    });
+    var sections = document.querySelectorAll('main.landing-content section[id]');
+    if ('IntersectionObserver' in window) {
+      var spyIO = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          var a = linkFor[e.target.id];
+          if (!a) return;
+          if (e.isIntersecting) {
+            Object.keys(linkFor).forEach(function (k) { linkFor[k].classList.remove('is-active'); });
+            a.classList.add('is-active');
+          }
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      sections.forEach(function (s) { spyIO.observe(s); });
+    }
+    // Size the profile iframe to the avatar's aspect ratio (the embed broadcasts it
+    // once ready), so the content fills the column width without letterboxing.
+    var squares = document.querySelector('.about-header__squares');
+    if (squares) {
+      window.addEventListener('message', function (e) {
+        if (e.data && e.data.type === 'profile-aspect' && e.data.ratio > 0) {
+          squares.style.aspectRatio = String(e.data.ratio);
+        }
+      });
+    }
+
+    // (Mobile nav toggle is handled inside the onepage-nav.html include.)
+  })();
+</script>
+
+<!-- WebGL collage scene (large data payload; loaded after the canvas exists) -->
+<script src="/assets/js/cover-collage.js" defer></script>
+
+
+    <!-- Footer -->    <footer class="sticky-bottom">
+      <div class="container" style="text-align: center;">
+        © 2026 <a href="/">Yaniv  Yacoby</a>. <span class="footer-credit"><i class="fas fa-palette" aria-hidden="true"></i> Moving art inspired by <a href="https://eiblinkoch.com" target="_blank" rel="noopener noreferrer noopener noreferrer">Eiblin Koch</a>.
+</span> <span class="footer-credit"><i class="fas fa-paintbrush" aria-hidden="true"></i> MOGU Lab art by <a href="https://www.instagram.com/thelilastronaut1/" target="_blank" rel="noopener noreferrer noopener noreferrer">@thelilastronaut1</a>.</span>
+      </div>
+    </footer>
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KB54ZTDTNF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-KB54ZTDTNF');
+  </script>
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+  </body>
+</html>
+
