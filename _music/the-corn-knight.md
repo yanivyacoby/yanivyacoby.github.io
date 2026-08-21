@@ -96,6 +96,7 @@ light_page: true # keep this album page on the default light theme (not the dark
 
 <p></p>
 
+<div class="video-stage">
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
     	 <div style="position:relative;height:0px;padding-bottom:56%;margin:0px auto;">
@@ -117,6 +118,7 @@ light_page: true # keep this album page on the default light theme (not the dark
 	      <iframe style="position:absolute;top:0px;left:0px;width:100%;height:100%;" width="640" height="360" src="https://www.youtube.com/embed/OOBqnbN_0KQ?rel=0&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
 	 </div>	 
     </div>
+</div>
 </div>
 
 <p></p>
