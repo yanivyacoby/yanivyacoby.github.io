@@ -5,7 +5,6 @@ description: A story-piece for marimba and piano, composed and performed in coll
 img: assets/img/music/ck-front.jpg
 hide_description: true
 importance: 3
-category: discography
 light_page: true # keep this album page on the default light theme (not the dark album canvas)
 ---
 
@@ -20,10 +19,10 @@ light_page: true # keep this album page on the default light theme (not the dark
 	</div>	
     </div>
     <div class="col-sm mt-3 mt-md-0">
-    	 <p style="text-align: justify;">
+    	 <p class="album-blurb">
 		<a href="https://chasemorrin.com/">Chase Morrin</a> and I started <i>The Corn Knight</i> as a project to explore the relationship between marimba and piano, spending hours inventing new orchestrational techniques and ways to groove together. Through this collaboration, we discovered a common thread in our musical sensibilities---a love for simplicity and narrative---and in the winter of 2015, decided to formally write and play a collaborative piece.
 	</p>
-	<p style="text-align: justify;">
+	<p class="album-blurb">
 		<i>The Corn Knight</i> is an hour-long story-piece, informed by a fictional narrative and composed of many short pieces, like chapters in a book. It is influenced by the music we study and admire and therefore draws from Irish and American Folk, Jazz, and Western Classical traditions. This piece is unique in that the structure is largely through-composed, but the details---such as ornaments, grooving patterns, and in some cases, entire melodies---are improvised.
 	 </p>	 
     </div>
@@ -99,14 +98,10 @@ light_page: true # keep this album page on the default light theme (not the dark
 <div class="video-stage">
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-    	 <div style="position:relative;height:0px;padding-bottom:56%;margin:0px auto;">
-	      <iframe style="position:absolute;top:0px;left:0px;width:100%;height:100%;" width="640" height="360" src="https://www.youtube.com/embed/347WQQOROYA?rel=0&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
-	 </div>
+    	 {% include video.html id="347WQQOROYA" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-    	 <div style="position:relative;height:0px;padding-bottom:56%;margin:0px auto;">
-    	      <iframe style="position:absolute;top:0px;left:0px;width:100%;height:100%;" width="640" height="360" src="https://www.youtube.com/embed/-ZRyjH435-w?rel=0&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
-	 </div>
+    	 {% include video.html id="-ZRyjH435-w" %}
     </div>
 </div>
 
@@ -114,9 +109,7 @@ light_page: true # keep this album page on the default light theme (not the dark
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-    	 <div style="position:relative;height:0px;padding-bottom:56%;margin:0px auto;">
-	      <iframe style="position:absolute;top:0px;left:0px;width:100%;height:100%;" width="640" height="360" src="https://www.youtube.com/embed/OOBqnbN_0KQ?rel=0&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
-	 </div>	 
+    	 {% include video.html id="OOBqnbN_0KQ" %}	 
     </div>
 </div>
 </div>

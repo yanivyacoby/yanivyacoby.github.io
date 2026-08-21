@@ -487,15 +487,6 @@ footer.sticky-bottom {
     width: calc((100% - 20px) / 3);
     margin-bottom: 10px;
   }
-
-  h2.category {
-    color: var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
-    padding-top: 0.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: right;
-  }
 }
 
 
@@ -787,6 +778,11 @@ progress {
     td:first-child {
 	padding-right: 10px;
     }
+}
+
+// Justified album description paragraphs (replaces a repeated inline style).
+.album-blurb {
+    text-align: justify;
 }
 
 .events-table {

@@ -5,7 +5,6 @@ description: Features on recording projects with friends, including The Boston I
 hide_description: true
 img: /assets/img/music/studio33_01.jpg
 importance: 2
-category: misc
 ---
 
 <div class="row">
@@ -13,7 +12,7 @@ category: misc
         {% include figure.html path="assets/img/music/in-between.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-    	<p style="text-align: justify;">
+    	<p class="album-blurb">
 	     Collaborated with <a href="https://annabreger.com" target="_blank" rel="noopener noreferrer">Anna Breger</a> on tracks "Meditation / Polska efter Sven Donat" and "Farewell."
 	</p>
 
@@ -33,7 +32,7 @@ category: misc
     	 {% include figure.html path="assets/img/music/ize-trio-global-prayer.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-    	<p style="text-align: justify;">
+    	<p class="album-blurb">
 	     Collaborated with <a href="https://izetrio.com" target="_blank" rel="noopener noreferrer">Ize Trio</a>---<a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a>, <a href="https://lernismusic.com/home" target="_blank" rel="noopener noreferrer">George Lernis</a>, and <a href="https://www.alatrashmusic.com" target="_blank" rel="noopener noreferrer">Naseem Alatrash</a>---on track, "Snæfellsjökull."
 	</p>
 
@@ -55,7 +54,7 @@ category: misc
         {% include figure.html path="assets/img/music/the-boston-imposters.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-    	<p style="text-align: justify;">
+    	<p class="album-blurb">
 	     Collaborated with <a href="https://www.daveyharrison.com/" target="_blank" rel="noopener noreferrer">Davey Harrison</a> and Maire Clement of <a href="https://www.thebostonimposters.com/" target="_blank" rel="noopener noreferrer">The Boston Imposters</a> on tracks, "Periphery", "Mournful Dove" and "Old Sea Walls".
 	</p>
 
@@ -79,7 +78,7 @@ category: misc
     	 {% include figure.html path="assets/img/music/gapi.jpeg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-    	<p style="text-align: justify;">
+    	<p class="album-blurb">
 	     Collaborated with <a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a> and <a href="https://www.doyeonmusic.com/" target="_blank" rel="noopener noreferrer">DoYeon Kim</a> of <a href="https://chasemorrin.com/Recordings/GapiAlbum" target="_blank" rel="noopener noreferrer">Gapi</a> on track, "Heung."
 	</p>
 
