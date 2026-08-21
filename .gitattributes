@@ -1,0 +1,22 @@
+# Normalize line endings. Text files are stored as LF in the repo and checked
+# out as LF, regardless of each contributor's `core.autocrlf` setting — so no
+# more stray CRLF (^M) in the working tree.
+* text=auto eol=lf
+
+# Binary assets: never touch their bytes / line endings.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
+*.woff  binary
+*.woff2 binary
+*.ttf  binary
+*.eot  binary
+*.otf  binary
+*.mp3  binary
+*.mp4  binary
+*.mov  binary
+*.zip  binary
