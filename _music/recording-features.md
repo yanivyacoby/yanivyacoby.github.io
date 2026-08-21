@@ -34,7 +34,7 @@ category: misc
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	<p style="text-align: justify;">
-	     Collaborated with <a href="https://izetrio.com" target="_blank" rel="noopener noreferrer">Ize Trio</a>--<a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a>, <a href="https://lernismusic.com/home" target="_blank" rel="noopener noreferrer">George Lernis</a>, and <a href="https://www.alatrashmusic.com" target="_blank" rel="noopener noreferrer">Naseem Alatrash</a>--on track, "Snæfellsjökull."
+	     Collaborated with <a href="https://izetrio.com" target="_blank" rel="noopener noreferrer">Ize Trio</a>---<a href="https://chasemorrin.com/" target="_blank" rel="noopener noreferrer">Chase Morrin</a>, <a href="https://lernismusic.com/home" target="_blank" rel="noopener noreferrer">George Lernis</a>, and <a href="https://www.alatrashmusic.com" target="_blank" rel="noopener noreferrer">Naseem Alatrash</a>---on track, "Snæfellsjökull."
 	</p>
 
 	<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1498787232/size=small/bgcol=000000/linkcol=ffe0a3/artwork=none/track=3480290272/transparent=true/" seamless><a href="https://chasemorrin.bandcamp.com/album/ize-trio-global-prayer">Ize Trio: Global Prayer by Chase Morrin, George Lernis, Naseem Alatrash, Vasilis Kostas, Yaniv Yacoby, and Layth Sidiq</a></iframe>

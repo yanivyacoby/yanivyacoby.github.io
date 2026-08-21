@@ -15,7 +15,7 @@ category: collaborations
 	    Photo credit: Flora Wiederkehr
 	</div>
     	<p style="text-align: justify;">
-	    Triga is a folk music trio formed on a Boston rooftop by <a href="http://www.annabreger.com" target="_blank" rel="noopener noreferrer">Anna Breger</a> from Vienna (Nyckelharpa), <a href="http://www.ericboodman.com" target="_blank" rel="noopener noreferrer">Eric Boodman</a> from Montreal (fiddle), and Yaniv Yacoby from Boston (Irish Bouzouki). With roots in various traditions -- Swedish nyckelharpa music, Québécois fiddling, Irish bouzouki, baroque improvisation -- the three members of Triga bring a unique sound to old and new tunes alike.
+	    Triga is a folk music trio formed on a Boston rooftop by <a href="http://www.annabreger.com" target="_blank" rel="noopener noreferrer">Anna Breger</a> from Vienna (Nyckelharpa), <a href="http://www.ericboodman.com" target="_blank" rel="noopener noreferrer">Eric Boodman</a> from Montreal (fiddle), and Yaniv Yacoby from Boston (Irish Bouzouki). With roots in various traditions---Swedish nyckelharpa music, Québécois fiddling, Irish bouzouki, baroque improvisation---the three members of Triga bring a unique sound to old and new tunes alike.
 	</p>
     </div>
     <div class="col-sm mt-3 mt-md-0">

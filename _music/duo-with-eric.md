@@ -14,7 +14,7 @@ category: collaborations
     </div>
     <div class="col-sm mt-3 mt-md-0">
     	 <p style="text-align: justify;">
-		Eric and Yaniv first met during a snowstorm late in 2017, at an Irish session in downtown Boston. When the session was done, they didn't want to stop playing tunes, and so they just kept on--for a few hours that evening, and then every week for the next six months.
+		Eric and Yaniv first met during a snowstorm late in 2017, at an Irish session in downtown Boston. When the session was done, they didn't want to stop playing tunes, and so they just kept on---for a few hours that evening, and then every week for the next six months.
 	</p>
 	<p style="text-align: justify;">
 		Combining the Québécois verve Eric's fiddling picked up in his hometown of Montreal, and the glittering countermelodies Yaniv learned on the bouzouki while traveling in Ireland, their tunes are at once rollicking and delicate. And if you're lucky, you might even hear some foot percussion and accordion!
