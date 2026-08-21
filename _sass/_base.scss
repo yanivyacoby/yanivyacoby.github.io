@@ -365,9 +365,9 @@ footer.sticky-bottom {
 	padding-bottom: 20px;
     }
     a {
-	color: var(--global-footer-link-color);
+	color: var(--global-footer-link-color); // white links (match the footer text)
 	&:hover {
-	    color: var(--global-theme-color);
+	    color: #ffe0a3; // warm gold on hover, on every page
 	    text-decoration: none;
 	}
     }

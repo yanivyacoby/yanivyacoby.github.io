@@ -328,6 +328,12 @@ body.music-album {
   a:hover,
   a:focus { color: #fff; }
 
+  // …but keep the footer's warm-gold hover. The broad rule above has the same
+  // specificity as `footer.sticky-bottom a:hover` and is defined later, so it
+  // would otherwise flip footer links to white on album pages. Scoping under
+  // body.music-album makes this the most specific rule, so gold wins.
+  footer.sticky-bottom a:hover { color: #ffe0a3; }
+
   .caption { color: rgba(255, 255, 255, 0.7); }
 
   // Streaming/store buttons (Apple, Bandcamp, Spotify, …): outlined pills on black.
