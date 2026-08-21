@@ -30,16 +30,16 @@ category: collaborations
 	      <iframe style="position:absolute;top:0px;left:0px;width:100%;height:100%;" width="1280" height="720" src="https://www.youtube.com/embed/HXh05i-RG-4?rel=0&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
 	 </div>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-    	 <div style="position:relative;height:0px;padding-bottom:56%;margin:0px auto;">
-	      <iframe style="position:absolute;top:0px;left:0px;width:100%;height:100%;" width="640" height="360" src="https://www.youtube.com/embed/foqw5W6Dyeo?rel=0&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
-	 </div>
-     </div>
 </div>
 
 <p></p>
 
 <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+    	 <div style="position:relative;height:0px;padding-bottom:56%;margin:0px auto;">
+	      <iframe style="position:absolute;top:0px;left:0px;width:100%;height:100%;" width="640" height="360" src="https://www.youtube.com/embed/foqw5W6Dyeo?rel=0&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
+	 </div>
+     </div>
     <div class="col-sm mt-3 mt-md-0">
     	 <div style="position:relative;height:0px;padding-bottom:56%;margin:0px auto;">
 	      <iframe style="position:absolute;top:0px;left:0px;width:100%;height:100%;" width="640" height="360" src="https://www.youtube.com/embed/7zETLNcDyMw?rel=0&amp;color=white" frameborder="0" allowfullscreen=""></iframe>
