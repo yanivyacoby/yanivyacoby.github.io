@@ -567,14 +567,17 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   }
 }
 
-// Contact + quick links: one column per theme (from _data/contact.yml),
-// laid out left-to-right. Columns wrap on narrow screens.
-// Contact columns: auto-fit grid so the column count drops (3 → 2 → 1) as the
-// section narrows. min(250px, 100%) keeps a single column from overflowing on
-// very small screens.
+// Contact + quick links: one column per theme (from _data/contact.yml), laid out
+// left-to-right. Three explicit stages as the screen narrows, so the columns
+// regroup in a controlled order (rather than auto-fit's plain left-to-right wrap):
+//   wide   → three columns:                 [Position] [Contact] [Academic]
+//   medium → Position keeps the left; the                        [Contact ]
+//            2nd & 3rd stack in the right:   [Position] [Academic]
+//   phone  → everything in a single column.
+// (Assumes the three columns from contact.yml; see the media queries below.)
 .about-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem 1.75rem;
   margin-bottom: 1.75rem;
   font-size: 1.1rem; // a touch larger; icons are em-based so they scale with it
@@ -596,9 +599,17 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   }
 }
 
-// On phones, collapse the contact links to a single column.
+// Medium screens: drop to two columns. Position spans both rows of the left
+// column, which pushes the 2nd & 3rd columns to stack together in the right one.
+@media (max-width: 850px) {
+  .about-links { grid-template-columns: 1fr 1fr; }
+  .about-links__col:first-child { grid-column: 1; grid-row: 1 / span 2; }
+}
+
+// Phones: collapse everything into a single column (reset the Position span).
 @media (max-width: 600px) {
   .about-links { grid-template-columns: 1fr; }
+  .about-links__col:first-child { grid-column: auto; grid-row: auto; }
 }
 
 .section-title {
