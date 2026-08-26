@@ -844,7 +844,7 @@ function rebuild() {
     const isWind = anim === ANIM.sl || anim === ANIM.sr;
     const dur  = isWind        ? (depth <= 0.33 ? rnd(45, 70) : WIND_DUR + rnd(-0.6, 0.6))
                : anim === ANIM.water ? rnd(3.5, 8)
-               : anim === ANIM.cloud ? rnd(55, 105) / (1 + skyFrac2 * 1.5)
+               : anim === ANIM.cloud ? rnd(37, 70) / (1 + skyFrac2 * 1.5)
                : rnd(4, 10);
     const del  = isWind
       ? (cx * WIND_CX + cy * WIND_CY) / WIND_WL * WIND_DUR + depth / WIND_DEPTH_WL * WIND_DUR + rnd(-0.5, 0.5)
@@ -977,15 +977,14 @@ requestAnimationFrame(frame);
 
 let _rt, _lastW = window.innerWidth, _lastDPR = window.devicePixelRatio || 1;
 window.addEventListener('resize', () => {
-  // On mobile, scrolling shows/hides the browser chrome, which changes only the
-  // viewport *height* and fires a resize event. Rebuilding the scene on those is
-  // what makes it flicker/regenerate mid-scroll — so only rebuild when the width
-  // (or pixel ratio) genuinely changes (window resize, rotation, zoom).
+  // On mobile, scrolling shows/hides the browser chrome, which changes only the viewport
+  // *height* and fires a resize event. Rebuilding the scene on those is what makes it
+  // flicker/regenerate mid-scroll — so only rebuild when the width (or pixel ratio) genuinely
+  // changes (window resize, rotation, zoom).
   const w = window.innerWidth, dpr = window.devicePixelRatio || 1;
   if (w === _lastW && dpr === _lastDPR) return;
   _lastW = w; _lastDPR = dpr;
   clearTimeout(_rt); _rt = setTimeout(rebuild, 400);
 });
-
 
 })();
