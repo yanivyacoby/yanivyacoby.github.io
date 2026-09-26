@@ -957,6 +957,17 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
  * (thin white connectors, hollow circles, filled + ring for present roles).
  ******************************************************************************/
 
+// Intro prose above the diagram (from bio-intro.md; matches .advocacy-mission's
+// measure/size). Markdownify emits <p>s, so trim the outer margins.
+.bio-intro {
+  max-width: 46rem;
+  margin: 0 0 1.75rem;
+  font-size: 1.05rem;
+
+  p:first-child { margin-top: 0; }
+  p:last-child { margin-bottom: 0; }
+}
+
 .bio-dg2 {
   width: 100%; // fill the content column (the D3 layout scales to this width)
   margin-top: 1.25rem; // extra breathing room below the "Bio" heading

@@ -1,4 +1,9 @@
-<!-- Bio: career diagram rendered with D3 into #bio-diagram (see assets/js/bio-diagram.js).
+<!-- Bio: intro prose, then the career diagram.
+     The prose lives in bio-intro.md so it can be edited as Markdown. -->
+{% capture bio_intro %}{% include sections/bio-intro.md %}{% endcapture %}
+<div class="bio-intro">{{ bio_intro | markdownify }}</div>
+
+<!-- Career diagram rendered with D3 into #bio-diagram (see assets/js/bio-diagram.js).
      The list below is a fallback shown if D3/JS is unavailable; the script replaces it. -->
 <div id="bio-diagram" class="bio-dg2">
   <ul class="bio-dg2__fallback">
