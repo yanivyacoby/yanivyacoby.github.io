@@ -872,7 +872,7 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
 
 // Music cards are whole-card links, but the only cues were the pointer cursor and
 // MDB's .hoverable shadow (slow + faint, and hover never fires on touch). So: a
-// persistent "Listen →" cue in the body, a quick lift on hover, and a focus ring.
+// persistent "Listen →" cue in the body, a quick lift + shadow on hover, and a focus ring.
 .projects {
   .grid-item > a {
     display: block;
@@ -888,13 +888,12 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   .card {
     border: 1px solid var(--global-divider-color);
     // Replaces MDB's `.hoverable` transition (all 0.55s) with immediate feedback.
-    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
   }
 
   .grid-item > a:hover .card,
   .grid-item > a:focus-visible .card {
     transform: translateY(-4px);
-    border-color: var(--global-theme-color);
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
   }
 
