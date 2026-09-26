@@ -15,6 +15,9 @@
         <div class="card-body">
           <h4 class="card-title">{{ project.title }}</h4>
           <p class="card-text">{{ project.description }}</p>
+          <!-- Rest-state affordance: shows the card is clickable without needing hover
+               (which never fires on touch). Override per page with `cta:` front matter. -->
+          <span class="card-cue">{{ project.cta | default: "Listen" }}<span class="card-cue__arrow" aria-hidden="true">&rarr;</span></span>
           <div class="row ml-1 mr-1 p-0">
             {%- if project.github -%}
             <div class="github-icon">

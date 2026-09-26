@@ -870,6 +870,64 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   .advocacy-cards { grid-template-columns: 1fr; }
 }
 
+// Music cards are whole-card links, but the only cues were the pointer cursor and
+// MDB's .hoverable shadow (slow + faint, and hover never fires on touch). So: a
+// persistent "Listen →" cue in the body, a quick lift on hover, and a focus ring.
+.projects {
+  .grid-item > a {
+    display: block;
+    border-radius: 0.25rem; // match the card, so the focus ring hugs its corners
+  }
+
+  // The card link had no focus style at all (.projects a drops the underline).
+  .grid-item > a:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 3px;
+  }
+
+  .card {
+    overflow: hidden; // clip the thumbnail's hover zoom to the rounded corners
+    border: 1px solid var(--global-divider-color);
+    // Replaces MDB's `.hoverable` transition (all 0.55s) with immediate feedback.
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  }
+
+  .card img { transition: transform 0.35s ease; }
+
+  .grid-item > a:hover .card,
+  .grid-item > a:focus-visible .card {
+    transform: translateY(-4px);
+    border-color: var(--global-theme-color);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+  }
+
+  .grid-item > a:hover .card img { transform: scale(1.04); }
+  .grid-item > a:hover .card-cue__arrow { transform: translateX(4px); }
+}
+
+// The always-visible "Listen →" cue at the bottom of the card body.
+.card-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.15rem;
+  color: var(--global-theme-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.card-cue__arrow { transition: transform 0.18s ease; }
+
+@media (prefers-reduced-motion: reduce) {
+  .projects .card,
+  .projects .card img,
+  .card-cue__arrow { transition: none; }
+
+  .projects .grid-item > a:hover .card,
+  .projects .grid-item > a:hover .card img,
+  .projects .grid-item > a:hover .card-cue__arrow { transform: none; }
+}
+
 .advocacy-card {
   display: flex;
   flex-direction: column;
