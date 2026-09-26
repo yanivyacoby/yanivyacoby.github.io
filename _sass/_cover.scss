@@ -897,6 +897,8 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
   }
 
+  // The cue tracks the card title: body text at rest, theme color on hover.
+  .grid-item > a:hover .card-cue { color: var(--global-theme-color); }
   .grid-item > a:hover .card-cue__arrow { transform: translateX(4px); }
 }
 
@@ -906,7 +908,7 @@ $tinted-sections: "#about, #bio, #publications, #teaching, #advocacy";
   align-items: center;
   gap: 0.35rem;
   margin-top: 0.15rem;
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
   font-size: 0.85rem;
   font-weight: 600;
 }
