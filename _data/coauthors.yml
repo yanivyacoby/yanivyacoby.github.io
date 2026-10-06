@@ -217,3 +217,15 @@
 "Picard":
   - firstname: ["R.", "Rosalind"]
     url: https://web.media.mit.edu/~picard/
+
+"McGuire":
+  - firstname: ["T.", "T. C.", "Taylor C."]
+    utl: https://scholar.google.com/citations?user=0kZ55xAAAAAJ&hl=en
+
+"Castro-Ramirez":
+  - firstname: ["F.", "Franchesca"]
+    utl: https://scholar.google.com/citations?user=SNIQ2pIAAAAJ&hl=en
+
+"Patel":
+  - firstname: ["A.", "Anushka", "A. R.", "Anushka R."]
+    utl: https://researchers.mgh.harvard.edu/profile/40395833/Anushka-Patel
