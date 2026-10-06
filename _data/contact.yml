@@ -13,7 +13,7 @@ columns:
   - title: Position
     items:
       - icon: fas fa-landmark
-        text: "Faculty @"
+        text: "Faculty @ "
         label: Wellesley CS
         url: "https://www.wellesley.edu/departments-programs/department/computer-science"
       - icon: fas fa-location-dot
