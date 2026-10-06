@@ -220,12 +220,12 @@
 
 "McGuire":
   - firstname: ["T.", "T. C.", "Taylor C.", "Taylor"]
-    utl: https://scholar.google.com/citations?user=0kZ55xAAAAAJ&hl=en
+    url: https://scholar.google.com/citations?user=0kZ55xAAAAAJ&hl=en
 
 "Castro-Ramirez":
   - firstname: ["F.", "Franchesca"]
-    utl: https://scholar.google.com/citations?user=SNIQ2pIAAAAJ&hl=en
+    url: https://scholar.google.com/citations?user=SNIQ2pIAAAAJ&hl=en
 
 "Patel":
   - firstname: ["A.", "Anushka", "A. R.", "Anushka R."]
-    utl: https://researchers.mgh.harvard.edu/profile/40395833/Anushka-Patel
+    url: https://researchers.mgh.harvard.edu/profile/40395833/Anushka-Patel
