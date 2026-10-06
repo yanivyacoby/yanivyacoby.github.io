@@ -1,7 +1,0 @@
-{%- comment -%}
-Responsive 16:9 YouTube embed. Usage: {% include video.html id="VIDEO_ID" %}
-Optional: title="..." for the iframe's accessible name.
-{%- endcomment -%}
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/{{ include.id }}?rel=0&amp;color=white" title="{{ include.title | default: 'YouTube video' }}" frameborder="0" allowfullscreen></iframe>
-</div>
